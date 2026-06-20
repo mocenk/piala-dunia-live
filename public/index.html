@@ -246,6 +246,114 @@
     main {
       padding: 12px 16px 24px;
     }
+    /* === Live Events (Sedang Tayang) === */
+    .live-events-section {
+      margin: 16px 0 8px;
+      display: none;
+    }
+    .live-events-section.show { display: block; }
+    .live-events-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .live-events-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .live-pulse {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ff4444;
+      box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7);
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(255, 68, 68, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0); }
+    }
+    .live-events-count {
+      font-size: 10px;
+      color: var(--text-3);
+      font-weight: 600;
+    }
+    .live-events-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 4px;
+    }
+    .live-events-scroll::-webkit-scrollbar { display: none; }
+    .live-event-card {
+      flex-shrink: 0;
+      width: 240px;
+      background: linear-gradient(135deg, rgba(255, 68, 68, 0.12) 0%, rgba(255, 87, 34, 0.08) 100%);
+      border: 1px solid rgba(255, 68, 68, 0.3);
+      border-radius: 12px;
+      padding: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: inherit;
+      color: inherit;
+      text-align: left;
+      -webkit-appearance: none;
+    }
+    .live-event-card:active { transform: scale(0.97); }
+    .live-event-card:hover {
+      border-color: rgba(255, 68, 68, 0.6);
+      background: linear-gradient(135deg, rgba(255, 68, 68, 0.18) 0%, rgba(255, 87, 34, 0.12) 100%);
+    }
+    .live-event-category {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--danger);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .live-event-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .live-event-channel {
+      font-size: 11px;
+      color: var(--text-2);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .live-event-time {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--fifa);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .live-event-countdown {
+      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+      font-variant-numeric: tabular-nums;
+    }
     .section-title {
       font-size: 12px;
       font-weight: 700;
@@ -466,6 +574,18 @@
   <input type="search" id="search" class="search-box" placeholder="🔍 Cari channel..." autocomplete="off">
   <div class="filters" id="filters"></div>
 </div>
+
+<!-- Live Events (Sedang Tayang) -->
+<section class="live-events-section" id="liveEventsSection">
+  <div class="live-events-header">
+    <div class="live-events-title">
+      <span class="live-pulse"></span>
+      Sedang Tayang
+    </div>
+    <div class="live-events-count" id="liveEventsCount"></div>
+  </div>
+  <div class="live-events-scroll" id="liveEventsScroll"></div>
+</section>
 
 <main id="main">
   <div class="section-title">⚽ FIFA World Cup</div>
@@ -803,11 +923,117 @@
   // === Search handler ===
   document.getElementById('search').addEventListener('input', renderChannels);
 
+  // === Live Events (Sedang Tayang) ===
+  const LIVE_EVENTS_URL = './live_events.json';
+  const liveSection = document.getElementById('liveEventsSection');
+  const liveScroll = document.getElementById('liveEventsScroll');
+  const liveCount = document.getElementById('liveEventsCount');
+  let liveEventsData = { events: [], last_updated: null };
+
+  function isEventActive(ev) {
+    const now = Date.now();
+    const start = new Date(ev.start).getTime();
+    const end = new Date(ev.end).getTime();
+    return now >= start && now < end;
+  }
+
+  function formatCountdown(ev) {
+    const now = Date.now();
+    const end = new Date(ev.end).getTime();
+    const remaining = end - now;
+    if (remaining <= 0) return '00:00';
+    const totalSec = Math.floor(remaining / 1000);
+    const h = Math.floor(totalSec / 3600);
+    const m = Math.floor((totalSec % 3600) / 60);
+    const s = totalSec % 60;
+    if (h > 0) return `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  }
+
+  function formatTimeRange(ev) {
+    try {
+      const s = new Date(ev.start);
+      const e = new Date(ev.end);
+      const fmt = (d) => d.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Jakarta' });
+      return `${fmt(s)}–${fmt(e)} WIB`;
+    } catch { return ''; }
+  }
+
+  function renderLiveEvents() {
+    const active = liveEventsData.events.filter(isEventActive);
+    if (active.length === 0) {
+      liveSection.classList.remove('show');
+      liveScroll.innerHTML = '';
+      liveCount.textContent = '';
+      return;
+    }
+    // Sort by start time
+    active.sort((a, b) => new Date(a.start) - new Date(b.start));
+    liveScroll.innerHTML = '';
+    active.forEach(ev => {
+      const card = document.createElement('button');
+      card.className = 'live-event-card';
+      card.type = 'button';
+      card.innerHTML = `
+        <div class="live-event-category">${ev.category || 'Live Event'}</div>
+        <div class="live-event-title">${ev.title}</div>
+        <div class="live-event-channel">📺 ${ev.channel_name}</div>
+        <div class="live-event-time">
+          <span>${formatTimeRange(ev)}</span>
+          <span class="live-event-countdown">⏱ ${formatCountdown(ev)}</span>
+        </div>
+      `;
+      card.onclick = () => {
+        // Find matching channel in our M3U list, or play URL directly
+        const matched = channels.find(c => c.url === ev.channel_url || c.name === ev.channel_name);
+        if (matched) {
+          playChannel(matched);
+        } else {
+          // Play URL directly via a synthetic channel
+          playChannel({
+            name: ev.channel_name,
+            url: ev.channel_url,
+            quality: 'fhd',
+            category: 'fifa'
+          });
+        }
+        // Scroll player into view
+        document.getElementById('playerWrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      };
+      liveScroll.appendChild(card);
+    });
+    liveSection.classList.add('show');
+    liveCount.textContent = `${active.length} event`;
+  }
+
+  async function loadLiveEvents() {
+    try {
+      const res = await fetch(LIVE_EVENTS_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      liveEventsData = await res.json();
+      renderLiveEvents();
+    } catch (err) {
+      console.warn('[live-events] load failed:', err);
+    }
+  }
+
+  // Update countdowns every second
+  setInterval(() => {
+    if (liveEventsData.events.some(isEventActive)) renderLiveEvents();
+  }, 1000);
+
+  // Refresh event list every 5 min (in case schedule changes)
+  setInterval(loadLiveEvents, 5 * 60 * 1000);
+
   // === Init: fetch M3U then render + auto-play first FIFA ===
   loadChannels().then(() => {
     const firstFifa = channels.find(c => c.category === 'fifa');
     if (firstFifa) setTimeout(() => playChannel(firstFifa), 500);
   });
+
+  // Load live events immediately + retry after channels load
+  loadLiveEvents();
+  setTimeout(loadLiveEvents, 2000);
 
   // === PWA service worker ===
   if ('serviceWorker' in navigator) {

@@ -1,0 +1,41 @@
+{
+  "events": [
+    {
+      "id": "demo-1",
+      "title": "Argentina vs Brasil",
+      "category": "World Cup Qualifier",
+      "channel_name": "beIN SPORTS XTRA",
+      "channel_url": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
+      "start": "2026-06-20T14:00:00+07:00",
+      "end": "2026-06-20T17:00:00+07:00"
+    },
+    {
+      "id": "demo-2",
+      "title": "Persija vs Persib",
+      "category": "Liga 1 Indonesia",
+      "channel_name": "RCTI HD (V+)",
+      "channel_url": "https://doi7ndjjezn0r.cloudfront.net/vidio-olympic2-live/live.m3u8",
+      "start": "2026-06-20T15:30:00+07:00",
+      "end": "2026-06-20T17:30:00+07:00"
+    },
+    {
+      "id": "demo-3",
+      "title": "Liverpool vs Manchester United",
+      "category": "Premier League",
+      "channel_name": "ESPN8 The Ocho",
+      "channel_url": "https://d3b6q2he5kp8ke.cloudfront.net/ESPNTheOcho.m3u8",
+      "start": "2026-06-20T19:00:00+07:00",
+      "end": "2026-06-20T21:00:00+07:00"
+    },
+    {
+      "id": "demo-4",
+      "title": "Malam ini sudah selesai",
+      "category": "Demo (past)",
+      "channel_name": "beIN Sports USA",
+      "channel_url": "http://23.237.104.106:8080/USA_BEIN/index.m3u8",
+      "start": "2026-06-20T10:00:00+07:00",
+      "end": "2026-06-20T12:00:00+07:00"
+    }
+  ],
+  "last_updated": "2026-06-20T15:42:50+07:00"
+}
