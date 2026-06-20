@@ -439,85 +439,103 @@
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13"></script>
 <script>
-  // === Channel data (68 streams) ===
-  const channels = [
-    { name: 'FIFA WC Live 1 (HD 720p)', url: 'https://mflixott.com/tv/dd/live2.php?id=54', category: 'fifa', quality: 'hd' },
-    { name: 'FIFA WC Live 2 (FHD 1080p)', url: 'https://mflixott.com/tv/dd/live.php?id=966', category: 'fifa', quality: 'fhd' },
-    { name: 'FIFA WC Live 3 (HD 720p)', url: 'https://mflixott.com/tv/dd/live2.php?id=116', category: 'fifa', quality: 'hd' },
-    { name: 'T Sports (HD 720p)', url: 'https://mflixott.com/tv/dd/live.php?id=270', category: 'sports', quality: 'hd' },
-    { name: 'Channel 36 (540p)', url: 'https://mflixott.com/tv/dd/live2.php?id=36', category: 'other', quality: 'sd' },
-    { name: 'Channel 38', url: 'https://mflixott.com/tv/dd/live2.php?id=38', category: 'other', quality: 'sd' },
-    { name: 'Channel 39 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=39', category: 'other', quality: 'hd' },
-    { name: 'Channel 44 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=44', category: 'other', quality: 'hd' },
-    { name: 'Channel 51 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=51', category: 'other', quality: 'hd' },
-    { name: 'Channel 62 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=62', category: 'other', quality: 'fhd' },
-    { name: 'Channel 63 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=63', category: 'other', quality: 'fhd' },
-    { name: 'Channel 64 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=64', category: 'other', quality: 'hd' },
-    { name: 'Channel 67 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=67', category: 'other', quality: 'hd' },
-    { name: 'Channel 81 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=81', category: 'other', quality: 'hd' },
-    { name: 'Channel 90 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=90', category: 'other', quality: 'hd' },
-    { name: 'Channel 111 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=111', category: 'other', quality: 'fhd' },
-    { name: 'Channel 112 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=112', category: 'other', quality: 'hd' },
-    { name: 'Channel 113 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=113', category: 'other', quality: 'fhd' },
-    { name: 'Channel 114 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=114', category: 'other', quality: 'hd' },
-    { name: 'Channel 115 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=115', category: 'other', quality: 'fhd' },
-    { name: 'Channel 117 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=117', category: 'other', quality: 'fhd' },
-    { name: 'Channel 118 (360p)', url: 'https://mflixott.com/tv/dd/live2.php?id=118', category: 'other', quality: 'sd' },
-    { name: 'Channel 119 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=119', category: 'other', quality: 'fhd' },
-    { name: 'Channel 123 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=123', category: 'other', quality: 'hd' },
-    { name: 'Channel 125 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=125', category: 'other', quality: 'hd' },
-    { name: 'Channel 126 (SD)', url: 'https://mflixott.com/tv/dd/live2.php?id=126', category: 'other', quality: 'sd' },
-    { name: 'Channel 140 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=140', category: 'other', quality: 'hd' },
-    { name: 'Channel 141 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=141', category: 'other', quality: 'hd' },
-    { name: 'Channel 142 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=142', category: 'other', quality: 'hd' },
-    { name: 'Channel 143 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=143', category: 'other', quality: 'hd' },
-    { name: 'Channel 144 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=144', category: 'other', quality: 'fhd' },
-    { name: 'Channel 145 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=145', category: 'other', quality: 'fhd' },
-    { name: 'Channel 146 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=146', category: 'other', quality: 'hd' },
-    { name: 'Channel 147 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=147', category: 'other', quality: 'hd' },
-    { name: 'Channel 255 (576p)', url: 'https://mflixott.com/tv/dd/live2.php?id=255', category: 'other', quality: 'sd' },
-    { name: 'Channel 257 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=257', category: 'other', quality: 'hd' },
-    { name: 'Channel 262 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=262', category: 'other', quality: 'hd' },
-    { name: 'Channel 263 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=263', category: 'other', quality: 'fhd' },
-    { name: 'Channel 264 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=264', category: 'other', quality: 'fhd' },
-    { name: 'Channel 265 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=265', category: 'other', quality: 'fhd' },
-    { name: 'Channel 266 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=266', category: 'other', quality: 'fhd' },
-    { name: 'Channel 267 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=267', category: 'other', quality: 'hd' },
-    { name: 'Channel 271 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=271', category: 'other', quality: 'fhd' },
-    { name: 'Channel 272 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=272', category: 'other', quality: 'hd' },
-    { name: 'Channel 273 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=273', category: 'other', quality: 'fhd' },
-    { name: 'Channel 277 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=277', category: 'other', quality: 'fhd' },
-    { name: 'Channel 278 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=278', category: 'other', quality: 'hd' },
-    { name: 'Channel 293 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=293', category: 'other', quality: 'hd' },
-    { name: 'Channel 300 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=300', category: 'other', quality: 'hd' },
-    { name: 'Channel 301 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=301', category: 'other', quality: 'hd' },
-    { name: 'Channel 302 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=302', category: 'other', quality: 'hd' },
-    { name: 'Channel 305 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=305', category: 'other', quality: 'hd' },
-    { name: 'Channel 306 (FHD)', url: 'https://mflixott.com/tv/dd/live2.php?id=306', category: 'other', quality: 'fhd' },
-    { name: 'Channel 308 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=308', category: 'other', quality: 'hd' },
-    { name: 'Channel 309 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=309', category: 'other', quality: 'hd' },
-    { name: 'Channel 310 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=310', category: 'other', quality: 'hd' },
-    { name: 'Channel 311 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=311', category: 'other', quality: 'hd' },
-    { name: 'Channel 312 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=312', category: 'other', quality: 'hd' },
-    { name: 'Channel 313 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=313', category: 'other', quality: 'hd' },
-    { name: 'Channel 314 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=314', category: 'other', quality: 'hd' },
-    { name: 'Channel 315 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=315', category: 'other', quality: 'hd' },
-    { name: 'Channel 316 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=316', category: 'other', quality: 'hd' },
-    { name: 'Channel 317 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=317', category: 'other', quality: 'hd' },
-    { name: 'Channel 318 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=318', category: 'other', quality: 'hd' },
-    { name: 'Channel 320 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=320', category: 'other', quality: 'hd' },
-    { name: 'Channel 321 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=321', category: 'other', quality: 'hd' },
-    { name: 'Channel 328 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=328', category: 'other', quality: 'hd' },
-    { name: 'Channel 335 (HD)', url: 'https://mflixott.com/tv/dd/live2.php?id=335', category: 'other', quality: 'hd' },
-  ];
+  // === Channel data: fetched from live M3U (auto-updates weekly) ===
+  let channels = [];
+  const M3U_URL = './piala_dunia.m3u';
+
+  // Map M3U group-title → UI category
+  function categoryFromGroup(group) {
+    const g = (group || '').toLowerCase();
+    if (g.includes('world cup') || g.includes('fifa') || g.includes('piala dunia')) return 'fifa';
+    if (g.includes('sport') || g.includes('sepakbola') || g.includes('bola')) return 'sports';
+    return 'other';
+  }
+
+  // Detect quality from name suffix or known patterns
+  function qualityFromName(name) {
+    const n = (name || '').toLowerCase();
+    if (n.includes('fhd') || n.includes('1080p')) return 'fhd';
+    if (n.includes('hd') || n.includes('720p')) return 'hd';
+    if (n.includes('sd') || n.includes('480p') || n.includes('540p') || n.includes('576p') || n.includes('360p')) return 'sd';
+    return 'sd';
+  }
+
+  // Strip quality suffix for cleaner display, e.g. "RCTI HD (V+) (HD 720p)" → "RCTI HD (V+)"
+  function cleanName(name) {
+    return (name || '').replace(/\s*\((FHD 1080p|HD 720p|SD 480p|FHD|HD|SD|1080p|720p|480p)\)\s*$/i, '').trim() || name;
+  }
+
+  // Parse M3U text into channel array
+  function parseM3U(text) {
+    const lines = text.split(/\r?\n/);
+    const result = [];
+    let cur = null;
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) continue;
+      if (line.startsWith('#EXTINF')) {
+        // Extract name (text after last comma)
+        const commaIdx = line.lastIndexOf(',');
+        const rawName = commaIdx >= 0 ? line.substring(commaIdx + 1).trim() : '';
+        // Extract group-title attribute
+        const groupMatch = line.match(/group-title="([^"]*)"/i);
+        const group = groupMatch ? groupMatch[1] : '';
+        cur = {
+          name: cleanName(rawName),
+          url: '',
+          category: categoryFromGroup(group),
+          quality: qualityFromName(rawName),
+          group: group
+        };
+      } else if (!line.startsWith('#')) {
+        // URL line (next non-comment after #EXTINF)
+        if (cur && !cur.url) {
+          cur.url = line;
+          if (cur.name && cur.url) result.push(cur);
+          cur = null;
+        }
+      }
+    }
+    return result;
+  }
+
+  // Show loading placeholder
+  function showLoading() {
+    const grids = ['fifaGrid', 'sportsGrid', 'allGrid'];
+    grids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:13px;">⏳ Memuat playlist…</div>';
+    });
+  }
+
+  // Fetch + parse M3U, then re-render
+  async function loadChannels() {
+    showLoading();
+    try {
+      const res = await fetch(M3U_URL + '?t=' + Date.now());  // bust cache
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const text = await res.text();
+      channels = parseM3U(text);
+      console.log(`[piala-dunia-live] Loaded ${channels.length} channels from M3U`);
+      renderStats();
+      renderFilters();
+      renderChannels();
+    } catch (err) {
+      console.error('[piala-dunia-live] M3U load failed:', err);
+      const grids = ['fifaGrid', 'sportsGrid', 'allGrid'];
+      grids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--danger);font-size:13px;">⚠️ Gagal memuat playlist. Coba refresh halaman.</div>';
+      });
+    }
+  }
 
   // === Stats ===
-  const total = channels.length;
-  const fhdCount = channels.filter(c => c.quality === 'fhd').length;
-  const hdCount = channels.filter(c => c.quality === 'hd').length;
-  document.getElementById('totalCount').textContent = total;
-  document.getElementById('fhdCount').textContent = fhdCount;
-  document.getElementById('hdCount').textContent = hdCount;
+  function renderStats() {
+    document.getElementById('totalCount').textContent = channels.length;
+    document.getElementById('fhdCount').textContent = channels.filter(c => c.quality === 'fhd').length;
+    document.getElementById('hdCount').textContent = channels.filter(c => c.quality === 'hd').length;
+  }
 
   // === Filters ===
   const filtersEl = document.getElementById('filters');
@@ -686,15 +704,11 @@
   // === Search handler ===
   document.getElementById('search').addEventListener('input', renderChannels);
 
-  // === Init ===
-  renderFilters();
-  renderChannels();
-
-  // Auto-play first FIFA channel
-  const firstFifa = channels.find(c => c.category === 'fifa');
-  if (firstFifa) {
-    setTimeout(() => playChannel(firstFifa), 500);
-  }
+  // === Init: fetch M3U then render + auto-play first FIFA ===
+  loadChannels().then(() => {
+    const firstFifa = channels.find(c => c.category === 'fifa');
+    if (firstFifa) setTimeout(() => playChannel(firstFifa), 500);
+  });
 
   // === PWA service worker ===
   if ('serviceWorker' in navigator) {
