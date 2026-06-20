@@ -434,6 +434,175 @@
     .q-hd { background: var(--hd); color: white; }
     .q-sd { background: var(--text-3); color: white; }
 
+    /* === Bottom Nav === */
+    .bottom-nav {
+      position: sticky;
+      bottom: 0;
+      z-index: 90;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background: rgba(15,15,20,0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+      gap: 4px;
+    }
+    .nav-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-3);
+      padding: 8px 4px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      transition: color .2s, background .2s;
+    }
+    .nav-btn .nav-ico { font-size: 20px; line-height: 1; }
+    .nav-btn:hover { color: var(--text-2); }
+    .nav-btn.active {
+      color: var(--accent);
+      background: rgba(255,68,68,0.12);
+    }
+
+    /* === Panels === */
+    .panel { display: none; }
+    .panel.active { display: block; }
+    .panel-title {
+      font-size: 18px;
+      font-weight: 800;
+      padding: 16px 12px 8px;
+      color: var(--text);
+      letter-spacing: 0.3px;
+    }
+    .panel-sub {
+      font-size: 12px;
+      color: var(--text-3);
+      padding: 0 12px 12px;
+    }
+
+    /* === Schedule list === */
+    .sched-list { padding: 0 12px 24px; }
+    .sched-day {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 16px 4px 8px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .sched-day:first-child { border-top: none; padding-top: 4px; }
+    .sched-item {
+      background: rgba(255,255,255,0.04);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      border-left: 3px solid var(--accent);
+    }
+    .sched-item.live { border-left-color: #00e676; box-shadow: 0 0 0 1px rgba(0,230,118,0.3); }
+    .sched-item.done { opacity: 0.55; border-left-color: var(--text-3); }
+    .sched-time {
+      font-size: 11px;
+      color: var(--text-3);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .sched-time .live-pill {
+      display: inline-block;
+      background: #00e676;
+      color: #000;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      font-size: 10px;
+      font-weight: 800;
+      animation: livePulse 1.5s ease-in-out infinite;
+    }
+    @keyframes livePulse {
+      0%,100% { opacity: 1; } 50% { opacity: 0.5; }
+    }
+    .sched-match {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 4px 0 6px;
+      line-height: 1.35;
+    }
+    .sched-meta {
+      font-size: 11px;
+      color: var(--text-2);
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .sched-meta .stage { color: var(--accent); font-weight: 600; }
+    .sched-empty {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-3);
+      font-size: 13px;
+    }
+
+    /* === Standings === */
+    .standings { padding: 0 12px 24px; }
+    .group-card {
+      background: rgba(255,255,255,0.04);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .group-head {
+      background: rgba(255,68,68,0.15);
+      color: var(--accent);
+      padding: 10px 14px;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .standings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .standings-table th, .standings-table td {
+      padding: 8px 6px;
+      text-align: center;
+      color: var(--text-2);
+    }
+    .standings-table th {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .standings-table .team {
+      text-align: left;
+      padding-left: 12px;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 13px;
+    }
+    .standings-table .flag { margin-right: 6px; }
+    .standings-table tr.qualified td { color: var(--text); }
+    .standings-table tr.qualified { background: rgba(0,230,118,0.06); }
+    .standings-table .pts { font-weight: 800; color: var(--accent); }
+    .standings-foot {
+      text-align: center;
+      padding: 16px 12px 8px;
+      font-size: 11px;
+      color: var(--text-3);
+    }
+
     /* === Footer === */
     footer {
       padding: 24px 16px 16px;
@@ -588,15 +757,48 @@
 </section>
 
 <main id="main">
-  <div class="section-title">⚽ FIFA World Cup</div>
-  <div class="grid" id="fifaGrid"></div>
+  <div class="panel panel-home active" id="panelHome">
+    <div class="section-title">⚽ FIFA World Cup</div>
+    <div class="grid" id="fifaGrid"></div>
 
-  <div class="section-title">🏏 Sports / Cricket</div>
-  <div class="grid" id="sportsGrid"></div>
+    <div class="section-title">🏏 Sports / Cricket</div>
+    <div class="grid" id="sportsGrid"></div>
 
-  <div class="section-title">📺 Semua Channel</div>
-  <div class="grid" id="allGrid"></div>
+    <div class="section-title">📺 Semua Channel</div>
+    <div class="grid" id="allGrid"></div>
+  </div>
+
+  <div class="panel panel-schedule" id="panelSchedule">
+    <div class="panel-title">📅 Jadwal Lengkap</div>
+    <div class="panel-sub">Piala Dunia & event live lainnya (WIB)</div>
+    <div class="sched-list" id="schedList">
+      <div class="sched-empty">Memuat jadwal...</div>
+    </div>
+  </div>
+
+  <div class="panel panel-standings" id="panelStandings">
+    <div class="panel-title">🏆 Klasemen</div>
+    <div class="panel-sub" id="standingsStage">Piala Dunia — Group Stage</div>
+    <div class="standings" id="standingsList">
+      <div class="sched-empty">Memuat klasemen...</div>
+    </div>
+  </div>
 </main>
+
+<nav class="bottom-nav" role="navigation" aria-label="Navigasi utama">
+  <button class="nav-btn active" data-tab="home" type="button">
+    <span class="nav-ico">🏠</span>
+    <span>Beranda</span>
+  </button>
+  <button class="nav-btn" data-tab="schedule" type="button">
+    <span class="nav-ico">📅</span>
+    <span>Jadwal</span>
+  </button>
+  <button class="nav-btn" data-tab="standings" type="button">
+    <span class="nav-ico">🏆</span>
+    <span>Klasemen</span>
+  </button>
+</nav>
 
 <footer>
   <div class="footer-stats">
@@ -1084,7 +1286,168 @@
   // Refresh event list every 5 min (in case schedule changes)
   setInterval(loadLiveEvents, 5 * 60 * 1000);
 
-  // === Init: fetch M3U then render + auto-play first FIFA ===
+  // === Bottom nav: switch tab ===
+function switchTab(tab) {
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel' + tab.charAt(0).toUpperCase() + tab.slice(1)));
+  // Reset mini-player offset when switching panels (player only on Beranda)
+  const playerWrap = document.getElementById('playerWrap');
+  if (playerWrap) {
+    if (tab === 'home') {
+      playerWrap.classList.remove('hidden-from-nav');
+    } else {
+      playerWrap.classList.add('hidden-from-nav');
+      playerWrap.classList.remove('mini');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // Lazy load on first view
+  if (tab === 'schedule') loadSchedule();
+  if (tab === 'standings') loadStandings();
+}
+
+document.querySelectorAll('.nav-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
+// === Schedule (Jadwal) ===
+const SCHEDULE_URL = './live_events.json';
+let scheduleData = null;
+
+async function loadSchedule() {
+  const container = document.getElementById('schedList');
+  if (!container) return;
+  try {
+    const res = await fetch(SCHEDULE_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    scheduleData = data.events || [];
+    renderSchedule();
+  } catch (err) {
+    container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat jadwal<br><small>' + err.message + '</small></div>';
+  }
+}
+
+function renderSchedule() {
+  const container = document.getElementById('schedList');
+  if (!container || !scheduleData) return;
+  if (scheduleData.length === 0) {
+    container.innerHTML = '<div class="sched-empty">Belum ada jadwal tersedia</div>';
+    return;
+  }
+  // Sort by start time
+  const sorted = [...scheduleData].sort((a, b) => new Date(a.start) - new Date(b.start));
+  const now = Date.now();
+  const groups = {};
+  sorted.forEach(ev => {
+    const d = new Date(ev.start);
+    const dayKey = d.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' });
+    if (!groups[dayKey]) groups[dayKey] = [];
+    groups[dayKey].push(ev);
+  });
+  let html = '';
+  Object.keys(groups).forEach(day => {
+    html += `<div class="sched-day">${day}</div>`;
+    groups[day].forEach(ev => {
+      const start = new Date(ev.start).getTime();
+      const end = new Date(ev.end).getTime();
+      const isLive = now >= start && now < end;
+      const isDone = now >= end;
+      const statusCls = isLive ? 'live' : (isDone ? 'done' : '');
+      const livePill = isLive ? '<span class="live-pill">● LIVE</span>' : '';
+      const timeStr = formatTimeRange(ev);
+      html += `
+        <button class="sched-item ${statusCls}" type="button" data-url="${ev.channel_url || ''}" data-name="${ev.channel_name || ''}">
+          <div class="sched-time">${timeStr} WIB ${livePill}</div>
+          <div class="sched-match">${ev.title || ''}</div>
+          <div class="sched-meta">
+            <span class="stage">${ev.category || 'Live Event'}</span>
+            <span>📺 ${ev.channel_name || ''}</span>
+          </div>
+        </button>`;
+    });
+  });
+  container.innerHTML = html;
+  // Click handler: switch to Beranda tab + play
+  container.querySelectorAll('.sched-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const url = el.dataset.url;
+      const name = el.dataset.name;
+      if (!url) return;
+      switchTab('home');
+      setTimeout(() => {
+        const matched = channels.find(c => c.url === url || c.name === name);
+        if (matched) { playChannel(matched); return; }
+        playChannel({ name: name || 'Live Event', url, quality: 'fhd', category: 'fifa' });
+      }, 250);
+    });
+  });
+}
+
+// Update live pill every 30s
+setInterval(() => { if (scheduleData && document.getElementById('panelSchedule').classList.contains('active')) renderSchedule(); }, 30000);
+
+// === Standings (Klasemen) ===
+const STANDINGS_URL = './standings.json';
+let standingsData = null;
+
+async function loadStandings() {
+  const container = document.getElementById('standingsList');
+  if (!container) return;
+  try {
+    const res = await fetch(STANDINGS_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    standingsData = await res.json();
+    renderStandings();
+  } catch (err) {
+    container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat klasemen<br><small>' + err.message + '</small></div>';
+  }
+}
+
+function renderStandings() {
+  const container = document.getElementById('standingsList');
+  const stageEl = document.getElementById('standingsStage');
+  if (!container || !standingsData) return;
+  const groups = standingsData.groups || [];
+  if (groups.length === 0) {
+    container.innerHTML = '<div class="sched-empty">Klasemen belum tersedia</div>';
+    return;
+  }
+  if (stageEl && standingsData.stage) stageEl.textContent = standingsData.stage;
+  let html = '';
+  groups.forEach(g => {
+    const teams = (g.teams || []).slice().sort((a, b) => a.rank - b.rank);
+    html += `
+      <div class="group-card">
+        <div class="group-head">GROUP ${g.name}</div>
+        <table class="standings-table">
+          <thead><tr>
+            <th>#</th><th class="team">Tim</th>
+            <th>M</th><th>W</th><th>D</th><th>L</th>
+            <th>SG</th><th>Pts</th>
+          </tr></thead>
+          <tbody>
+            ${teams.map(t => `
+              <tr class="${t.rank <= 2 ? 'qualified' : ''}">
+                <td>${t.rank}</td>
+                <td class="team"><span class="flag">${t.flag || '🏳️'}</span>${t.country}</td>
+                <td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td>
+                <td>${t.gd > 0 ? '+' + t.gd : t.gd}</td>
+                <td class="pts">${t.pts}</td>
+              </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>`;
+  });
+  if (standingsData.last_updated) {
+    const dt = new Date(standingsData.last_updated);
+    const ts = dt.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
+    html += `<div class="standings-foot">Update terakhir: ${ts} WIB</div>`;
+  }
+  container.innerHTML = html;
+}
+
+// === Init: fetch M3U then render + auto-play first FIFA ===
   loadChannels().then(() => {
     const firstFifa = channels.find(c => c.category === 'fifa');
     if (firstFifa) setTimeout(() => playChannel(firstFifa), 500);
