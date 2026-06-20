@@ -35,7 +35,43 @@
       "channel_url": "https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8",
       "start": "2026-06-20T16:00:00+07:00",
       "end": "2026-06-21T23:59:00+07:00"
+    },
+    {
+      "id": "test-rcti-dash",
+      "title": "RCTI HD (DASH)",
+      "category": "Test — MNC Group DASH",
+      "channel_name": "RCTI HD",
+      "channel_url": "https://indihuy.streamized.net/atm/DASH/rcti/manifest.mpd",
+      "start": "2026-06-20T16:00:00+07:00",
+      "end": "2026-06-21T23:59:00+07:00"
+    },
+    {
+      "id": "test-mnctv-dash",
+      "title": "MNCTV (DASH)",
+      "category": "Test — MNC Group DASH",
+      "channel_name": "MNCTV",
+      "channel_url": "https://indihuy.streamized.net/atm/DASH/mnctv/manifest.mpd",
+      "start": "2026-06-20T16:00:00+07:00",
+      "end": "2026-06-21T23:59:00+07:00"
+    },
+    {
+      "id": "test-inews-dash",
+      "title": "iNews (DASH)",
+      "category": "Test — MNC Group DASH",
+      "channel_name": "iNews",
+      "channel_url": "https://indihuy.streamized.net/atm/DASH/inews/manifest.mpd",
+      "start": "2026-06-20T16:00:00+07:00",
+      "end": "2026-06-21T23:59:00+07:00"
+    },
+    {
+      "id": "test-sindonews-dash",
+      "title": "Sindo News TV (DASH)",
+      "category": "Test — MNC Group DASH",
+      "channel_name": "Sindo News TV",
+      "channel_url": "https://indihuy.streamized.net/atm/DASH/mncnews/manifest.mpd",
+      "start": "2026-06-20T16:00:00+07:00",
+      "end": "2026-06-21T23:59:00+07:00"
     }
   ],
-  "last_updated": "2026-06-20T16:32:55+07:00"
+  "last_updated": "2026-06-20T16:43:00+07:00"
 }

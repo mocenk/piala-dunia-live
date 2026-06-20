@@ -841,3 +841,61 @@ https://cdn.nng.cloudns.us/live/m3u8/id/6183ec225226ccf.m3u8
 https://tvstreamcast.com/indonesiana.m3u8
 #EXTINF:-1 tvg-id="id-garuda-tv-channelfeed" tvg-name="Garuda TV (ChannelFeed)" tvg-logo="https://thumbor.prod.vidiocdn.com/qtIYvE-mjwMPwd-VUxilo2gFiAI=/230x230/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/18162/b4bea2.png" group-title="📺 Indonesia - TV Nasional",Garuda TV (ChannelFeed)
 https://hgmtv.com:19360/garudatvlivestreaming/480p.m3u8
+
+# === Indonesian DASH channels (Shaka Player required) ===
+#EXTINF:-1 tvg-logo="",Antara TV
+https://indihuy.streamized.net/atm/DASH/antara/manifest.mpd
+#EXTINF:-1 tvg-logo="",Bali TV
+https://indihuy.streamized.net/atm/DASH/balitv/manifest.mpd
+#EXTINF:-1 tvg-logo="",IDX Channel
+https://indihuy.streamized.net/atm/DASH/idx/manifest.mpd
+#EXTINF:-1 tvg-logo="",iNews
+https://indihuy.streamized.net/atm/DASH/inews/manifest.mpd
+#EXTINF:-1 tvg-logo="",Jak TV
+https://indihuy.streamized.net/atm/DASH/JAK_TV/manifest.mpd
+#EXTINF:-1 tvg-logo="",MAX Eats
+https://indihuy.streamized.net/atm/DASH/maxeats/manifest.mpd
+#EXTINF:-1 tvg-logo="",MAX Kids
+https://indihuy.streamized.net/atm/DASH/indikids/manifest.mpd
+#EXTINF:-1 tvg-logo="",MAX Reels
+https://indihuy.streamized.net/atm/DASH/useeprime/manifest.mpd
+#EXTINF:-1 tvg-logo="",MAX Sports
+https://indihuy.streamized.net/atm/DASH/useesport/manifest.mpd
+#EXTINF:-1 tvg-logo="",MAX Streak
+https://indihuy.streamized.net/atm/DASH/maxstreak/manifest.mpd
+#EXTINF:-1 tvg-logo="",MNCTV
+https://indihuy.streamized.net/atm/DASH/mnctv/manifest.mpd
+#EXTINF:-1 tvg-logo="",MQTV
+https://indihuy.streamized.net/atm/DASH/mqtv/manifest.mpd
+#EXTINF:-1 tvg-logo="",MTA TV
+https://indihuy.streamized.net/atm/DASH/mtatv/manifest.mpd
+#EXTINF:-1 tvg-logo="",My Kidz
+https://cdn10jtedge.indihometv.com/atm/DASH/mykids/manifest.mpd
+#EXTINF:-1 tvg-logo="",New TV Comprehensive
+https://indihuy.streamized.net/atm/DASH/newtvcomprehensive/manifest.mpd
+#EXTINF:-1 tvg-logo="",New TV Finance
+https://indihuy.streamized.net/atm/DASH/newtvfinance/manifest.mpd
+#EXTINF:-1 tvg-logo="",New TV Variety
+https://indihuy.streamized.net/atm/DASH/newtvvariety/manifest.mpd
+#EXTINF:-1 tvg-logo="",Nusantara TV
+https://indihuy.streamized.net/atm/DASH/nusantaratv/manifest.mpd
+#EXTINF:-1 tvg-logo="",Prambors
+https://indihuy.streamized.net/atm/DASH/pramborstv/manifest.mpd
+#EXTINF:-1 tvg-logo="",Rajawali TV
+https://indihuy.streamized.net/atm/DASH/RAJAWALI_TV/manifest.mpd
+#EXTINF:-1 tvg-logo="",RCTI HD
+https://indihuy.streamized.net/atm/DASH/rcti/manifest.mpd
+#EXTINF:-1 tvg-logo="",Rodja TV
+https://indihuy.streamized.net/atm/DASH/rodjatv/manifest.mpd
+#EXTINF:-1 tvg-logo="",Sin Po TV
+https://indihuy.streamized.net/atm/DASH/sinpotv/manifest.mpd
+#EXTINF:-1 tvg-logo="",Sindo News TV
+https://indihuy.streamized.net/atm/DASH/mncnews/manifest.mpd
+#EXTINF:-1 tvg-logo="",TV 9 Nusantara
+https://indihuy.streamized.net/atm/DASH/tv9/manifest.mpd
+#EXTINF:-1 tvg-logo="",TV Mu
+https://indihuy.streamized.net/atm/DASH/muhammadiyahtv/manifest.mpd
+#EXTINF:-1 tvg-logo="",TV MUI
+https://indihuy.streamized.net/atm/DASH/muitv/manifest.mpd
+#EXTINF:-1 tvg-logo="",Zee Bioskop
+https://indihuy.streamized.net/atm/DASH/zbioskop/manifest.mpd

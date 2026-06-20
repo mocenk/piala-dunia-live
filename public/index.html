@@ -609,6 +609,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13"></script>
+<!-- Shaka Player: plays MPEG-DASH (.mpd) + HLS (.m3u8). Falls back to HLS.js for legacy. -->
+<script src="https://cdn.jsdelivr.net/npm/shaka-player@4.11.6/dist/shaka-player.compiled.min.js"></script>
 <script>
   // === Channel data: fetched from live M3U (auto-updates weekly) ===
   let channels = [];
@@ -804,8 +806,39 @@
   const nowQuality = document.getElementById('nowQuality');
   let currentChannel = null;
   let hls = null;
+  let shakaPlayer = null;  // shaka player instance (reused for DASH+HLS)
 
-  function playChannel(ch) {
+  // === Shaka init: configure DRM-free streaming (we only do public FTA streams) ===
+  if (window.shaka && shaka.polyfill) {
+    shaka.polyfill.installAll();
+  }
+  async function ensureShaka() {
+    if (shakaPlayer) return shakaPlayer;
+    if (!window.shaka || !shaka.Player) {
+      throw new Error('Shaka not loaded');
+    }
+    shakaPlayer = new shaka.Player();
+    shakaPlayer.configure({
+      drm: { servers: {} },  // no DRM, public streams only
+      streaming: {
+        bufferingGoal: 30,
+        rebufferingGoal: 4,
+        retryParameters: { maxAttempts: 3, baseDelay: 500, backoffFactor: 2 }
+      },
+      abr: { enabled: true }  // adaptive bitrate
+    });
+    // Shaka error logging
+    shakaPlayer.addEventListener('error', (e) => {
+      console.warn('[Shaka] error:', e.detail && e.detail.code, e.detail && e.detail.message);
+    });
+    return shakaPlayer;
+  }
+
+  function isDashUrl(url) {
+    return /\.mpd(\?|$)/i.test(url || '');
+  }
+
+  async function playChannel(ch) {
     currentChannel = ch;
     nowPlaying.textContent = ch.name;
     nowQuality.textContent = ch.quality === 'fhd' ? 'FHD' : ch.quality === 'hd' ? 'HD' : 'SD';
@@ -818,13 +851,35 @@
       c.classList.toggle('active', c.dataset.url === ch.url);
     });
 
-    // Cleanup previous HLS
+    // Cleanup previous players
     if (hls) { hls.destroy(); hls = null; }
+    if (shakaPlayer) {
+      try { await shakaPlayer.detach(); } catch (e) {}
+    }
 
-    // Detect master playlist vs direct stream
-    // Some endpoints return #EXTM3U master playlist (live2.php)
-    // Others return direct chunk URL (live.php)
-    // HLS.js handles both transparently
+    // === Route to Shaka for DASH or any format; fallback to HLS.js ===
+    const url = ch.url;
+    const tryShaka = window.shaka && shaka.Player && shaka.Player.isBrowserSupported();
+
+    if (tryShaka) {
+      try {
+        const player = await ensureShaka();
+        await player.attach(video);
+        await player.load(url);
+        // Detect actual format for the quality label (Shaka handles both transparently)
+        const stats = player.getStats();
+        const isMpd = (player.getManifestType && player.getManifestType() === 'DASH') || /\.mpd(\?|$)/i.test(url);
+        if (isMpd) console.log('[Shaka] playing DASH:', url);
+        else console.log('[Shaka] playing HLS:', url);
+        video.play().catch(e => console.log('Autoplay blocked:', e));
+        loadingEl.classList.add('hidden');
+        return;
+      } catch (err) {
+        console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message);
+        // fall through to HLS.js below
+        try { if (shakaPlayer) await shakaPlayer.detach(); } catch (e) {}
+      }
+    }
 
     if (Hls.isSupported()) {
       hls = new Hls({ enableWorker: true, lowLatencyMode: false });
@@ -860,7 +915,7 @@
         loadingEl.classList.add('hidden');
       });
     } else {
-      errorMsg.textContent = 'Browser tidak support HLS';
+      errorMsg.textContent = 'Browser tidak support HLS/DASH';
       errorEl.classList.add('show');
     }
 
