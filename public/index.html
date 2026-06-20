@@ -1321,7 +1321,7 @@ async function loadSchedule() {
     const res = await fetch(SCHEDULE_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    scheduleData = data.events || [];
+    scheduleData = Array.isArray(data) ? data : (data.events || []);
     renderSchedule();
   } catch (err) {
     container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat jadwal<br><small>' + err.message + '</small></div>';
