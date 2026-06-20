@@ -1,54 +1,430 @@
 {
   "last_updated": "2026-06-20",
   "stage": "Group Stage",
-  "groups": {
-    "A": [
-      { "rank": 1, "country": "🇧🇷 Brazil",       "p": 3, "w": 2, "d": 1, "l": 0, "gf": 7, "ga": 2, "gd": 5, "pts": 7 },
-      { "rank": 2, "country": "🇭🇷 Kroasia",      "p": 3, "w": 1, "d": 2, "l": 0, "gf": 4, "ga": 2, "gd": 2, "pts": 5 },
-      { "rank": 3, "country": "🇲🇦 Maroko",       "p": 3, "w": 1, "d": 1, "l": 1, "gf": 3, "ga": 4, "gd": -1, "pts": 4 },
-      { "rank": 4, "country": "🇨🇲 Kamerun",      "p": 3, "w": 0, "d": 0, "l": 3, "gf": 1, "ga": 7, "gd": -6, "pts": 0 }
-    ],
-    "B": [
-      { "rank": 1, "country": "🇦🇷 Argentina",    "p": 3, "w": 3, "d": 0, "l": 0, "gf": 6, "ga": 1, "gd": 5, "pts": 9 },
-      { "rank": 2, "country": "🇫🇷 Prancis",      "p": 3, "w": 2, "d": 0, "l": 1, "gf": 5, "ga": 3, "gd": 2, "pts": 6 },
-      { "rank": 3, "country": "🇩🇰 Denmark",      "p": 3, "w": 1, "d": 0, "l": 2, "gf": 2, "ga": 4, "gd": -2, "pts": 3 },
-      { "rank": 4, "country": "🇹🇳 Tunisia",      "p": 3, "w": 0, "d": 0, "l": 3, "gf": 1, "ga": 6, "gd": -5, "pts": 0 }
-    ],
-    "C": [
-      { "rank": 1, "country": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inggris",   "p": 3, "w": 2, "d": 1, "l": 0, "gf": 5, "ga": 2, "gd": 3, "pts": 7 },
-      { "rank": 2, "country": "🇺🇸 Amerika Serikat","p": 3, "w": 1, "d": 2, "l": 0, "gf": 3, "ga": 2, "gd": 1, "pts": 5 },
-      { "rank": 3, "country": "🇮🇷 Iran",         "p": 3, "w": 1, "d": 0, "l": 2, "gf": 2, "ga": 4, "gd": -2, "pts": 3 },
-      { "rank": 4, "country": "🏴 Wales",         "p": 3, "w": 0, "d": 1, "l": 2, "gf": 1, "ga": 3, "gd": -2, "pts": 1 }
-    ],
-    "D": [
-      { "rank": 1, "country": "🇫🇷 Prancis",      "p": 3, "w": 2, "d": 1, "l": 0, "gf": 4, "ga": 1, "gd": 3, "pts": 7 },
-      { "rank": 2, "country": "🇦🇺 Australia",    "p": 3, "w": 1, "d": 1, "l": 1, "gf": 3, "ga": 3, "gd": 0, "pts": 4 },
-      { "rank": 3, "country": "🇩🇰 Denmark",      "p": 3, "w": 1, "d": 0, "l": 2, "gf": 2, "ga": 4, "gd": -2, "pts": 3 },
-      { "rank": 4, "country": "🇹🇳 Tunisia",      "p": 3, "w": 0, "d": 2, "l": 1, "gf": 1, "ga": 2, "gd": -1, "pts": 2 }
-    ],
-    "E": [
-      { "rank": 1, "country": "🇪🇸 Spanyol",      "p": 3, "w": 2, "d": 1, "l": 0, "gf": 5, "ga": 2, "gd": 3, "pts": 7 },
-      { "rank": 2, "country": "🇩🇪 Jerman",       "p": 3, "w": 1, "d": 1, "l": 1, "gf": 4, "ga": 3, "gd": 1, "pts": 4 },
-      { "rank": 3, "country": "🇯🇵 Jepang",       "p": 3, "w": 1, "d": 1, "l": 1, "gf": 3, "ga": 3, "gd": 0, "pts": 4 },
-      { "rank": 4, "country": "🇨🇷 Kosta Rika",   "p": 3, "w": 0, "d": 1, "l": 2, "gf": 1, "ga": 5, "gd": -4, "pts": 1 }
-    ],
-    "F": [
-      { "rank": 1, "country": "🇲🇦 Maroko",       "p": 3, "w": 2, "d": 1, "l": 0, "gf": 4, "ga": 1, "gd": 3, "pts": 7 },
-      { "rank": 2, "country": "🇭🇷 Kroasia",      "p": 3, "w": 1, "d": 2, "l": 0, "gf": 4, "ga": 1, "gd": 3, "pts": 5 },
-      { "rank": 3, "country": "🇧🇪 Belgia",       "p": 3, "w": 1, "d": 1, "l": 1, "gf": 3, "ga": 3, "gd": 0, "pts": 4 },
-      { "rank": 4, "country": "🇨🇦 Kanada",       "p": 3, "w": 0, "d": 0, "l": 3, "gf": 1, "ga": 7, "gd": -6, "pts": 0 }
-    ],
-    "G": [
-      { "rank": 1, "country": "🇧🇷 Brazil",       "p": 3, "w": 2, "d": 0, "l": 1, "gf": 6, "ga": 3, "gd": 3, "pts": 6 },
-      { "rank": 2, "country": "🇨🇭 Swiss",        "p": 3, "w": 2, "d": 0, "l": 1, "gf": 4, "ga": 3, "gd": 1, "pts": 6 },
-      { "rank": 3, "country": "🇨🇲 Kamerun",      "p": 3, "w": 1, "d": 0, "l": 2, "gf": 3, "ga": 4, "gd": -1, "pts": 3 },
-      { "rank": 4, "country": "🇷🇸 Serbia",       "p": 3, "w": 1, "d": 0, "l": 2, "gf": 3, "ga": 6, "gd": -3, "pts": 3 }
-    ],
-    "H": [
-      { "rank": 1, "country": "🇵🇹 Portugal",     "p": 3, "w": 3, "d": 0, "l": 0, "gf": 8, "ga": 2, "gd": 6, "pts": 9 },
-      { "rank": 2, "country": "🇰🇷 Korea Selatan","p": 3, "w": 1, "d": 1, "l": 1, "gf": 3, "ga": 4, "gd": -1, "pts": 4 },
-      { "rank": 3, "country": "🇺🇾 Uruguay",      "p": 3, "w": 1, "d": 1, "l": 1, "gf": 2, "ga": 3, "gd": -1, "pts": 4 },
-      { "rank": 4, "country": "🇬🇭 Ghana",        "p": 3, "w": 0, "d": 0, "l": 3, "gf": 2, "ga": 6, "gd": -4, "pts": 0 }
-    ]
-  }
+  "groups": [
+    {
+      "name": "A",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇧🇷 Brazil",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 7,
+          "ga": 2,
+          "gd": 5,
+          "pts": 7
+        },
+        {
+          "rank": 2,
+          "country": "🇭🇷 Kroasia",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "gd": 2,
+          "pts": 5
+        },
+        {
+          "rank": 3,
+          "country": "🇲🇦 Maroko",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "gd": -1,
+          "pts": 4
+        },
+        {
+          "rank": 4,
+          "country": "🇨🇲 Kamerun",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 7,
+          "gd": -6,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇦🇷 Argentina",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "gd": 5,
+          "pts": 9
+        },
+        {
+          "rank": 2,
+          "country": "🇫🇷 Prancis",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 5,
+          "ga": 3,
+          "gd": 2,
+          "pts": 6
+        },
+        {
+          "rank": 3,
+          "country": "🇩🇰 Denmark",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
+          "pts": 3
+        },
+        {
+          "rank": 4,
+          "country": "🇹🇳 Tunisia",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 6,
+          "gd": -5,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inggris",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "gd": 3,
+          "pts": 7
+        },
+        {
+          "rank": 2,
+          "country": "🇺🇸 Amerika Serikat",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 3,
+          "ga": 2,
+          "gd": 1,
+          "pts": 5
+        },
+        {
+          "rank": 3,
+          "country": "🇮🇷 Iran",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
+          "pts": 3
+        },
+        {
+          "rank": 4,
+          "country": "🏴 Wales",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇫🇷 Prancis",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 7
+        },
+        {
+          "rank": 2,
+          "country": "🇦🇺 Australia",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 4
+        },
+        {
+          "rank": 3,
+          "country": "🇩🇰 Denmark",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
+          "pts": 3
+        },
+        {
+          "rank": 4,
+          "country": "🇹🇳 Tunisia",
+          "p": 3,
+          "w": 0,
+          "d": 2,
+          "l": 1,
+          "gf": 1,
+          "ga": 2,
+          "gd": -1,
+          "pts": 2
+        }
+      ]
+    },
+    {
+      "name": "E",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇪🇸 Spanyol",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 5,
+          "ga": 2,
+          "gd": 3,
+          "pts": 7
+        },
+        {
+          "rank": 2,
+          "country": "🇩🇪 Jerman",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "gd": 1,
+          "pts": 4
+        },
+        {
+          "rank": 3,
+          "country": "🇯🇵 Jepang",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 4
+        },
+        {
+          "rank": 4,
+          "country": "🇨🇷 Kosta Rika",
+          "p": 3,
+          "w": 0,
+          "d": 1,
+          "l": 2,
+          "gf": 1,
+          "ga": 5,
+          "gd": -4,
+          "pts": 1
+        }
+      ]
+    },
+    {
+      "name": "F",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇲🇦 Maroko",
+          "p": 3,
+          "w": 2,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 7
+        },
+        {
+          "rank": 2,
+          "country": "🇭🇷 Kroasia",
+          "p": 3,
+          "w": 1,
+          "d": 2,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "pts": 5
+        },
+        {
+          "rank": 3,
+          "country": "🇧🇪 Belgia",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 3,
+          "gd": 0,
+          "pts": 4
+        },
+        {
+          "rank": 4,
+          "country": "🇨🇦 Kanada",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 1,
+          "ga": 7,
+          "gd": -6,
+          "pts": 0
+        }
+      ]
+    },
+    {
+      "name": "G",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇧🇷 Brazil",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 6,
+          "ga": 3,
+          "gd": 3,
+          "pts": 6
+        },
+        {
+          "rank": 2,
+          "country": "🇨🇭 Swiss",
+          "p": 3,
+          "w": 2,
+          "d": 0,
+          "l": 1,
+          "gf": 4,
+          "ga": 3,
+          "gd": 1,
+          "pts": 6
+        },
+        {
+          "rank": 3,
+          "country": "🇨🇲 Kamerun",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 4,
+          "gd": -1,
+          "pts": 3
+        },
+        {
+          "rank": 4,
+          "country": "🇷🇸 Serbia",
+          "p": 3,
+          "w": 1,
+          "d": 0,
+          "l": 2,
+          "gf": 3,
+          "ga": 6,
+          "gd": -3,
+          "pts": 3
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "teams": [
+        {
+          "rank": 1,
+          "country": "🇵🇹 Portugal",
+          "p": 3,
+          "w": 3,
+          "d": 0,
+          "l": 0,
+          "gf": 8,
+          "ga": 2,
+          "gd": 6,
+          "pts": 9
+        },
+        {
+          "rank": 2,
+          "country": "🇰🇷 Korea Selatan",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 3,
+          "ga": 4,
+          "gd": -1,
+          "pts": 4
+        },
+        {
+          "rank": 3,
+          "country": "🇺🇾 Uruguay",
+          "p": 3,
+          "w": 1,
+          "d": 1,
+          "l": 1,
+          "gf": 2,
+          "ga": 3,
+          "gd": -1,
+          "pts": 4
+        },
+        {
+          "rank": 4,
+          "country": "🇬🇭 Ghana",
+          "p": 3,
+          "w": 0,
+          "d": 0,
+          "l": 3,
+          "gf": 2,
+          "ga": 6,
+          "gd": -4,
+          "pts": 0
+        }
+      ]
+    }
+  ]
 }
