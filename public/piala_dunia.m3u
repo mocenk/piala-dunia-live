@@ -1,0 +1,212 @@
+#EXTM3U
+
+# FIFA World Cup Live (HD)
+#EXTINF:-1 tvg-id="fifa-wc-1" tvg-name="FIFA World Cup Live 1 (HD 720p)" tvg-logo="https://i.postimg.cc/QjD6hcSc/FIFA-World-Cup-Logo-2022.jpg" group-title="⚽ Sports - World Cup",FIFA World Cup Live 1 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=54
+
+# FIFA World Cup Live (FHD)
+#EXTINF:-1 tvg-id="fifa-wc-2" tvg-name="FIFA World Cup Live 2 (FHD 1080p)" tvg-logo="https://i.postimg.cc/QjD6hcSc/FIFA-World-Cup-Logo-2022.jpg" group-title="⚽ Sports - World Cup",FIFA World Cup Live 2 (FHD 1080p)
+https://mflixott.com/tv/dd/live.php?id=966
+
+# FIFA World Cup Live 3 (HD)
+#EXTINF:-1 tvg-id="fifa-wc-3" tvg-name="FIFA World Cup Live 3 (HD 720p)" tvg-logo="https://i.postimg.cc/QjD6hcSc/FIFA-World-Cup-Logo-2022.jpg" group-title="⚽ Sports - World Cup",FIFA World Cup Live 3 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=116
+
+# T Sports Bangladesh (HD)
+#EXTINF:-1 tvg-id="t-sports" tvg-name="T Sports Bangladesh (HD 720p)" tvg-logo="https://www.jagobd.com/wp-content/uploads/2019/12/t-sports.jpg" group-title="⚽ Sports - Cricket",T Sports Bangladesh (HD 720p)
+https://mflixott.com/tv/dd/live.php?id=270
+
+# === Active streams scan ID 1-100 ===
+#EXTINF:-1 tvg-id="ch-36" tvg-name="Channel 36 (540p)" group-title="📺 Other Live",Channel 36 (540p)
+https://mflixott.com/tv/dd/live2.php?id=36
+
+#EXTINF:-1 tvg-id="ch-38" tvg-name="Channel 38" group-title="📺 Other Live",Channel 38
+https://mflixott.com/tv/dd/live2.php?id=38
+
+#EXTINF:-1 tvg-id="ch-39" tvg-name="Channel 39 (HD 720p)" group-title="📺 Other Live",Channel 39 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=39
+
+#EXTINF:-1 tvg-id="ch-44" tvg-name="Channel 44 (HD 720p)" group-title="📺 Other Live",Channel 44 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=44
+
+#EXTINF:-1 tvg-id="ch-51" tvg-name="Channel 51 (HD 720p)" group-title="📺 Other Live",Channel 51 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=51
+
+#EXTINF:-1 tvg-id="ch-62" tvg-name="Channel 62 (FHD 1080p)" group-title="📺 Other Live",Channel 62 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=62
+
+#EXTINF:-1 tvg-id="ch-63" tvg-name="Channel 63 (FHD 1080p)" group-title="📺 Other Live",Channel 63 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=63
+
+#EXTINF:-1 tvg-id="ch-64" tvg-name="Channel 64 (HD 720p)" group-title="📺 Other Live",Channel 64 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=64
+
+#EXTINF:-1 tvg-id="ch-67" tvg-name="Channel 67 (HD 720p)" group-title="📺 Other Live",Channel 67 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=67
+
+#EXTINF:-1 tvg-id="ch-81" tvg-name="Channel 81 (HD 720p)" group-title="📺 Other Live",Channel 81 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=81
+
+#EXTINF:-1 tvg-id="ch-90" tvg-name="Channel 90 (HD 720p)" group-title="📺 Other Live",Channel 90 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=90
+
+# === Active streams scan ID 100-300 ===
+#EXTINF:-1 tvg-id="ch-111" tvg-name="Channel 111 (FHD 1080p)" group-title="📺 Other Live",Channel 111 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=111
+
+#EXTINF:-1 tvg-id="ch-112" tvg-name="Channel 112 (HD 720p)" group-title="📺 Other Live",Channel 112 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=112
+
+#EXTINF:-1 tvg-id="ch-113" tvg-name="Channel 113 (FHD 1080p)" group-title="📺 Other Live",Channel 113 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=113
+
+#EXTINF:-1 tvg-id="ch-114" tvg-name="Channel 114 (HD 720p)" group-title="📺 Other Live",Channel 114 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=114
+
+#EXTINF:-1 tvg-id="ch-115" tvg-name="Channel 115 (FHD 1080p)" group-title="📺 Other Live",Channel 115 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=115
+
+#EXTINF:-1 tvg-id="ch-117" tvg-name="Channel 117 (FHD 1080p)" group-title="📺 Other Live",Channel 117 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=117
+
+#EXTINF:-1 tvg-id="ch-118" tvg-name="Channel 118 (360p)" group-title="📺 Other Live",Channel 118 (360p)
+https://mflixott.com/tv/dd/live2.php?id=118
+
+#EXTINF:-1 tvg-id="ch-119" tvg-name="Channel 119 (FHD 1080p)" group-title="📺 Other Live",Channel 119 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=119
+
+#EXTINF:-1 tvg-id="ch-123" tvg-name="Channel 123 (HD 720p)" group-title="📺 Other Live",Channel 123 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=123
+
+#EXTINF:-1 tvg-id="ch-125" tvg-name="Channel 125 (HD 720p)" group-title="📺 Other Live",Channel 125 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=125
+
+#EXTINF:-1 tvg-id="ch-126" tvg-name="Channel 126 (SD)" group-title="📺 Other Live",Channel 126 (SD)
+https://mflixott.com/tv/dd/live2.php?id=126
+
+#EXTINF:-1 tvg-id="ch-140" tvg-name="Channel 140 (HD 720p)" group-title="📺 Other Live",Channel 140 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=140
+
+#EXTINF:-1 tvg-id="ch-141" tvg-name="Channel 141 (HD 720p)" group-title="📺 Other Live",Channel 141 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=141
+
+#EXTINF:-1 tvg-id="ch-142" tvg-name="Channel 142 (HD 720p)" group-title="📺 Other Live",Channel 142 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=142
+
+#EXTINF:-1 tvg-id="ch-143" tvg-name="Channel 143 (HD 720p)" group-title="📺 Other Live",Channel 143 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=143
+
+#EXTINF:-1 tvg-id="ch-144" tvg-name="Channel 144 (FHD 1080p)" group-title="📺 Other Live",Channel 144 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=144
+
+#EXTINF:-1 tvg-id="ch-145" tvg-name="Channel 145 (FHD 1080p)" group-title="📺 Other Live",Channel 145 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=145
+
+#EXTINF:-1 tvg-id="ch-146" tvg-name="Channel 146 (HD 720p)" group-title="📺 Other Live",Channel 146 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=146
+
+#EXTINF:-1 tvg-id="ch-147" tvg-name="Channel 147 (HD 720p)" group-title="📺 Other Live",Channel 147 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=147
+
+#EXTINF:-1 tvg-id="ch-255" tvg-name="Channel 255 (576p)" group-title="📺 Other Live",Channel 255 (576p)
+https://mflixott.com/tv/dd/live2.php?id=255
+
+#EXTINF:-1 tvg-id="ch-257" tvg-name="Channel 257 (HD 720p)" group-title="📺 Other Live",Channel 257 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=257
+
+#EXTINF:-1 tvg-id="ch-262" tvg-name="Channel 262 (HD 720p)" group-title="📺 Other Live",Channel 262 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=262
+
+#EXTINF:-1 tvg-id="ch-263" tvg-name="Channel 263 (FHD 1080p)" group-title="📺 Other Live",Channel 263 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=263
+
+#EXTINF:-1 tvg-id="ch-264" tvg-name="Channel 264 (FHD 1080p)" group-title="📺 Other Live",Channel 264 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=264
+
+#EXTINF:-1 tvg-id="ch-265" tvg-name="Channel 265 (FHD 1080p)" group-title="📺 Other Live",Channel 265 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=265
+
+#EXTINF:-1 tvg-id="ch-266" tvg-name="Channel 266 (FHD 1080p)" group-title="📺 Other Live",Channel 266 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=266
+
+#EXTINF:-1 tvg-id="ch-267" tvg-name="Channel 267 (HD 720p)" group-title="📺 Other Live",Channel 267 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=267
+
+#EXTINF:-1 tvg-id="ch-271" tvg-name="Channel 271 (FHD 1080p)" group-title="📺 Other Live",Channel 271 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=271
+
+#EXTINF:-1 tvg-id="ch-272" tvg-name="Channel 272 (HD 720p)" group-title="📺 Other Live",Channel 272 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=272
+
+#EXTINF:-1 tvg-id="ch-273" tvg-name="Channel 273 (FHD 1080p)" group-title="📺 Other Live",Channel 273 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=273
+
+#EXTINF:-1 tvg-id="ch-277" tvg-name="Channel 277 (FHD 1080p)" group-title="📺 Other Live",Channel 277 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=277
+
+#EXTINF:-1 tvg-id="ch-278" tvg-name="Channel 278 (HD 720p)" group-title="📺 Other Live",Channel 278 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=278
+
+#EXTINF:-1 tvg-id="ch-293" tvg-name="Channel 293 (HD 720p)" group-title="📺 Other Live",Channel 293 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=293
+
+#EXTINF:-1 tvg-id="ch-300" tvg-name="Channel 300 (HD 720p)" group-title="📺 Other Live",Channel 300 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=300
+
+# === Active streams scan ID 300-340 ===
+#EXTINF:-1 tvg-id="ch-301" tvg-name="Channel 301 (HD 720p)" group-title="📺 Other Live",Channel 301 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=301
+
+#EXTINF:-1 tvg-id="ch-302" tvg-name="Channel 302 (HD 720p)" group-title="📺 Other Live",Channel 302 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=302
+
+#EXTINF:-1 tvg-id="ch-305" tvg-name="Channel 305 (HD 720p)" group-title="📺 Other Live",Channel 305 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=305
+
+#EXTINF:-1 tvg-id="ch-306" tvg-name="Channel 306 (FHD 1080p)" group-title="📺 Other Live",Channel 306 (FHD 1080p)
+https://mflixott.com/tv/dd/live2.php?id=306
+
+#EXTINF:-1 tvg-id="ch-308" tvg-name="Channel 308 (HD 720p)" group-title="📺 Other Live",Channel 308 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=308
+
+#EXTINF:-1 tvg-id="ch-309" tvg-name="Channel 309 (HD 720p)" group-title="📺 Other Live",Channel 309 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=309
+
+#EXTINF:-1 tvg-id="ch-310" tvg-name="Channel 310 (HD 720p)" group-title="📺 Other Live",Channel 310 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=310
+
+#EXTINF:-1 tvg-id="ch-311" tvg-name="Channel 311 (HD 720p)" group-title="📺 Other Live",Channel 311 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=311
+
+#EXTINF:-1 tvg-id="ch-312" tvg-name="Channel 312 (HD 720p)" group-title="📺 Other Live",Channel 312 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=312
+
+#EXTINF:-1 tvg-id="ch-313" tvg-name="Channel 313 (HD 720p)" group-title="📺 Other Live",Channel 313 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=313
+
+#EXTINF:-1 tvg-id="ch-314" tvg-name="Channel 314 (HD 720p)" group-title="📺 Other Live",Channel 314 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=314
+
+#EXTINF:-1 tvg-id="ch-315" tvg-name="Channel 315 (HD 720p)" group-title="📺 Other Live",Channel 315 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=315
+
+#EXTINF:-1 tvg-id="ch-316" tvg-name="Channel 316 (HD 720p)" group-title="📺 Other Live",Channel 316 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=316
+
+#EXTINF:-1 tvg-id="ch-317" tvg-name="Channel 317 (HD 720p)" group-title="📺 Other Live",Channel 317 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=317
+
+#EXTINF:-1 tvg-id="ch-318" tvg-name="Channel 318 (HD 720p)" group-title="📺 Other Live",Channel 318 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=318
+
+#EXTINF:-1 tvg-id="ch-320" tvg-name="Channel 320 (HD 720p)" group-title="📺 Other Live",Channel 320 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=320
+
+#EXTINF:-1 tvg-id="ch-321" tvg-name="Channel 321 (HD 720p)" group-title="📺 Other Live",Channel 321 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=321
+
+#EXTINF:-1 tvg-id="ch-328" tvg-name="Channel 328 (HD 720p)" group-title="📺 Other Live",Channel 328 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=328
+
+#EXTINF:-1 tvg-id="ch-335" tvg-name="Channel 335 (HD 720p)" group-title="📺 Other Live",Channel 335 (HD 720p)
+https://mflixott.com/tv/dd/live2.php?id=335

@@ -1,0 +1,6 @@
+.vercel-token
+.vercel-deployment.json
+.deployment.json
+*.log
+.DS_Store
+node_modules/
