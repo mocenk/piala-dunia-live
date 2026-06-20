@@ -716,7 +716,6 @@
     { id: 'all', label: 'Semua', icon: '🎬' },
     { id: 'fifa', label: 'FIFA WC', icon: '⚽' },
     { id: 'sports', label: 'Sports', icon: '🏏' },
-    { id: 'indonesia', label: 'Indonesia TV', icon: '🇮🇩' },
     { id: 'fhd', label: 'FHD 1080p', icon: '🟣' },
     { id: 'hd', label: 'HD 720p', icon: '🟢' },
     { id: 'sd', label: 'SD 480p', icon: '⚪' },
@@ -735,17 +734,8 @@
     });
   }
 
-  // Detect Indonesian TV channels by group-title keyword or channel name
-  function matchesIndonesia(ch) {
-    const g = (ch.group || '').toLowerCase();
-    const n = (ch.name || '').toLowerCase();
-    if (g.includes('indonesia')) return true;
-    return /\b(rcti|sctv|indosiar|mnctv|trans7|antv|tvone|metro tv|mdtv|moji|net tv|jtv|inews|kompas|metrotvnews|sindo|antara|bali tv|idx tv|rodja|nu tv|dai tv|nusantara|magna channel|cnbc indonesia|tvri)\b/i.test(n);
-  }
-
   function countByFilter(id) {
     if (id === 'all') return channels.length;
-    if (id === 'indonesia') return channels.filter(matchesIndonesia).length;
     if (['fifa', 'sports', 'other'].includes(id)) return channels.filter(c => c.category === id).length;
     if (['fhd', 'hd', 'sd'].includes(id)) return channels.filter(c => c.quality === id).length;
     return 0;
@@ -775,7 +765,6 @@
       if (search && !ch.name.toLowerCase().includes(search)) return false;
       // Category filter
       if (activeFilter === 'all') return true;
-      if (activeFilter === 'indonesia') return matchesIndonesia(ch);
       if (['fifa', 'sports', 'other'].includes(activeFilter)) return ch.category === activeFilter;
       if (['fhd', 'hd', 'sd'].includes(activeFilter)) return ch.quality === activeFilter;
       return true;
