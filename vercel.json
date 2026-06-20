@@ -1,32 +1,24 @@
 {
-  "version": 2,
-  "name": "piala-dunia-live",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
       ]
     },
     {
       "source": "/sw.js",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        },
-        {
-          "key": "Service-Worker-Allowed",
-          "value": "/"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
       ]
     }
   ]
