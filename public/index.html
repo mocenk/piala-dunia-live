@@ -108,14 +108,17 @@
       50% { opacity: 0.3; }
     }
 
-    /* === Player === */
+    /* === Player (sticky: stays visible while scrolling channel list) === */
     .player-wrap {
-      position: relative;
+      position: sticky;
+      top: 56px;  /* sit below sticky header */
+      z-index: 50;
       background: #000;
       width: 100%;
       aspect-ratio: 16 / 9;
-      max-height: 50vh;
+      max-height: 30vh;
       overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
     .player-wrap video {
       width: 100%;
@@ -183,11 +186,8 @@
     .toolbar {
       padding: 12px 16px 8px;
       background: var(--bg);
-      position: sticky;
-      top: 56px;
-      z-index: 99;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      position: relative;
+      z-index: 10;
       border-bottom: 1px solid var(--border);
     }
     .search-box {
@@ -952,18 +952,21 @@
     playerWrap.classList.toggle('mini', shouldMini);
   }
 
-  // Throttled scroll handler
+  // Mini-player scroll handler DISABLED — player is sticky-positioned instead.
+// Auto-minimize was causing scroll-blocking bugs on some devices.
+// Keeping code commented for easy re-enable if needed.
+  /*
   let scrollTick = false;
   window.addEventListener('scroll', () => {
     if (scrollTick) return;
     scrollTick = true;
     requestAnimationFrame(() => {
       const rect = playerWrap.getBoundingClientRect();
-      // Switch to mini when player bottom is <60px from top (mostly scrolled past)
       setMini(rect.bottom < 60);
       scrollTick = false;
     });
   }, { passive: true });
+  */
 
   // Tap mini-player → restore full size
   playerWrap.addEventListener('click', (e) => {
