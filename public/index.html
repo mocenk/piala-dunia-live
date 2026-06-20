@@ -377,6 +377,56 @@
       margin-top: 4px;
       font-family: inherit;
     }
+
+    /* === Mini-player (floating when scrolled) === */
+    .player-wrap.mini {
+      position: fixed;
+      bottom: max(16px, env(safe-area-inset-bottom));
+      right: 16px;
+      width: 180px;
+      aspect-ratio: 16 / 9;
+      max-height: none;
+      z-index: 200;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);
+      animation: miniPop 0.25s ease-out;
+      cursor: pointer;
+    }
+    .player-wrap.mini video { border-radius: 12px; }
+    @keyframes miniPop {
+      from { transform: scale(0.7) translateY(20px); opacity: 0; }
+      to { transform: scale(1) translateY(0); opacity: 1; }
+    }
+    .player-wrap.mini .now-playing-name,
+    .player-wrap.mini .now-playing-quality { display: none; }
+    .player-wrap.mini .player-error,
+    .player-wrap.mini .player-loading { font-size: 9px; padding: 4px; gap: 4px; }
+    .player-wrap.mini .player-error-icon { font-size: 18px; }
+    .player-wrap.mini .spinner { width: 18px; height: 18px; border-width: 2px; }
+    .mini-close {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      font-size: 14px;
+      line-height: 1;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      pointer-events: auto;
+      border: 1px solid rgba(255,255,255,0.25);
+      font-family: inherit;
+      padding: 0;
+    }
+    .mini-close:hover { background: rgba(255,68,68,0.9); }
+    .player-wrap.mini .mini-close { display: flex; }
   </style>
 </head>
 <body>
@@ -394,7 +444,8 @@
   </div>
 </header>
 
-<div class="player-wrap">
+<div class="player-wrap" id="playerWrap">
+  <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
   <video id="player" playsinline controls></video>
   <div class="now-playing">
     <div class="now-playing-name" id="nowPlaying">Pilih channel</div>
@@ -700,6 +751,54 @@
   video.addEventListener('playing', () => loadingEl.classList.add('hidden'));
   video.addEventListener('waiting', () => loadingEl.classList.remove('hidden'));
   retryBtn.onclick = () => { if (currentChannel) playChannel(currentChannel); };
+
+  // === Mini-player: shrink to floating when player scrolls out of view ===
+  const playerWrap = document.getElementById('playerWrap');
+  const miniClose = document.getElementById('miniClose');
+  let isMini = false;
+
+  function setMini(shouldMini) {
+    if (shouldMini === isMini) return;
+    // Don't mini if no channel playing
+    if (shouldMini && !currentChannel) return;
+    isMini = shouldMini;
+    playerWrap.classList.toggle('mini', shouldMini);
+  }
+
+  // Throttled scroll handler
+  let scrollTick = false;
+  window.addEventListener('scroll', () => {
+    if (scrollTick) return;
+    scrollTick = true;
+    requestAnimationFrame(() => {
+      const rect = playerWrap.getBoundingClientRect();
+      // Switch to mini when player bottom is <60px from top (mostly scrolled past)
+      setMini(rect.bottom < 60);
+      scrollTick = false;
+    });
+  }, { passive: true });
+
+  // Tap mini-player → restore full size
+  playerWrap.addEventListener('click', (e) => {
+    if (e.target === miniClose) return;  // close btn handled below
+    if (!isMini) return;
+    setMini(false);
+    playerWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // Close button → stop stream, hide player
+  miniClose.onclick = (e) => {
+    e.stopPropagation();
+    if (hls) { hls.destroy(); hls = null; }
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    currentChannel = null;
+    setMini(false);
+    nowPlaying.textContent = 'Pilih channel';
+    nowQuality.textContent = '';
+    document.querySelectorAll('.channel.active').forEach(c => c.classList.remove('active'));
+  };
 
   // === Search handler ===
   document.getElementById('search').addEventListener('input', renderChannels);
