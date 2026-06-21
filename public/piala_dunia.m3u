@@ -3,7 +3,134 @@
 # ============================================
 # TVRI Nasional & Regional (OFFICIAL BUMN)
 # ============================================
-#EXTINF:-1 tvg-id="TVRI.id@HD" tvg-name="TVRI (1080i)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI (1080i)
+#EXTINF:-1 tvg-id="TVRI.id@HD2" tvg-name="TVRI Nasional (1080i)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nasional (1080i)
+https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Aceh" tvg-name="TVRI Aceh (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Aceh (720p)
+https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Bali" tvg-name="TVRI Bali (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Bali (480p)
+https://ott-balancer.tvri.go.id/live/eds/Bali/hls/Bali.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@BangkaBelitung" tvg-name="TVRI Bangka Belitung (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Bangka Belitung (480p)
+https://ott-balancer.tvri.go.id/live/eds/Babel/hls/Babel.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Bengkulu" tvg-name="TVRI Bengkulu (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Bengkulu (480p)
+https://ott-balancer.tvri.go.id/live/eds/Bengkulu/hls/Bengkulu.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Gorontalo" tvg-name="TVRI Gorontalo (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Gorontalo (480p)
+https://ott-balancer.tvri.go.id/live/eds/Gorontalo/hls/Gorontalo.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Jakarta" tvg-name="TVRI Jakarta (576i) [Not 24/7]" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Jakarta (576i) [Not 24/7]
+https://ott-balancer.tvri.go.id/live/eds/DKI/hls/DKI.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Jambi" tvg-name="TVRI Jambi (720p) [Not 24/7]" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Jambi (720p) [Not 24/7]
+https://ott-balancer.tvri.go.id/live/eds/Jambi/hls/Jambi.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestJava" tvg-name="TVRI Jawa Barat (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Jawa Barat (480p)
+https://ott-balancer.tvri.go.id/live/eds/Jabar/hls/Jabar.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@CentralJava" tvg-name="TVRI Jawa Tengah (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Jawa Tengah (720p)
+https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@EastJava" tvg-name="TVRI Jawa Timur (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Jawa Timur (720p)
+https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestKalimantan" tvg-name="TVRI Kalimantan Barat (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Kalimantan Barat (480p)
+https://ott-balancer.tvri.go.id/live/eds/Kalbar/hls/Kalbar.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@SouthKalimantan" tvg-name="TVRI Kalimantan Selatan (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Kalimantan Selatan (720p)
+https://ott-balancer.tvri.go.id/live/eds/Kalsel/hls/Kalsel.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@CentralKalimantan" tvg-name="TVRI Kalimantan Tengah (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Kalimantan Tengah (480p)
+https://ott-balancer.tvri.go.id/live/eds/Kalteng/hls/Kalteng.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@EastKalimantan" tvg-name="TVRI Kalimantan Timur (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Kalimantan Timur (720p)
+https://ott-balancer.tvri.go.id/live/eds/Kaltim/hls/Kaltim.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Lampung" tvg-name="TVRI Lampung (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Lampung (720p)
+https://ott-balancer.tvri.go.id/live/eds/Lampung/hls/Lampung.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Maluku" tvg-name="TVRI Maluku (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Maluku (480p)
+https://ott-balancer.tvri.go.id/live/eds/Ambon/hls/Ambon.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@NorthSulawesi" tvg-name="TVRI North Sulawesi (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI North Sulawesi (1080p)
+https://ott-balancer.tvri.go.id/live/eds/Sulut/hls/Sulut.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@NorthSumatra" tvg-name="TVRI North Sumatra (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI North Sumatra (1080p)
+https://ott-balancer.tvri.go.id/live/eds/Sumut/hls/Sumut.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestNusaTenggara" tvg-name="TVRI Nusa Tenggara Barat (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nusa Tenggara Barat (720p)
+https://ott-balancer.tvri.go.id/live/eds/NTB/hls/NTB.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@EastNusaTenggara" tvg-name="TVRI Nusa Tenggara Timur (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nusa Tenggara Timur (480p)
+https://ott-balancer.tvri.go.id/live/eds/NTT/hls/NTT.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Papua" tvg-name="TVRI Papua (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Papua (480p)
+https://ott-balancer.tvri.go.id/live/eds/Papua/hls/Papua.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Riau" tvg-name="TVRI Riau (720p) [Not 24/7]" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Riau (720p) [Not 24/7]
+https://ott-balancer.tvri.go.id/live/eds/Riau/hls/Riau.m3u8
+
+#EXTINF:-1 tvg-id="TVRISport.id@SD" tvg-name="TVRI Sport (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sport (720p)
+https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestSulawesi" tvg-name="TVRI Sulawesi Barat (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sulawesi Barat (720p)
+https://ott-balancer.tvri.go.id/live/eds/Sulbar/hls/Sulbar.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@SouthSulawesi" tvg-name="TVRI Sulawesi Selatan (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sulawesi Selatan (480p)
+https://ott-balancer.tvri.go.id/live/eds/Sulsel/hls/Sulsel.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@CentralSulawesi" tvg-name="TVRI Sulawesi Tengah (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sulawesi Tengah (720p)
+https://ott-balancer.tvri.go.id/live/eds/Sulteng/hls/Sulteng.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@SoutheastSulawesi" tvg-name="TVRI Sulawesi Tenggara (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sulawesi Tenggara (480p)
+https://ott-balancer.tvri.go.id/live/eds/Sultra/hls/Sultra.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestSumatra" tvg-name="TVRI Sumatera Barat (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sumatera Barat (720p)
+https://ott-balancer.tvri.go.id/live/eds/Sumbar/hls/Sumbar.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@SouthSumatra" tvg-name="TVRI Sumatera Selatan (480p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Sumatera Selatan (480p)
+https://ott-balancer.tvri.go.id/live/eds/Sumsel/hls/Sumsel.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@WestPapua" tvg-name="TVRI West Papua (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI West Papua (1080p)
+https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8
+
+#EXTINF:-1 tvg-id="TVRIWorld.id@SD" tvg-name="TVRI World (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI World (1080p)
+https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
+
+#EXTINF:-1 tvg-id="TVRI.id@Yogyakarta" tvg-name="TVRI Yogyakarta (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Yogyakarta (720p)
+https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
+
+# ============================================
+# TV Indonesia Official (iptv-org)# 🇮🇩 TV Indonesia Official — VERIFIED WORKING (CORS-enabled, geo-OK, HTTPS)
+# Dihapus dari M3U: Trans7/Trans TV (butuh referrer), RCTI/iNews/Antara (DASH geo-block),
+# ANTV (401 auth), tvOne (HTTP mixed-content), Online TV Nusantara (404).
+# 5 channel di bawah ini udah lulus test dari VPS: HTTPS + Access-Control-Allow-Origin: *
+# Source: iptv-org + Medcom + Siar.us + streamlock + Gunadarma
+
+#EXTINF:-1 tvg-id="MetroTV.id@SD" tvg-name="Metro TV" group-title="🇮🇩 TV Indonesia Official",Metro TV
+https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NusantaraTV.id@SD" tvg-name="Nusantara TV (1080p)" group-title="🇮🇩 TV Indonesia Official",Nusantara TV (1080p)
+https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TV9Nusantara.id@SD" tvg-name="TV9 Nusantara (720p)" group-title="🇮🇩 TV Indonesia Official",TV9 Nusantara (720p)
+https://5bf7b725107e5.streamlock.net/tv9/tv9/playlist.m3u8
+
+#EXTINF:-1 tvg-id="UGTV.id@SD" tvg-name="UGTV (720p)" group-title="🇮🇩 TV Indonesia Official",UGTV (720p)
+https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
+
+#EXTINF:-1 tvg-name="TVRI Nasional Live (1080i)" group-title="🇮🇩 TV Indonesia Official",TVRI Nasional Live (1080i)
+https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
+
+#EXTINF:-1 tvg-name="TVRI Sport Live" group-title="🇮🇩 TV Indonesia Official",TVRI Sport Live
+https://ott-balancer.tvri.go.id/live/eds/SportHD/hls/SportHD.m3u8
+
+#EXTINF:-1 tvg-name="TVRI World (1080p)" group-title="🇮🇩 TV Indonesia Official",TVRI World (1080p)
+https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
+
+🇮🇩 TVRI Nasional & Regional",TVRI (1080i)
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
 
 #EXTINF:-1 tvg-id="TVRI.id@Aceh" tvg-name="TVRI Aceh (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Aceh (720p)
@@ -148,9 +275,6 @@ https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
 # ============================================
 # Existing: FIFA WC + Mflixott + others
 # ============================================
-
-#EXTINF:-1 tvg-logo="",UGTV (720p)
-https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
 
 #EXTINF:-1 tvg-id="fifa-wc-1" tvg-name="FIFA World Cup Live 1 (HD 720p)" tvg-logo="https://i.postimg.cc/QjD6hcSc/FIFA-World-Cup-Logo-2022.jpg" group-title="⚽ Sports - World Cup",FIFA World Cup Live 1 (HD 720p)
 https://mflixott.com/tv/dd/live2.php?id=54

@@ -4,3 +4,7 @@
 *.log
 .DS_Store
 node_modules/
+__pycache__/
+*.bak
+*.bak.*
+*.corrupt.bak
