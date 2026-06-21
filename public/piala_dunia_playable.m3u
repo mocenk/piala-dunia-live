@@ -1,14 +1,9 @@
 #EXTM3U
-# Total: 469 channels
-# VPS-verified: 447
-# Geo-blocked from VPS (test from Indo IP): 22
-# Confirmed dead (excluded): 6
-
 #EXTINF:-1 tvg-id="TVRI.id@HD2" tvg-name="TVRI Nasional (1080i)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nasional (1080i)
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
-#EXTINF:-1 tvg-id="TVRI.id@HD2" tvg-name="TVRI Nasional (1080i)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nasional (1080i)
+#EXTINF:-1 tvg-name="TVRI Nasional Live (1080i)" group-title="🇮🇩 TV Indonesia Official",TVRI Nasional Live (1080i)
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
-#EXTINF:-1 tvg-id="TVRI.id@HD2" tvg-name="TVRI Nasional (1080i)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Nasional (1080i)
+#EXTINF:-1,(unnamed)
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
 #EXTINF:-1 tvg-id="TVRI.id@Aceh" tvg-name="TVRI Aceh (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Aceh (720p)
 https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
@@ -128,7 +123,7 @@ https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8
 https://ott-balancer.tvri.go.id/live/eds/Pabar/hls/Pabar.m3u8
 #EXTINF:-1 tvg-id="TVRIWorld.id@SD" tvg-name="TVRI World (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI World (1080p)
 https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
-#EXTINF:-1 tvg-id="TVRIWorld.id@SD" tvg-name="TVRI World (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI World (1080p)
+#EXTINF:-1 tvg-name="TVRI World (1080p)" group-title="🇮🇩 TV Indonesia Official",TVRI World (1080p)
 https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
 #EXTINF:-1 tvg-id="TVRIWorld.id@SD" tvg-name="TVRI World (1080p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI World (1080p)
 https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
@@ -136,10 +131,6 @@ https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8
 https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
 #EXTINF:-1 tvg-id="TVRI.id@Yogyakarta" tvg-name="TVRI Yogyakarta (720p)" group-title="🇮🇩 TVRI Nasional & Regional",TVRI Yogyakarta (720p)
 https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
-#EXTINF:-1 group-title="🇮🇩 TV Indonesia Official",Antara TV
-https://indihuy.streamized.net/atm/DASH/antara/manifest.mpd
-#EXTINF:-1 group-title="🇮🇩 TV Indonesia Official",iNews (720p)
-https://indihuy.streamized.net/atm/DASH/inews/manifest.mpd
 #EXTINF:-1 tvg-id="MetroTV.id@SD" tvg-name="Metro TV" group-title="🇮🇩 TV Indonesia Official",Metro TV
 https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MetroTV.id@SD" tvg-name="Metro TV" group-title="🇮🇩 TV Indonesia Official",Metro TV
@@ -148,8 +139,6 @@ https://edge.medcom.id/live-edge/smil:metro.smil/playlist.m3u8
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NusantaraTV.id@SD" tvg-name="Nusantara TV (1080p)" group-title="🇮🇩 TV Indonesia Official",Nusantara TV (1080p)
 https://nusantaratv.siar.us/nusantaratv/live/playlist.m3u8
-#EXTINF:-1 group-title="🇮🇩 TV Indonesia Official",RCTI HD (720p)
-https://indihuy.streamized.net/atm/DASH/rcti/manifest.mpd
 #EXTINF:-1 tvg-id="Trans7.id@SD" tvg-name="Trans7 (720p)" group-title="🇮🇩 TV Indonesia Official",Trans7 (720p)
 https://video.detik.com/trans7/smil:trans7.smil/index.m3u8
 #EXTINF:-1 tvg-id="TransTV.id@SD" tvg-name="Trans TV (720p)" group-title="🇮🇩 TV Indonesia Official",Trans TV (720p)
@@ -904,41 +893,3 @@ https://dnf08l6u6uxnz.cloudfront.net/master.m3u8
 https://rightsboosterltd-scl-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="sport-supertennis-1080p" tvg-name="SuperTennis (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/6/6a/SuperTennis_-_Logo_2016.svg/960px-SuperTennis_-_Logo_2016.svg.png" group-title="🏟️ Premium Sports",SuperTennis (1080p)
 https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
-#EXTINF:-1 tvg-logo="",IDX Channel
-https://indihuy.streamized.net/atm/DASH/idx/manifest.mpd
-#EXTINF:-1 tvg-logo="",Jak TV
-https://indihuy.streamized.net/atm/DASH/JAK_TV/manifest.mpd
-#EXTINF:-1 tvg-logo="",MAX Eats
-https://indihuy.streamized.net/atm/DASH/maxeats/manifest.mpd
-#EXTINF:-1 tvg-logo="",MAX Kids
-https://indihuy.streamized.net/atm/DASH/indikids/manifest.mpd
-#EXTINF:-1 tvg-logo="",MAX Reels
-https://indihuy.streamized.net/atm/DASH/useeprime/manifest.mpd
-#EXTINF:-1 tvg-logo="",MAX Sports
-https://indihuy.streamized.net/atm/DASH/useesport/manifest.mpd
-#EXTINF:-1 tvg-logo="",MAX Streak
-https://indihuy.streamized.net/atm/DASH/maxstreak/manifest.mpd
-#EXTINF:-1 tvg-logo="",MQTV
-https://indihuy.streamized.net/atm/DASH/mqtv/manifest.mpd
-#EXTINF:-1 tvg-logo="",MTA TV
-https://indihuy.streamized.net/atm/DASH/mtatv/manifest.mpd
-#EXTINF:-1 tvg-logo="",My Kidz
-https://cdn10jtedge.indihometv.com/atm/DASH/mykids/manifest.mpd
-#EXTINF:-1 tvg-logo="",New TV Comprehensive
-https://indihuy.streamized.net/atm/DASH/newtvcomprehensive/manifest.mpd
-#EXTINF:-1 tvg-logo="",New TV Finance
-https://indihuy.streamized.net/atm/DASH/newtvfinance/manifest.mpd
-#EXTINF:-1 tvg-logo="",New TV Variety
-https://indihuy.streamized.net/atm/DASH/newtvvariety/manifest.mpd
-#EXTINF:-1 tvg-logo="",Prambors
-https://indihuy.streamized.net/atm/DASH/pramborstv/manifest.mpd
-#EXTINF:-1 tvg-logo="",Rajawali TV
-https://indihuy.streamized.net/atm/DASH/RAJAWALI_TV/manifest.mpd
-#EXTINF:-1 tvg-logo="",Sin Po TV
-https://indihuy.streamized.net/atm/DASH/sinpotv/manifest.mpd
-#EXTINF:-1 tvg-logo="",TV Mu
-https://indihuy.streamized.net/atm/DASH/muhammadiyahtv/manifest.mpd
-#EXTINF:-1 tvg-logo="",TV MUI
-https://indihuy.streamized.net/atm/DASH/muitv/manifest.mpd
-#EXTINF:-1 tvg-logo="",Zee Bioskop
-https://indihuy.streamized.net/atm/DASH/zbioskop/manifest.mpd

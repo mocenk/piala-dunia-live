@@ -805,20 +805,21 @@
     <div><span id="totalCount">0</span> Stream</div>
     <div><span id="fhdCount">0</span> FHD</div>
     <div><span id="hdCount">0</span> HD</div>
+    <div><span id="sourceCount">0</span> Source</div>
   </div>
-  <div>Source: mflixott.com (Bangladesh relay)</div>
-  <div style="margin-top:4px;">HLS.js player · Mobile-first PWA</div>
+  <div>Source: best-effort redundant playlist</div>
+  <div style="margin-top:4px;">Shaka + HLS.js · Auto fallback source</div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13"></script>
 <!-- Shaka Player: plays MPEG-DASH (.mpd) + HLS (.m3u8). Falls back to HLS.js for legacy. -->
 <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.11.6/dist/shaka-player.compiled.min.js"></script>
+
 <script>
-  // === Channel data: fetched from live M3U (auto-updates weekly) ===
+  // === Best-effort channel data: fetched from redundant M3U ===
   let channels = [];
   const M3U_URL = './piala_dunia.m3u';
 
-  // Map M3U group-title → UI category
   function categoryFromGroup(group) {
     const g = (group || '').toLowerCase();
     if (g.includes('world cup') || g.includes('fifa') || g.includes('piala dunia')) return 'fifa';
@@ -826,93 +827,105 @@
     return 'other';
   }
 
-  // Detect quality from name suffix or known patterns
   function qualityFromName(name) {
     const n = (name || '').toLowerCase();
     if (n.includes('fhd') || n.includes('1080p')) return 'fhd';
-    if (n.includes('hd') || n.includes('720p')) return 'hd';
+    if (n.includes('hd') || n.includes('720p') || n.includes('1080i')) return 'hd';
     if (n.includes('sd') || n.includes('480p') || n.includes('540p') || n.includes('576p') || n.includes('360p')) return 'sd';
     return 'sd';
   }
 
-  // Strip quality suffix for cleaner display, e.g. "RCTI HD (V+) (HD 720p)" → "RCTI HD (V+)"
   function cleanName(name) {
-    return (name || '').replace(/\s*\((FHD 1080p|HD 720p|SD 480p|FHD|HD|SD|1080p|720p|480p)\)\s*$/i, '').trim() || name;
+    return (name || '').replace(/\s*\((FHD 1080p|HD 720p|SD 480p|FHD|HD|SD|1080p|1080i|720p|480p)\)\s*$/i, '').trim() || name;
   }
 
-  // Parse M3U text into channel array
+  function normalizeName(name) {
+    return cleanName(name).replace(/\s+/g, ' ').trim();
+  }
+
+  // Best-effort parser: duplicate channel names are merged as backup URLs.
+  // Example: best_effort M3U may contain TVRI Nasional 3x with same/different URLs.
   function parseM3U(text) {
     const lines = text.split(/\r?\n/);
-    const result = [];
+    const byName = new Map();
     let cur = null;
     for (const raw of lines) {
       const line = raw.trim();
       if (!line) continue;
       if (line.startsWith('#EXTINF')) {
-        // Extract name (text after last comma)
         const commaIdx = line.lastIndexOf(',');
         const rawName = commaIdx >= 0 ? line.substring(commaIdx + 1).trim() : '';
-        // Extract group-title attribute
         const groupMatch = line.match(/group-title="([^"]*)"/i);
         const group = groupMatch ? groupMatch[1] : '';
         cur = {
-          name: cleanName(rawName),
+          name: normalizeName(rawName),
+          urls: [],
           url: '',
           category: categoryFromGroup(group),
           quality: qualityFromName(rawName),
           group: group
         };
-      } else if (!line.startsWith('#')) {
-        // URL line (next non-comment after #EXTINF)
-        if (cur && !cur.url) {
-          cur.url = line;
-          if (cur.name && cur.url) result.push(cur);
-          cur = null;
+      } else if (!line.startsWith('#') && cur) {
+        const url = line;
+        if (!/^https?:\/\//i.test(url)) { cur = null; continue; }
+        const key = cur.name.toLowerCase();
+        const existing = byName.get(key);
+        if (existing) {
+          if (!existing.urls.includes(url)) existing.urls.push(url);
+          if (qualityRank(cur.quality) > qualityRank(existing.quality)) existing.quality = cur.quality;
+          if (cur.category === 'fifa') existing.category = 'fifa';
+          else if (cur.category === 'sports' && existing.category !== 'fifa') existing.category = 'sports';
+        } else {
+          cur.url = url;
+          cur.urls = [url];
+          byName.set(key, cur);
         }
+        cur = null;
       }
     }
-    return result;
+    return Array.from(byName.values()).map(ch => ({ ...ch, url: ch.urls[0] }));
   }
 
-  // Show loading placeholder
+  function qualityRank(q) {
+    return q === 'fhd' ? 3 : q === 'hd' ? 2 : 1;
+  }
+
   function showLoading() {
-    const grids = ['fifaGrid', 'sportsGrid', 'allGrid'];
-    grids.forEach(id => {
+    ['fifaGrid', 'sportsGrid', 'allGrid'].forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:13px;">⏳ Memuat playlist…</div>';
+      if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:13px;">⏳ Memuat playlist best-effort…</div>';
     });
   }
 
-  // Fetch + parse M3U, then re-render
   async function loadChannels() {
     showLoading();
     try {
-      const res = await fetch(M3U_URL + '?t=' + Date.now());  // bust cache
+      const res = await fetch(M3U_URL + '?t=' + Date.now());
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const text = await res.text();
       channels = parseM3U(text);
-      console.log(`[piala-dunia-live] Loaded ${channels.length} channels from M3U`);
+      const sourceCount = channels.reduce((sum, ch) => sum + (ch.urls ? ch.urls.length : 1), 0);
+      console.log(`[piala-dunia-live] Loaded ${channels.length} channels / ${sourceCount} sources (best-effort)`);
       renderStats();
       renderFilters();
       renderChannels();
     } catch (err) {
       console.error('[piala-dunia-live] M3U load failed:', err);
-      const grids = ['fifaGrid', 'sportsGrid', 'allGrid'];
-      grids.forEach(id => {
+      ['fifaGrid', 'sportsGrid', 'allGrid'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--danger);font-size:13px;">⚠️ Gagal memuat playlist. Coba refresh halaman.</div>';
       });
     }
   }
 
-  // === Stats ===
   function renderStats() {
     document.getElementById('totalCount').textContent = channels.length;
     document.getElementById('fhdCount').textContent = channels.filter(c => c.quality === 'fhd').length;
     document.getElementById('hdCount').textContent = channels.filter(c => c.quality === 'hd').length;
+    const srcEl = document.getElementById('sourceCount');
+    if (srcEl) srcEl.textContent = channels.reduce((sum, ch) => sum + (ch.urls ? ch.urls.length : 1), 0);
   }
 
-  // === Filters ===
   const filtersEl = document.getElementById('filters');
   const filterDefs = [
     { id: 'all', label: 'Semua', icon: '🎬' },
@@ -929,8 +942,7 @@
     filterDefs.forEach(f => {
       const btn = document.createElement('button');
       btn.className = 'chip' + (activeFilter === f.id ? ' active' : '');
-      const count = countByFilter(f.id);
-      btn.innerHTML = `${f.icon} ${f.label}<span class="chip-count">${count}</span>`;
+      btn.innerHTML = `${f.icon} ${f.label}<span class="chip-count">${countByFilter(f.id)}</span>`;
       btn.onclick = () => { activeFilter = f.id; renderFilters(); renderChannels(); };
       filtersEl.appendChild(btn);
     });
@@ -943,8 +955,7 @@
     return 0;
   }
 
-  // === Render channel cards ===
-  function makeCard(ch, isFifaSection) {
+  function makeCard(ch) {
     const card = document.createElement('button');
     card.className = 'channel' + (ch.category === 'fifa' ? ' fifa' : '');
     card.dataset.name = ch.name;
@@ -955,7 +966,8 @@
     const qLabel = ch.quality === 'fhd' ? '<div class="channel-quality q-fhd">FHD</div>' :
                    ch.quality === 'hd' ? '<div class="channel-quality q-hd">HD</div>' :
                    '<div class="channel-quality q-sd">SD</div>';
-    card.innerHTML = `${qLabel}<span class="channel-icon">${icon}</span><div class="channel-name">${ch.name}</div>`;
+    const srcBadge = (ch.urls && ch.urls.length > 1) ? `<div style="position:absolute;left:6px;bottom:5px;font-size:9px;color:var(--success);font-weight:800;">${ch.urls.length} SRC</div>` : '';
+    card.innerHTML = `${qLabel}${srcBadge}<span class="channel-icon">${icon}</span><div class="channel-name">${ch.name}</div>`;
     card.onclick = () => playChannel(ch);
     return card;
   }
@@ -963,34 +975,25 @@
   function renderChannels() {
     const search = document.getElementById('search').value.trim().toLowerCase();
     const filterFn = (ch) => {
-      // Search filter
       if (search && !ch.name.toLowerCase().includes(search)) return false;
-      // Category filter
       if (activeFilter === 'all') return true;
       if (['fifa', 'sports', 'other'].includes(activeFilter)) return ch.category === activeFilter;
       if (['fhd', 'hd', 'sd'].includes(activeFilter)) return ch.quality === activeFilter;
       return true;
     };
-
     const fifa = channels.filter(ch => ch.category === 'fifa' && filterFn(ch));
     const sports = channels.filter(ch => ch.category === 'sports' && filterFn(ch));
     const others = channels.filter(ch => ch.category === 'other' && filterFn(ch));
-
     document.getElementById('fifaGrid').innerHTML = '';
     document.getElementById('sportsGrid').innerHTML = '';
     document.getElementById('allGrid').innerHTML = '';
-
-    fifa.forEach(ch => document.getElementById('fifaGrid').appendChild(makeCard(ch, true)));
-    sports.forEach(ch => document.getElementById('sportsGrid').appendChild(makeCard(ch, false)));
-    others.forEach(ch => document.getElementById('allGrid').appendChild(makeCard(ch, false)));
-
-    // Toggle section visibility
-    document.querySelectorAll('.section-title').forEach((el, i) => {
+    fifa.forEach(ch => document.getElementById('fifaGrid').appendChild(makeCard(ch)));
+    sports.forEach(ch => document.getElementById('sportsGrid').appendChild(makeCard(ch)));
+    others.forEach(ch => document.getElementById('allGrid').appendChild(makeCard(ch)));
+    document.querySelectorAll('.section-title').forEach((el) => {
       const grid = el.nextElementSibling;
       el.style.display = grid.children.length === 0 ? 'none' : 'flex';
     });
-
-    // Highlight current playing
     if (currentChannel) {
       document.querySelectorAll('.channel').forEach(c => {
         if (c.dataset.url === currentChannel.url) c.classList.add('active');
@@ -998,7 +1001,6 @@
     }
   }
 
-  // === HLS Player ===
   const video = document.getElementById('player');
   const loadingEl = document.getElementById('loading');
   const loadingMsg = document.getElementById('loadingMsg');
@@ -1008,180 +1010,161 @@
   const nowPlaying = document.getElementById('nowPlaying');
   const nowQuality = document.getElementById('nowQuality');
   let currentChannel = null;
+  let currentSourceIndex = 0;
   let hls = null;
-  let shakaPlayer = null;  // shaka player instance (reused for DASH+HLS)
+  let shakaPlayer = null;
+  let playToken = 0;
 
-  // === Shaka init: configure DRM-free streaming (we only do public FTA streams) ===
-  if (window.shaka && shaka.polyfill) {
-    shaka.polyfill.installAll();
-  }
+  if (window.shaka && shaka.polyfill) shaka.polyfill.installAll();
+
   async function ensureShaka() {
     if (shakaPlayer) return shakaPlayer;
-    if (!window.shaka || !shaka.Player) {
-      throw new Error('Shaka not loaded');
-    }
+    if (!window.shaka || !shaka.Player) throw new Error('Shaka not loaded');
     shakaPlayer = new shaka.Player();
     shakaPlayer.configure({
-      drm: { servers: {} },  // no DRM, public streams only
-      streaming: {
-        bufferingGoal: 30,
-        rebufferingGoal: 4,
-        retryParameters: { maxAttempts: 3, baseDelay: 500, backoffFactor: 2 }
-      },
-      abr: { enabled: true }  // adaptive bitrate
+      drm: { servers: {} },
+      streaming: { bufferingGoal: 30, rebufferingGoal: 4, retryParameters: { maxAttempts: 2, baseDelay: 350, backoffFactor: 1.6 } },
+      abr: { enabled: true }
     });
-    // Shaka error logging
-    shakaPlayer.addEventListener('error', (e) => {
-      console.warn('[Shaka] error:', e.detail && e.detail.code, e.detail && e.detail.message);
-    });
+    shakaPlayer.addEventListener('error', (e) => console.warn('[Shaka] error:', e.detail && e.detail.code, e.detail && e.detail.message));
     return shakaPlayer;
   }
 
-  function isDashUrl(url) {
-    return /\.mpd(\?|$)/i.test(url || '');
+  function sourceList(ch) {
+    return (ch && Array.isArray(ch.urls) && ch.urls.length) ? ch.urls : [ch.url];
   }
 
-  async function playChannel(ch) {
+  async function cleanupPlayers() {
+    if (hls) { try { hls.destroy(); } catch(e) {} hls = null; }
+    if (shakaPlayer) { try { await shakaPlayer.detach(); } catch (e) {} }
+    try { video.pause(); video.removeAttribute('src'); video.load(); } catch(e) {}
+  }
+
+  async function playChannel(ch, sourceIndex = 0) {
+    if (!ch) return;
+    const sources = sourceList(ch).filter(Boolean);
+    if (!sources.length) return;
+    const token = ++playToken;
     currentChannel = ch;
-    nowPlaying.textContent = ch.name;
+    currentSourceIndex = Math.max(0, Math.min(sourceIndex, sources.length - 1));
+    const url = sources[currentSourceIndex];
+    ch.url = url;
+    nowPlaying.textContent = ch.name + (sources.length > 1 ? ` (${currentSourceIndex + 1}/${sources.length})` : '');
     nowQuality.textContent = ch.quality === 'fhd' ? 'FHD' : ch.quality === 'hd' ? 'HD' : 'SD';
     loadingEl.classList.remove('hidden');
     errorEl.classList.remove('show');
-    loadingMsg.textContent = 'Memuat ' + ch.name + '...';
+    loadingMsg.textContent = 'Memuat ' + ch.name + (sources.length > 1 ? ` — source ${currentSourceIndex + 1}/${sources.length}` : '') + '...';
 
-    // Highlight active card
     document.querySelectorAll('.channel').forEach(c => {
-      c.classList.toggle('active', c.dataset.url === ch.url);
+      c.classList.toggle('active', c.dataset.name === ch.name);
     });
 
-    // Cleanup previous players
-    if (hls) { hls.destroy(); hls = null; }
-    if (shakaPlayer) {
-      try { await shakaPlayer.detach(); } catch (e) {}
-    }
+    await cleanupPlayers();
 
-    // === Route to Shaka for DASH or any format; fallback to HLS.js ===
-    const url = ch.url;
+    const failover = (reason) => {
+      if (token !== playToken) return;
+      console.warn('[best-effort] source failed:', reason, url);
+      if (currentSourceIndex + 1 < sources.length) {
+        loadingMsg.textContent = 'Source gagal, coba backup ' + (currentSourceIndex + 2) + '/' + sources.length + '...';
+        setTimeout(() => playChannel(ch, currentSourceIndex + 1), 250);
+      } else {
+        loadingEl.classList.add('hidden');
+        errorMsg.textContent = sources.length > 1 ? 'Semua source gagal — coba channel lain' : 'Stream error — coba channel lain';
+        errorEl.classList.add('show');
+      }
+    };
+
+    const startTimeout = setTimeout(() => failover('startup timeout'), 12000);
+    const clearStartTimeout = () => clearTimeout(startTimeout);
+
     const tryShaka = window.shaka && shaka.Player && shaka.Player.isBrowserSupported();
-
     if (tryShaka) {
       try {
         const player = await ensureShaka();
         await player.attach(video);
         await player.load(url);
-        // Detect actual format for the quality label (Shaka handles both transparently)
-        const stats = player.getStats();
-        const isMpd = (player.getManifestType && player.getManifestType() === 'DASH') || /\.mpd(\?|$)/i.test(url);
-        if (isMpd) console.log('[Shaka] playing DASH:', url);
-        else console.log('[Shaka] playing HLS:', url);
+        if (token !== playToken) return;
+        clearStartTimeout();
+        console.log('[Shaka] playing:', url);
         video.play().catch(e => console.log('Autoplay blocked:', e));
         loadingEl.classList.add('hidden');
         return;
       } catch (err) {
         console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message);
-        // fall through to HLS.js below
         try { if (shakaPlayer) await shakaPlayer.detach(); } catch (e) {}
       }
     }
 
     if (Hls.isSupported()) {
-      hls = new Hls({ enableWorker: true, lowLatencyMode: false });
-      hls.loadSource(ch.url);
+      hls = new Hls({ enableWorker: true, lowLatencyMode: false, manifestLoadingTimeOut: 10000, fragLoadingTimeOut: 12000 });
+      hls.loadSource(url);
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        if (token !== playToken) return;
+        clearStartTimeout();
         video.play().catch(e => console.log('Autoplay blocked:', e));
         loadingEl.classList.add('hidden');
       });
       hls.on(Hls.Events.ERROR, (event, data) => {
-        if (data.fatal) {
-          switch (data.type) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              errorMsg.textContent = 'Network error - coba lagi';
-              errorEl.classList.add('show');
-              break;
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              errorMsg.textContent = 'Media error - coba lagi';
-              errorEl.classList.add('show');
-              hls.recoverMediaError();
-              break;
-            default:
-              errorMsg.textContent = 'Stream error: ' + data.type;
-              errorEl.classList.add('show');
-          }
+        if (!data.fatal || token !== playToken) return;
+        if (data.type === Hls.ErrorTypes.MEDIA_ERROR && hls) {
+          try { hls.recoverMediaError(); return; } catch (e) {}
         }
+        clearStartTimeout();
+        failover(data.type || 'hls fatal');
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      // Native HLS (Safari)
-      video.src = ch.url;
+      video.src = url;
       video.addEventListener('loadedmetadata', () => {
+        if (token !== playToken) return;
+        clearStartTimeout();
         video.play();
         loadingEl.classList.add('hidden');
-      });
+      }, { once: true });
+      video.addEventListener('error', () => { clearStartTimeout(); failover('native video error'); }, { once: true });
     } else {
+      clearStartTimeout();
       errorMsg.textContent = 'Browser tidak support HLS/DASH';
       errorEl.classList.add('show');
     }
-
-    // Hide loading after timeout fallback
-    setTimeout(() => loadingEl.classList.add('hidden'), 5000);
   }
 
   video.addEventListener('playing', () => loadingEl.classList.add('hidden'));
   video.addEventListener('waiting', () => loadingEl.classList.remove('hidden'));
-  retryBtn.onclick = () => { if (currentChannel) playChannel(currentChannel); };
+  retryBtn.onclick = () => { if (currentChannel) playChannel(currentChannel, currentSourceIndex); };
 
-  // === Mini-player: shrink to floating when player scrolls out of view ===
   const playerWrap = document.getElementById('playerWrap');
   const miniClose = document.getElementById('miniClose');
   let isMini = false;
 
   function setMini(shouldMini) {
     if (shouldMini === isMini) return;
-    // Don't mini if no channel playing
     if (shouldMini && !currentChannel) return;
     isMini = shouldMini;
     playerWrap.classList.toggle('mini', shouldMini);
   }
 
-  // Mini-player scroll handler DISABLED — player is sticky-positioned instead.
-// Auto-minimize was causing scroll-blocking bugs on some devices.
-// Keeping code commented for easy re-enable if needed.
-  /*
-  let scrollTick = false;
-  window.addEventListener('scroll', () => {
-    if (scrollTick) return;
-    scrollTick = true;
-    requestAnimationFrame(() => {
-      const rect = playerWrap.getBoundingClientRect();
-      setMini(rect.bottom < 60);
-      scrollTick = false;
-    });
-  }, { passive: true });
-  */
-
-  // Tap mini-player → restore full size
   playerWrap.addEventListener('click', (e) => {
-    if (e.target === miniClose) return;  // close btn handled below
+    if (e.target === miniClose) return;
     if (!isMini) return;
     setMini(false);
     playerWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
-  // Close button → stop stream, hide player
-  miniClose.onclick = (e) => {
+  miniClose.onclick = async (e) => {
     e.stopPropagation();
-    if (hls) { hls.destroy(); hls = null; }
-    video.pause();
-    video.removeAttribute('src');
-    video.load();
+    ++playToken;
+    await cleanupPlayers();
     currentChannel = null;
+    currentSourceIndex = 0;
     setMini(false);
     nowPlaying.textContent = 'Pilih channel';
     nowQuality.textContent = '';
+    loadingEl.classList.add('hidden');
+    errorEl.classList.remove('show');
     document.querySelectorAll('.channel.active').forEach(c => c.classList.remove('active'));
   };
 
-  // === Search handler ===
   document.getElementById('search').addEventListener('input', renderChannels);
 
   // === Live Events (Sedang Tayang) ===
@@ -1191,6 +1174,10 @@
   const liveCount = document.getElementById('liveEventsCount');
   let liveEventsData = { events: [], last_updated: null };
 
+  function getEventsArray(data) {
+    return Array.isArray(data) ? data : (data && Array.isArray(data.events) ? data.events : []);
+  }
+
   function isEventActive(ev) {
     const now = Date.now();
     const start = new Date(ev.start).getTime();
@@ -1199,9 +1186,7 @@
   }
 
   function formatCountdown(ev) {
-    const now = Date.now();
-    const end = new Date(ev.end).getTime();
-    const remaining = end - now;
+    const remaining = new Date(ev.end).getTime() - Date.now();
     if (remaining <= 0) return '00:00';
     const totalSec = Math.floor(remaining / 1000);
     const h = Math.floor(totalSec / 3600);
@@ -1213,22 +1198,39 @@
 
   function formatTimeRange(ev) {
     try {
-      const s = new Date(ev.start);
-      const e = new Date(ev.end);
       const fmt = (d) => d.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Jakarta' });
-      return `${fmt(s)}–${fmt(e)} WIB`;
+      return `${fmt(new Date(ev.start))}–${fmt(new Date(ev.end))}`;
     } catch { return ''; }
   }
 
+  function resolveEventChannel(ev) {
+    const names = [];
+    if (Array.isArray(ev.channel_options)) names.push(...ev.channel_options);
+    if (ev.channel_name) names.push(ev.channel_name);
+    if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) {
+      const exactUrl = channels.find(c => c.url === ev.channel_url || (c.urls || []).includes(ev.channel_url));
+      if (exactUrl) return exactUrl;
+    }
+    for (const name of names) {
+      const wanted = String(name || '').replace(/^#channel:/, '').trim().toLowerCase();
+      if (!wanted) continue;
+      let matched = channels.find(c => c.name.toLowerCase() === wanted);
+      if (matched) return matched;
+      matched = channels.find(c => c.name.toLowerCase().includes(wanted) || wanted.includes(c.name.toLowerCase()));
+      if (matched) return matched;
+    }
+    return null;
+  }
+
   function renderLiveEvents() {
-    const active = liveEventsData.events.filter(isEventActive);
+    const events = getEventsArray(liveEventsData);
+    const active = events.filter(isEventActive);
     if (active.length === 0) {
       liveSection.classList.remove('show');
       liveScroll.innerHTML = '';
       liveCount.textContent = '';
       return;
     }
-    // Sort by start time
     active.sort((a, b) => new Date(a.start) - new Date(b.start));
     liveScroll.innerHTML = '';
     active.forEach(ev => {
@@ -1237,28 +1239,16 @@
       card.type = 'button';
       card.innerHTML = `
         <div class="live-event-category">${ev.category || 'Live Event'}</div>
-        <div class="live-event-title">${ev.title}</div>
-        <div class="live-event-channel">📺 ${ev.channel_name}</div>
+        <div class="live-event-title">${ev.title || ''}</div>
+        <div class="live-event-channel">📺 ${ev.channel_name || ''}</div>
         <div class="live-event-time">
-          <span>${formatTimeRange(ev)}</span>
+          <span>${formatTimeRange(ev)} WIB</span>
           <span class="live-event-countdown">⏱ ${formatCountdown(ev)}</span>
-        </div>
-      `;
+        </div>`;
       card.onclick = () => {
-        // Find matching channel in our M3U list, or play URL directly
-        const matched = channels.find(c => c.url === ev.channel_url || c.name === ev.channel_name);
-        if (matched) {
-          playChannel(matched);
-        } else {
-          // Play URL directly via a synthetic channel
-          playChannel({
-            name: ev.channel_name,
-            url: ev.channel_url,
-            quality: 'fhd',
-            category: 'fifa'
-          });
-        }
-        // Scroll player into view
+        const matched = resolveEventChannel(ev);
+        if (matched) playChannel(matched);
+        else if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) playChannel({ name: ev.channel_name || 'Live Event', url: ev.channel_url, urls: [ev.channel_url], quality: 'fhd', category: 'fifa' });
         document.getElementById('playerWrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
       };
       liveScroll.appendChild(card);
@@ -1278,189 +1268,142 @@
     }
   }
 
-  // Update countdowns every second
   setInterval(() => {
-    if (liveEventsData.events.some(isEventActive)) renderLiveEvents();
+    const events = getEventsArray(liveEventsData);
+    if (events.some(isEventActive)) renderLiveEvents();
   }, 1000);
-
-  // Refresh event list every 5 min (in case schedule changes)
   setInterval(loadLiveEvents, 5 * 60 * 1000);
 
-  // === Bottom nav: switch tab ===
-function switchTab(tab) {
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
-  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel' + tab.charAt(0).toUpperCase() + tab.slice(1)));
-  // Reset mini-player offset when switching panels (player only on Beranda)
-  const playerWrap = document.getElementById('playerWrap');
-  if (playerWrap) {
-    if (tab === 'home') {
-      playerWrap.classList.remove('hidden-from-nav');
-    } else {
-      playerWrap.classList.add('hidden-from-nav');
-      playerWrap.classList.remove('mini');
+  function switchTab(tab) {
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+    document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel' + tab.charAt(0).toUpperCase() + tab.slice(1)));
+    const playerWrap = document.getElementById('playerWrap');
+    if (playerWrap) {
+      if (tab === 'home') playerWrap.classList.remove('hidden-from-nav');
+      else { playerWrap.classList.add('hidden-from-nav'); playerWrap.classList.remove('mini'); }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (tab === 'schedule') loadSchedule();
+    if (tab === 'standings') loadStandings();
   }
-  // Lazy load on first view
-  if (tab === 'schedule') loadSchedule();
-  if (tab === 'standings') loadStandings();
-}
 
-document.querySelectorAll('.nav-btn').forEach(btn => {
-  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
-});
+  document.querySelectorAll('.nav-btn').forEach(btn => btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
 
-// === Schedule (Jadwal) ===
-const SCHEDULE_URL = './live_events.json';
-let scheduleData = null;
+  const SCHEDULE_URL = './live_events.json';
+  let scheduleData = null;
 
-async function loadSchedule() {
-  const container = document.getElementById('schedList');
-  if (!container) return;
-  try {
-    const res = await fetch(SCHEDULE_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    scheduleData = Array.isArray(data) ? data : (data.events || []);
-    renderSchedule();
-  } catch (err) {
-    container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat jadwal<br><small>' + err.message + '</small></div>';
+  async function loadSchedule() {
+    const container = document.getElementById('schedList');
+    if (!container) return;
+    try {
+      const res = await fetch(SCHEDULE_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      scheduleData = getEventsArray(data);
+      renderSchedule();
+    } catch (err) {
+      container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat jadwal<br><small>' + err.message + '</small></div>';
+    }
   }
-}
 
-function renderSchedule() {
-  const container = document.getElementById('schedList');
-  if (!container || !scheduleData) return;
-  if (scheduleData.length === 0) {
-    container.innerHTML = '<div class="sched-empty">Belum ada jadwal tersedia</div>';
-    return;
-  }
-  // Sort by start time
-  const sorted = [...scheduleData].sort((a, b) => new Date(a.start) - new Date(b.start));
-  const now = Date.now();
-  const groups = {};
-  sorted.forEach(ev => {
-    const d = new Date(ev.start);
-    const dayKey = d.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' });
-    if (!groups[dayKey]) groups[dayKey] = [];
-    groups[dayKey].push(ev);
-  });
-  let html = '';
-  Object.keys(groups).forEach(day => {
-    html += `<div class="sched-day">${day}</div>`;
-    groups[day].forEach(ev => {
-      const start = new Date(ev.start).getTime();
-      const end = new Date(ev.end).getTime();
-      const isLive = now >= start && now < end;
-      const isDone = now >= end;
-      const statusCls = isLive ? 'live' : (isDone ? 'done' : '');
-      const livePill = isLive ? '<span class="live-pill">● LIVE</span>' : '';
-      const timeStr = formatTimeRange(ev);
-      html += `
-        <button class="sched-item ${statusCls}" type="button" data-url="${ev.channel_url || ''}" data-name="${ev.channel_name || ''}">
-          <div class="sched-time">${timeStr} WIB ${livePill}</div>
-          <div class="sched-match">${ev.title || ''}</div>
-          <div class="sched-meta">
-            <span class="stage">${ev.category || 'Live Event'}</span>
-            <span>📺 ${ev.channel_name || ''}</span>
-          </div>
-        </button>`;
+  function renderSchedule() {
+    const container = document.getElementById('schedList');
+    if (!container || !scheduleData) return;
+    if (scheduleData.length === 0) {
+      container.innerHTML = '<div class="sched-empty">Belum ada jadwal tersedia</div>';
+      return;
+    }
+    const sorted = [...scheduleData].sort((a, b) => new Date(a.start) - new Date(b.start));
+    const now = Date.now();
+    const groups = {};
+    sorted.forEach(ev => {
+      const d = new Date(ev.start);
+      const dayKey = d.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Jakarta' });
+      if (!groups[dayKey]) groups[dayKey] = [];
+      groups[dayKey].push(ev);
     });
-  });
-  container.innerHTML = html;
-  // Click handler: switch to Beranda tab + play
-  container.querySelectorAll('.sched-item').forEach(el => {
-    el.addEventListener('click', () => {
-      const url = el.dataset.url;
-      const name = el.dataset.name;
-      if (!url) return;
-      switchTab('home');
-      setTimeout(() => {
-        const matched = channels.find(c => c.url === url || c.name === name);
-        if (matched) { playChannel(matched); return; }
-        playChannel({ name: name || 'Live Event', url, quality: 'fhd', category: 'fifa' });
-      }, 250);
+    let html = '';
+    Object.keys(groups).forEach(day => {
+      html += `<div class="sched-day">${day}</div>`;
+      groups[day].forEach(ev => {
+        const start = new Date(ev.start).getTime();
+        const end = new Date(ev.end).getTime();
+        const isLive = now >= start && now < end;
+        const isDone = now >= end;
+        const statusCls = isLive ? 'live' : (isDone ? 'done' : '');
+        const livePill = isLive ? '<span class="live-pill">● LIVE</span>' : '';
+        html += `
+          <button class="sched-item ${statusCls}" type="button" data-id="${ev.id || ''}">
+            <div class="sched-time">${formatTimeRange(ev)} WIB ${livePill}</div>
+            <div class="sched-match">${ev.title || ''}</div>
+            <div class="sched-meta"><span class="stage">${ev.category || 'Live Event'}</span><span>📺 ${ev.channel_name || ''}</span></div>
+          </button>`;
+      });
     });
-  });
-}
-
-// Update live pill every 30s
-setInterval(() => { if (scheduleData && document.getElementById('panelSchedule').classList.contains('active')) renderSchedule(); }, 30000);
-
-// === Standings (Klasemen) ===
-const STANDINGS_URL = './standings.json';
-let standingsData = null;
-
-async function loadStandings() {
-  const container = document.getElementById('standingsList');
-  if (!container) return;
-  try {
-    const res = await fetch(STANDINGS_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    standingsData = await res.json();
-    renderStandings();
-  } catch (err) {
-    container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat klasemen<br><small>' + err.message + '</small></div>';
+    container.innerHTML = html;
+    container.querySelectorAll('.sched-item').forEach((el, idx) => {
+      el.addEventListener('click', () => {
+        const ev = sorted[idx];
+        switchTab('home');
+        setTimeout(() => {
+          const matched = resolveEventChannel(ev);
+          if (matched) playChannel(matched);
+          else if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) playChannel({ name: ev.channel_name || 'Live Event', url: ev.channel_url, urls: [ev.channel_url], quality: 'fhd', category: 'fifa' });
+        }, 250);
+      });
+    });
   }
-}
 
-function renderStandings() {
-  const container = document.getElementById('standingsList');
-  const stageEl = document.getElementById('standingsStage');
-  if (!container || !standingsData) return;
-  const groups = standingsData.groups || [];
-  if (groups.length === 0) {
-    container.innerHTML = '<div class="sched-empty">Klasemen belum tersedia</div>';
-    return;
-  }
-  if (stageEl && standingsData.stage) stageEl.textContent = standingsData.stage;
-  let html = '';
-  groups.forEach(g => {
-    const teams = (g.teams || []).slice().sort((a, b) => a.rank - b.rank);
-    html += `
-      <div class="group-card">
-        <div class="group-head">GROUP ${g.name}</div>
-        <table class="standings-table">
-          <thead><tr>
-            <th>#</th><th class="team">Tim</th>
-            <th>M</th><th>W</th><th>D</th><th>L</th>
-            <th>SG</th><th>Pts</th>
-          </tr></thead>
-          <tbody>
-            ${teams.map(t => `
-              <tr class="${t.rank <= 2 ? 'qualified' : ''}">
-                <td>${t.rank}</td>
-                <td class="team"><span class="flag">${t.flag || '🏳️'}</span>${t.country}</td>
-                <td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td>
-                <td>${t.gd > 0 ? '+' + t.gd : t.gd}</td>
-                <td class="pts">${t.pts}</td>
-              </tr>`).join('')}
-          </tbody>
-        </table>
-      </div>`;
-  });
-  if (standingsData.last_updated) {
-    const dt = new Date(standingsData.last_updated);
-    const ts = dt.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
-    html += `<div class="standings-foot">Update terakhir: ${ts} WIB</div>`;
-  }
-  container.innerHTML = html;
-}
+  setInterval(() => { if (scheduleData && document.getElementById('panelSchedule').classList.contains('active')) renderSchedule(); }, 30000);
 
-// === Init: fetch M3U then render + auto-play first FIFA ===
+  const STANDINGS_URL = './standings.json';
+  let standingsData = null;
+
+  async function loadStandings() {
+    const container = document.getElementById('standingsList');
+    if (!container) return;
+    try {
+      const res = await fetch(STANDINGS_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      standingsData = await res.json();
+      renderStandings();
+    } catch (err) {
+      container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat klasemen<br><small>' + err.message + '</small></div>';
+    }
+  }
+
+  function renderStandings() {
+    const container = document.getElementById('standingsList');
+    const stageEl = document.getElementById('standingsStage');
+    if (!container || !standingsData) return;
+    const groups = Array.isArray(standingsData.groups) ? standingsData.groups : Object.entries(standingsData.groups || {}).map(([name, teams]) => ({ name, teams }));
+    if (groups.length === 0) {
+      container.innerHTML = '<div class="sched-empty">Klasemen belum tersedia</div>';
+      return;
+    }
+    if (stageEl && standingsData.stage) stageEl.textContent = standingsData.stage;
+    let html = '';
+    groups.forEach(g => {
+      const teams = (g.teams || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
+      html += `<div class="group-card"><div class="group-head">GROUP ${g.name}</div><table class="standings-table"><thead><tr><th>#</th><th class="team">Tim</th><th>M</th><th>W</th><th>D</th><th>L</th><th>SG</th><th>Pts</th></tr></thead><tbody>${teams.map(t => `<tr class="${t.rank <= 2 ? 'qualified' : ''}"><td>${t.rank}</td><td class="team"><span class="flag">${t.flag || '🏳️'}</span>${t.country}</td><td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td><td>${t.gd > 0 ? '+' + t.gd : t.gd}</td><td class="pts">${t.pts}</td></tr>`).join('')}</tbody></table></div>`;
+    });
+    if (standingsData.last_updated) {
+      const dt = new Date(standingsData.last_updated);
+      const ts = dt.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Jakarta' });
+      html += `<div class="standings-foot">Update terakhir: ${ts} WIB</div>`;
+    }
+    container.innerHTML = html;
+  }
+
   loadChannels().then(() => {
     const firstFifa = channels.find(c => c.category === 'fifa');
     if (firstFifa) setTimeout(() => playChannel(firstFifa), 500);
+    renderLiveEvents();
   });
-
-  // Load live events immediately + retry after channels load
   loadLiveEvents();
   setTimeout(loadLiveEvents, 2000);
 
-  // === PWA service worker ===
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(() => {});
-  }
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
 </script>
 </body>
 </html>
