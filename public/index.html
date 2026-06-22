@@ -1,822 +1,939 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <meta name="theme-color" content="#0a0a0a">
-  <meta name="description" content="Live streaming Piala Dunia FIFA gratis - 68 channel HD/FHD">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>⚽ Piala Dunia Live - FIFA World Cup Streaming</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-    :root {
-      --bg: #0a0a0a;
-      --surface: #161616;
-      --surface-2: #1f1f1f;
-      --border: #2a2a2a;
-      --text: #f5f5f5;
-      --text-2: #aaa;
-      --text-3: #777;
-      --accent: #4a8aff;
-      --accent-2: #1a4aff;
-      --fifa: #ffcc00;
-      --fifa-2: #ff5722;
-      --danger: #ff4444;
-      --success: #00d68f;
-      --hd: #00b894;
-      --fhd: #6c5ce7;
-      --safe-top: env(safe-area-inset-top, 0);
-      --safe-bottom: env(safe-area-inset-bottom, 0);
-    }
-    html, body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-      font-size: 14px;
-      line-height: 1.4;
-      min-height: 100vh;
-      overscroll-behavior: none;
-    }
-    body {
-      padding-top: var(--safe-top);
-      padding-bottom: var(--safe-bottom);
-      background: linear-gradient(180deg, #0a0a0a 0%, #0f0f12 100%);
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>PIALA DUNIA · LIVE STREAMING HUB</title>
+<meta name="description" content="Piala Dunia live streaming — multi-source HD channel player, jadwal, klasemen. Tanpa buffering.">
 
-    /* === Header === */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 16px;
-    }
-    .header-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: -0.3px;
-    }
-    .brand-icon {
-      font-size: 24px;
-      filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.5));
-    }
-    .brand-text { color: var(--text); }
-    .brand-sub {
-      font-size: 10px;
-      font-weight: 500;
-      color: var(--text-3);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-    }
-    .live-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      background: var(--danger);
-      color: white;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
-    }
-    .live-badge::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: white;
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
 
-    /* === Player (sticky: stays visible while scrolling channel list) === */
-    .player-wrap {
-      position: sticky;
-      top: 56px;  /* sit below sticky header */
-      z-index: 50;
-      background: #000;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      max-height: 30vh;
-      overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-    }
-    .player-wrap video {
-      width: 100%;
-      height: 100%;
-      display: block;
-      background: #000;
-    }
-    .player-loading {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.85);
-      color: var(--text-2);
-      gap: 12px;
-      transition: opacity 0.3s;
-    }
-    .player-loading.hidden { opacity: 0; pointer-events: none; }
-    .spinner {
-      width: 32px;
-      height: 32px;
-      border: 3px solid rgba(255, 255, 255, 0.1);
-      border-top-color: var(--fifa);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .now-playing {
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      right: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-      pointer-events: none;
-    }
-    .now-playing-name {
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(8px);
-      color: white;
-      font-size: 11px;
-      font-weight: 600;
-      padding: 5px 10px;
-      border-radius: 6px;
-      max-width: 70%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .now-playing-quality {
-      background: rgba(74, 138, 255, 0.9);
-      color: white;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 4px 8px;
-      border-radius: 4px;
-      letter-spacing: 0.5px;
-    }
+<style>
+:root{
+  /* ── CORE PALETTE — UEFA BLACK × ROYAL GOLD ───────────────── */
+  --bg:#000000;
+  --bg-2:#060606;
+  --surface:#0d0d0d;
+  --surface-2:#141414;
+  --surface-3:#1c1c1c;
+  --border:#1f1f1f;
+  --border-2:#2a2a2a;
+  --border-bright:#3a3a3a;
 
-    /* === Search & Filter === */
-    .toolbar {
-      padding: 12px 16px 8px;
-      background: var(--bg);
-      position: relative;
-      z-index: 10;
-      border-bottom: 1px solid var(--border);
-    }
-    .search-box {
-      width: 100%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 14px;
-      color: var(--text);
-      font-size: 14px;
-      font-family: inherit;
-      outline: none;
-      transition: border-color 0.15s;
-    }
-    .search-box:focus { border-color: var(--accent); }
-    .search-box::placeholder { color: var(--text-3); }
-    .filters {
-      display: flex;
-      gap: 6px;
-      margin-top: 10px;
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-    }
-    .filters::-webkit-scrollbar { display: none; }
-    .chip {
-      flex-shrink: 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-2);
-      font-size: 12px;
-      font-weight: 600;
-      padding: 6px 12px;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.15s;
-      white-space: nowrap;
-      font-family: inherit;
-    }
-    .chip.active {
-      background: var(--accent);
-      color: white;
-      border-color: var(--accent);
-    }
-    .chip-count {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
-      font-size: 10px;
-      padding: 1px 6px;
-      border-radius: 8px;
-      margin-left: 4px;
-      font-weight: 700;
-    }
+  /* Royal gold (UEFA) */
+  --gold:#d4af37;
+  --gold-bright:#f4d03f;
+  --gold-deep:#a8861d;
+  --gold-glow:rgba(212,175,55,0.18);
+  --gold-glow-strong:rgba(212,175,55,0.42);
 
-    /* === Channel Grid === */
-    main {
-      padding: 12px 16px 24px;
-    }
-    /* === Live Events (Sedang Tayang) === */
-    .live-events-section {
-      margin: 16px 0 8px;
-      display: none;
-    }
-    .live-events-section.show { display: block; }
-    .live-events-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    .live-events-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-3);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .live-pulse {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #ff4444;
-      box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7);
-      animation: pulse 1.5s infinite;
-    }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7); }
-      70% { box-shadow: 0 0 0 8px rgba(255, 68, 68, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0); }
-    }
-    .live-events-count {
-      font-size: 10px;
-      color: var(--text-3);
-      font-weight: 600;
-    }
-    .live-events-scroll {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 4px;
-    }
-    .live-events-scroll::-webkit-scrollbar { display: none; }
-    .live-event-card {
-      flex-shrink: 0;
-      width: 240px;
-      background: linear-gradient(135deg, rgba(255, 68, 68, 0.12) 0%, rgba(255, 87, 34, 0.08) 100%);
-      border: 1px solid rgba(255, 68, 68, 0.3);
-      border-radius: 12px;
-      padding: 12px;
-      cursor: pointer;
-      transition: all 0.15s;
-      font-family: inherit;
-      color: inherit;
-      text-align: left;
-      -webkit-appearance: none;
-    }
-    .live-event-card:active { transform: scale(0.97); }
-    .live-event-card:hover {
-      border-color: rgba(255, 68, 68, 0.6);
-      background: linear-gradient(135deg, rgba(255, 68, 68, 0.18) 0%, rgba(255, 87, 34, 0.12) 100%);
-    }
-    .live-event-category {
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--danger);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 4px;
-    }
-    .live-event-title {
-      font-size: 14px;
-      font-weight: 700;
-      color: var(--text);
-      line-height: 1.3;
-      margin-bottom: 8px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
-    .live-event-channel {
-      font-size: 11px;
-      color: var(--text-2);
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .live-event-time {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--fifa);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .live-event-countdown {
-      font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-      font-variant-numeric: tabular-nums;
-    }
-    .section-title {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--text-3);
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      margin: 16px 0 10px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .section-title:first-child { margin-top: 0; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-      gap: 8px;
-    }
-    @media (max-width: 480px) {
-      .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 6px; }
-    }
-    .channel {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 8px;
-      cursor: pointer;
-      transition: all 0.12s;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      font-family: inherit;
-      color: inherit;
-      -webkit-appearance: none;
-    }
-    .channel:active { transform: scale(0.97); }
-    .channel.active {
-      border-color: var(--accent);
-      background: rgba(74, 138, 255, 0.12);
-      box-shadow: 0 0 0 1px var(--accent);
-    }
-    .channel.fifa {
-      background: linear-gradient(135deg, rgba(255, 204, 0, 0.08) 0%, rgba(255, 87, 34, 0.08) 100%);
-      border-color: rgba(255, 204, 0, 0.3);
-    }
-    .channel.fifa.active {
-      background: linear-gradient(135deg, rgba(255, 204, 0, 0.18) 0%, rgba(255, 87, 34, 0.18) 100%);
-      border-color: var(--fifa);
-      box-shadow: 0 0 0 1px var(--fifa);
-    }
-    .channel-icon {
-      font-size: 22px;
-      margin-bottom: 4px;
-      display: block;
-      line-height: 1;
-    }
-    .channel-name {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.25;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      word-break: break-word;
-    }
-    .channel-quality {
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      font-size: 8px;
-      font-weight: 700;
-      padding: 2px 5px;
-      border-radius: 3px;
-      letter-spacing: 0.3px;
-    }
-    .q-fhd { background: var(--fhd); color: white; }
-    .q-hd { background: var(--hd); color: white; }
-    .q-sd { background: var(--text-3); color: white; }
+  /* Live & status */
+  --red:#ff1744;
+  --red-glow:rgba(255,23,68,0.5);
+  --green:#00d68f;
+  --green-glow:rgba(0,214,143,0.4);
+  --blue:#2196f3;
 
-    /* === Bottom Nav === */
-    .bottom-nav {
-      position: sticky;
-      bottom: 0;
-      z-index: 90;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background: rgba(15,15,20,0.96);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
-      gap: 4px;
-    }
-    .nav-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-3);
-      padding: 8px 4px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 600;
-      font-family: inherit;
-      cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
-      transition: color .2s, background .2s;
-    }
-    .nav-btn .nav-ico { font-size: 20px; line-height: 1; }
-    .nav-btn:hover { color: var(--text-2); }
-    .nav-btn.active {
-      color: var(--accent);
-      background: rgba(255,68,68,0.12);
-    }
+  /* Text */
+  --text:#f5f5f5;
+  --text-2:#a8a8a8;
+  --text-3:#666666;
+  --text-4:#3a3a3a;
 
-    /* === Panels === */
-    .panel { display: none; }
-    .panel.active { display: block; }
-    .panel-title {
-      font-size: 18px;
-      font-weight: 800;
-      padding: 16px 12px 8px;
-      color: var(--text);
-      letter-spacing: 0.3px;
-    }
-    .panel-sub {
-      font-size: 12px;
-      color: var(--text-3);
-      padding: 0 12px 12px;
-    }
+  /* Hairlines / overlays */
+  --scan:rgba(255,255,255,0.04);
+  --scan-2:rgba(255,255,255,0.08);
+}
 
-    /* === Schedule list === */
-    .sched-list { padding: 0 12px 24px; }
-    .sched-day {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 16px 4px 8px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-    .sched-day:first-child { border-top: none; padding-top: 4px; }
-    .sched-item {
-      background: rgba(255,255,255,0.04);
-      border-radius: 10px;
-      padding: 12px 14px;
-      margin-bottom: 8px;
-      border-left: 3px solid var(--accent);
-    }
-    .sched-item.live { border-left-color: #00e676; box-shadow: 0 0 0 1px rgba(0,230,118,0.3); }
-    .sched-item.done { opacity: 0.55; border-left-color: var(--text-3); }
-    .sched-time {
-      font-size: 11px;
-      color: var(--text-3);
-      font-weight: 600;
-      letter-spacing: 0.3px;
-    }
-    .sched-time .live-pill {
-      display: inline-block;
-      background: #00e676;
-      color: #000;
-      padding: 1px 6px;
-      border-radius: 4px;
-      margin-left: 6px;
-      font-size: 10px;
-      font-weight: 800;
-      animation: livePulse 1.5s ease-in-out infinite;
-    }
-    @keyframes livePulse {
-      0%,100% { opacity: 1; } 50% { opacity: 0.5; }
-    }
-    .sched-match {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--text);
-      margin: 4px 0 6px;
-      line-height: 1.35;
-    }
-    .sched-meta {
-      font-size: 11px;
-      color: var(--text-2);
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .sched-meta .stage { color: var(--accent); font-weight: 600; }
-    .sched-empty {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--text-3);
-      font-size: 13px;
-    }
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:#000;color:var(--text);font-family:'Inter','SF Pro Display',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:14px;line-height:1.4;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overscroll-behavior-y:contain}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(1200px 800px at 50% -10%, rgba(212,175,55,0.06) 0%, transparent 60%),
+    radial-gradient(800px 600px at 100% 100%, rgba(255,23,68,0.04) 0%, transparent 60%),
+    var(--bg);
+  background-attachment:fixed;
+  padding-bottom:calc(72px + env(safe-area-inset-bottom));
+}
+button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer;-webkit-appearance:none;appearance:none}
+a{color:inherit;text-decoration:none}
+input{font-family:inherit}
+::-webkit-scrollbar{display:none}
+*{scrollbar-width:none}
 
-    /* === Standings === */
-    .standings { padding: 0 12px 24px; }
-    .group-card {
-      background: rgba(255,255,255,0.04);
-      border-radius: 12px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-    .group-head {
-      background: rgba(255,68,68,0.15);
-      color: var(--accent);
-      padding: 10px 14px;
-      font-weight: 800;
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .standings-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
-    }
-    .standings-table th, .standings-table td {
-      padding: 8px 6px;
-      text-align: center;
-      color: var(--text-2);
-    }
-    .standings-table th {
-      font-size: 10px;
-      font-weight: 600;
-      color: var(--text-3);
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .standings-table .team {
-      text-align: left;
-      padding-left: 12px;
-      font-weight: 600;
-      color: var(--text);
-      font-size: 13px;
-    }
-    .standings-table .flag { margin-right: 6px; }
-    .standings-table tr.qualified td { color: var(--text); }
-    .standings-table tr.qualified { background: rgba(0,230,118,0.06); }
-    .standings-table .pts { font-weight: 800; color: var(--accent); }
-    .standings-foot {
-      text-align: center;
-      padding: 16px 12px 8px;
-      font-size: 11px;
-      color: var(--text-3);
-    }
+/* ── TYPOGRAPHY UTILITIES ───────────────────────────────────── */
+.mono{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;font-variant-numeric:tabular-nums;letter-spacing:-0.02em}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-3)}
+.gold{color:var(--gold)}
 
-    /* === Footer === */
-    footer {
-      padding: 24px 16px 16px;
-      text-align: center;
-      color: var(--text-3);
-      font-size: 11px;
-      line-height: 1.6;
-    }
-    footer a {
-      color: var(--text-2);
-      text-decoration: none;
-    }
-    .footer-stats {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin: 8px 0;
-      font-weight: 600;
-      color: var(--text-2);
-    }
-    .footer-stats span { font-weight: 800; color: var(--text); }
+/* ── TOP STATUS STRIP (BREAKING TICKER) ─────────────────────── */
+.status-strip{
+  position:sticky;top:0;z-index:100;
+  display:flex;align-items:center;gap:0;
+  height:28px;
+  background:linear-gradient(90deg,#0a0a0a 0%,#0a0a0a 30%,var(--gold-deep) 100%);
+  border-bottom:1px solid var(--gold);
+  font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--text-2);
+  overflow:hidden;
+}
+.status-strip::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(255,255,255,0.02) 6px 12px);
+  pointer-events:none;
+}
+.status-badge{
+  flex-shrink:0;
+  display:flex;align-items:center;gap:6px;
+  padding:0 12px;height:100%;
+  background:var(--red);color:#fff;font-weight:900;
+  letter-spacing:0.15em;
+  position:relative;
+}
+.status-badge::after{
+  content:'';position:absolute;right:-8px;top:0;bottom:0;width:8px;
+  background:var(--red);
+  clip-path:polygon(0 0,100% 50%,0 100%);
+}
+.status-badge .pulse{
+  width:6px;height:6px;border-radius:50%;background:#fff;
+  box-shadow:0 0 0 0 rgba(255,255,255,0.7);
+  animation:pulse 1.4s infinite;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(255,255,255,0.9)}
+  70%{box-shadow:0 0 0 6px rgba(255,255,255,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}
+}
+.status-ticker{
+  flex:1;display:flex;align-items:center;
+  padding:0 12px;height:100%;
+  white-space:nowrap;overflow:hidden;
+  mask-image:linear-gradient(90deg,transparent 0,#000 24px,#000 calc(100% - 24px),transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 24px,#000 calc(100% - 24px),transparent 100%);
+}
+.status-ticker-track{
+  display:inline-flex;gap:32px;
+  animation:scroll-x 60s linear infinite;
+  font-variant-numeric:tabular-nums;
+}
+.status-ticker-track span{display:inline-flex;align-items:center;gap:6px}
+.status-ticker-track .dot{color:var(--gold)}
+.status-ticker-track .v-mid{color:var(--gold-bright);font-weight:800}
+@keyframes scroll-x{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
 
-    /* === Error state === */
-    .player-error {
-      position: absolute;
-      inset: 0;
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.9);
-      color: var(--text-2);
-      gap: 8px;
-      padding: 16px;
-      text-align: center;
-    }
-    .player-error.show { display: flex; }
-    .player-error-icon { font-size: 32px; }
-    .player-error-msg { font-size: 12px; }
-    .retry-btn {
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      margin-top: 4px;
-      font-family: inherit;
-    }
+/* ── HEADER ─────────────────────────────────────────────────── */
+.brand-bar{
+  position:sticky;top:28px;z-index:99;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 16px 12px;
+  background:rgba(0,0,0,0.85);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-bottom:1px solid var(--border);
+}
+.brand{
+  display:flex;align-items:center;gap:12px;
+  min-width:0;
+}
+.brand-mark{
+  flex-shrink:0;
+  width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), transparent 60%),
+    var(--gold);
+  color:#000;
+  font-family:'JetBrains Mono',monospace;
+  font-weight:900;font-size:14px;letter-spacing:-0.04em;
+  clip-path:polygon(20% 0,80% 0,100% 30%,100% 70%,80% 100%,20% 100%,0 70%,0 30%);
+  position:relative;
+  box-shadow:0 0 0 1px var(--gold-deep), 0 4px 12px rgba(212,175,55,0.25);
+}
+.brand-text{
+  display:flex;flex-direction:column;line-height:1;min-width:0;
+}
+.brand-name{
+  font-size:16px;font-weight:900;letter-spacing:0.02em;
+  display:flex;align-items:center;gap:6px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.brand-name .accent{color:var(--gold);position:relative}
+.brand-name .accent::after{
+  content:'';position:absolute;left:0;right:0;bottom:-3px;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+}
+.brand-tag{
+  font-size:9px;font-weight:600;letter-spacing:0.22em;
+  color:var(--text-3);text-transform:uppercase;
+  margin-top:4px;
+}
+.brand-meta{
+  display:flex;align-items:center;gap:10px;
+  flex-shrink:0;
+}
+.viewers{
+  display:flex;flex-direction:column;align-items:flex-end;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.viewers-count{font-size:14px;font-weight:800;color:var(--gold-bright);letter-spacing:-0.01em}
+.viewers-label{font-size:8px;letter-spacing:0.2em;color:var(--text-3);text-transform:uppercase;margin-top:3px;font-weight:700}
+.live-dot{
+  width:10px;height:10px;border-radius:50%;background:var(--red);
+  box-shadow:0 0 0 0 var(--red-glow);
+  animation:pulse 1.4s infinite;
+}
 
-    /* === Mini-player (floating when scrolled) === */
-    .player-wrap.mini {
-      position: fixed;
-      bottom: max(16px, env(safe-area-inset-bottom));
-      right: 16px;
-      width: 180px;
-      aspect-ratio: 16 / 9;
-      max-height: none;
-      z-index: 200;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);
-      animation: miniPop 0.25s ease-out;
-      cursor: pointer;
-    }
-    .player-wrap.mini video { border-radius: 12px; }
-    @keyframes miniPop {
-      from { transform: scale(0.7) translateY(20px); opacity: 0; }
-      to { transform: scale(1) translateY(0); opacity: 1; }
-    }
-    .player-wrap.mini .now-playing-name,
-    .player-wrap.mini .now-playing-quality { display: none; }
-    .player-wrap.mini .player-error,
-    .player-wrap.mini .player-loading { font-size: 9px; padding: 4px; gap: 4px; }
-    .player-wrap.mini .player-error-icon { font-size: 18px; }
-    .player-wrap.mini .spinner { width: 18px; height: 18px; border-width: 2px; }
-    .mini-close {
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(0,0,0,0.7);
-      color: white;
-      font-size: 14px;
-      line-height: 1;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 5;
-      pointer-events: auto;
-      border: 1px solid rgba(255,255,255,0.25);
-      font-family: inherit;
-      padding: 0;
-    }
-    .mini-close:hover { background: rgba(255,68,68,0.9); }
-    .player-wrap.mini .mini-close { display: flex; }
-  </style>
+/* ── PLAYER ─────────────────────────────────────────────────── */
+.player-wrap{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:#000;
+  border-bottom:2px solid var(--gold);
+  box-shadow:0 0 0 1px var(--border), 0 8px 32px rgba(0,0,0,0.6);
+  overflow:hidden;
+}
+.player-wrap::before{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    repeating-linear-gradient(135deg,transparent 0 12px,rgba(255,255,255,0.012) 12px 24px),
+    radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.4) 100%);
+}
+.player-wrap::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:linear-gradient(180deg,var(--gold-bright) 0%,var(--gold) 50%,var(--gold-deep) 100%);
+  z-index:3;pointer-events:none;
+}
+.player-wrap video{
+  width:100%;height:100%;display:block;background:#000;position:relative;z-index:0;
+}
+.player-loading{
+  position:absolute;inset:0;z-index:4;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:rgba(0,0,0,0.85);color:var(--text-2);gap:12px;
+  transition:opacity 0.3s;
+}
+.player-loading.hidden{opacity:0;pointer-events:none}
+.spinner{
+  width:36px;height:36px;border:2px solid rgba(212,175,55,0.15);
+  border-top-color:var(--gold);border-right-color:var(--gold-bright);
+  border-radius:50%;animation:spin 0.7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.now-playing{
+  position:absolute;left:14px;right:14px;top:12px;z-index:5;
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  pointer-events:none;
+}
+.now-playing-name{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(0,0,0,0.75);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(212,175,55,0.3);
+  color:#fff;font-size:11px;font-weight:800;letter-spacing:0.05em;
+  padding:7px 12px;border-radius:2px;
+  max-width:75%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  text-transform:uppercase;
+}
+.now-playing-name::before{
+  content:'';width:6px;height:6px;background:var(--gold);flex-shrink:0;
+}
+.now-playing-quality{
+  background:var(--gold);color:#000;font-size:9px;font-weight:900;
+  padding:5px 8px;letter-spacing:0.12em;border-radius:2px;
+  text-transform:uppercase;
+  box-shadow:0 0 0 1px var(--gold-deep), 0 0 12px var(--gold-glow);
+}
+
+/* Score bug — shown only when live event active */
+.score-bug{
+  position:absolute;left:14px;bottom:14px;z-index:5;
+  display:none;align-items:center;gap:0;
+  background:rgba(0,0,0,0.88);
+  backdrop-filter:blur(8px);
+  border:1px solid var(--gold);
+  font-size:11px;font-weight:800;
+  pointer-events:none;
+  box-shadow:0 4px 16px rgba(0,0,0,0.6);
+}
+.score-bug.show{display:flex}
+.score-bug-time{
+  background:var(--red);color:#fff;font-size:10px;font-weight:900;
+  padding:6px 8px;letter-spacing:0.08em;
+  display:flex;flex-direction:column;align-items:center;line-height:1.1;
+  border-right:1px solid rgba(255,255,255,0.15);
+}
+.score-bug-time .min{font-size:13px}
+.score-bug-time .live{font-size:8px;letter-spacing:0.2em;margin-top:2px}
+.score-bug-teams{padding:6px 10px;display:flex;flex-direction:column;gap:2px;line-height:1.2}
+.score-bug-team{display:flex;justify-content:space-between;align-items:center;gap:16px;min-width:180px}
+.score-bug-team .name{color:#fff;font-weight:700;font-size:11px}
+.score-bug-team .sc{color:var(--gold-bright);font-family:'JetBrains Mono',monospace;font-weight:900;font-size:13px;font-variant-numeric:tabular-nums}
+
+.player-error{
+  position:absolute;inset:0;z-index:6;
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  background:rgba(0,0,0,0.9);color:var(--text-2);gap:10px;
+  padding:16px;text-align:center;
+}
+.player-error.show{display:flex}
+.player-error-icon{font-size:32px;color:var(--gold)}
+.player-error-msg{font-size:12px;max-width:300px}
+.retry-btn{
+  background:var(--gold);color:#000;
+  border:none;padding:10px 20px;font-size:11px;font-weight:800;
+  letter-spacing:0.15em;text-transform:uppercase;
+  cursor:pointer;margin-top:6px;font-family:inherit;
+  clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));
+}
+.retry-btn:hover{background:var(--gold-bright)}
+
+/* Mini-player */
+.player-wrap.mini{
+  position:fixed;bottom:max(80px,calc(env(safe-area-inset-bottom) + 80px));right:12px;
+  width:160px;aspect-ratio:16/9;z-index:200;
+  border-bottom:none;border:2px solid var(--gold);
+  box-shadow:0 8px 32px rgba(0,0,0,0.8),0 0 0 1px rgba(212,175,55,0.4);
+  animation:miniPop 0.22s ease-out;cursor:pointer;
+}
+.player-wrap.mini::after{width:3px}
+@keyframes miniPop{
+  from{transform:scale(0.6) translateY(20px);opacity:0}
+  to{transform:scale(1) translateY(0);opacity:1}
+}
+.player-wrap.mini .now-playing,.player-wrap.mini .score-bug{display:none}
+.player-wrap.mini .player-error,.player-wrap.mini .player-loading{font-size:9px;padding:6px;gap:4px}
+.player-wrap.mini .player-error-icon{font-size:18px}
+.player-wrap.mini .spinner{width:18px;height:18px;border-width:2px}
+.mini-close{
+  position:absolute;top:6px;right:6px;width:24px;height:24px;
+  border-radius:2px;background:rgba(0,0,0,0.85);color:var(--gold);
+  font-size:14px;font-weight:900;line-height:1;
+  display:none;align-items:center;justify-content:center;
+  cursor:pointer;z-index:7;pointer-events:auto;
+  border:1px solid var(--gold-deep);font-family:inherit;padding:0;
+}
+.mini-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.player-wrap.mini .mini-close{display:flex}
+
+/* ── TOOLBAR (search + filters) ─────────────────────────────── */
+.toolbar{
+  padding:12px 16px 8px;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+  position:relative;z-index:10;
+}
+.search-wrap{position:relative}
+.search-box{
+  width:100%;
+  background:var(--surface);
+  border:1px solid var(--border-2);
+  border-radius:2px;
+  padding:11px 14px 11px 38px;
+  color:var(--text);font-size:13px;font-weight:600;
+  outline:none;transition:all 0.15s;
+  letter-spacing:0.01em;
+}
+.search-box:focus{
+  border-color:var(--gold);
+  background:var(--surface-2);
+  box-shadow:0 0 0 1px var(--gold-glow);
+}
+.search-box::placeholder{color:var(--text-3);font-weight:500}
+.search-icon{
+  position:absolute;left:12px;top:50%;transform:translateY(-50%);
+  color:var(--gold);font-size:14px;pointer-events:none;font-weight:900;
+}
+.filters{
+  display:flex;gap:0;margin-top:10px;overflow-x:auto;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+}
+.filters::-webkit-scrollbar{display:none}
+.chip{
+  flex-shrink:0;
+  background:transparent;
+  border:1px solid var(--border-2);
+  color:var(--text-2);
+  font-size:11px;font-weight:700;letter-spacing:0.08em;
+  padding:7px 14px;
+  border-right:none;
+  cursor:pointer;transition:all 0.12s;white-space:nowrap;
+  font-family:inherit;text-transform:uppercase;
+}
+.chip:last-child{border-right:1px solid var(--border-2)}
+.chip.active{
+  background:var(--gold);color:#000;
+  border-color:var(--gold);
+  box-shadow:inset 0 -2px 0 var(--gold-deep);
+}
+.chip-count{
+  display:inline-block;
+  background:rgba(255,255,255,0.08);
+  font-size:9px;font-weight:800;letter-spacing:0;
+  padding:1px 5px;margin-left:6px;color:var(--text-3);
+}
+.chip.active .chip-count{background:rgba(0,0,0,0.18);color:#000}
+
+/* ── LIVE EVENTS (SEDANG TAYANG) ────────────────────────────── */
+.live-events-section{
+  margin:14px 0 6px;display:none;
+  background:linear-gradient(180deg,rgba(255,23,68,0.06) 0%,transparent 100%);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:14px 0 12px;
+}
+.live-events-section.show{display:block}
+.live-events-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 16px 10px;
+}
+.live-events-title{
+  font-size:11px;font-weight:900;
+  color:var(--text);letter-spacing:0.18em;
+  text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.live-events-title .live-pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--red);
+  box-shadow:0 0 0 0 var(--red-glow);animation:pulse 1.4s infinite;
+}
+.live-events-title .badge-live{
+  background:var(--red);color:#fff;font-size:9px;font-weight:900;
+  padding:3px 6px;letter-spacing:0.15em;border-radius:2px;
+  margin-left:4px;
+}
+.live-events-count{
+  font-size:10px;color:var(--text-3);font-weight:700;
+  letter-spacing:0.1em;
+}
+.live-events-scroll{
+  display:flex;gap:10px;overflow-x:auto;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  padding:0 16px 4px;
+}
+.live-events-scroll::-webkit-scrollbar{display:none}
+.live-event-card{
+  flex-shrink:0;width:280px;
+  background:linear-gradient(135deg,rgba(255,23,68,0.12) 0%,rgba(212,175,55,0.08) 100%);
+  border:1px solid rgba(255,23,68,0.4);
+  border-left:3px solid var(--red);
+  padding:12px 14px;cursor:pointer;
+  transition:all 0.15s;font-family:inherit;color:inherit;text-align:left;
+  -webkit-appearance:none;position:relative;overflow:hidden;
+}
+.live-event-card::before{
+  content:'';position:absolute;top:0;right:0;width:30px;height:30px;
+  background:linear-gradient(135deg,transparent 50%,var(--red) 50%);
+  opacity:0.15;
+}
+.live-event-card:active{transform:scale(0.98)}
+.live-event-card:hover{
+  border-color:var(--red);
+  background:linear-gradient(135deg,rgba(255,23,68,0.18) 0%,rgba(212,175,55,0.12) 100%);
+}
+.live-event-category{
+  font-size:9px;font-weight:900;color:var(--red);
+  text-transform:uppercase;letter-spacing:0.18em;margin-bottom:4px;
+}
+.live-event-title{
+  font-size:13px;font-weight:700;color:var(--text);line-height:1.3;
+  margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+}
+.live-event-channel{
+  font-size:10px;color:var(--text-2);margin-bottom:6px;
+  display:flex;align-items:center;gap:4px;
+  letter-spacing:0.05em;text-transform:uppercase;font-weight:600;
+}
+.live-event-time{
+  font-size:11px;font-weight:700;color:var(--gold-bright);
+  display:flex;align-items:center;justify-content:space-between;
+  font-variant-numeric:tabular-nums;
+}
+.live-event-countdown{
+  font-family:'JetBrains Mono',monospace;font-weight:800;
+  color:var(--text);
+}
+
+/* ── SECTIONS ───────────────────────────────────────────────── */
+main{padding:8px 0 24px}
+.section-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 16px 10px;
+}
+.section-title{
+  display:flex;align-items:center;gap:10px;
+  font-size:14px;font-weight:900;letter-spacing:0.05em;
+  color:var(--text);text-transform:uppercase;
+}
+.section-title::before{
+  content:'';width:3px;height:14px;background:var(--gold);
+}
+.section-title .count{
+  font-size:10px;font-weight:700;color:var(--text-3);
+  letter-spacing:0.1em;
+  background:var(--surface-2);
+  padding:2px 6px;border-radius:2px;
+}
+.section-title.fifa .count{color:var(--gold);background:rgba(212,175,55,0.1)}
+.section-meta{
+  font-size:10px;color:var(--text-3);font-weight:700;
+  letter-spacing:0.12em;text-transform:uppercase;
+}
+
+/* ── CHANNEL GRID (DENSE SPORTSBOOK STYLE) ──────────────────── */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+  gap:1px;
+  background:var(--border);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  margin:0 16px;
+}
+@media (max-width:480px){
+  .grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));margin:0 12px}
+}
+.channel{
+  background:var(--surface);
+  padding:14px 10px 12px;
+  cursor:pointer;transition:all 0.12s;
+  text-align:center;position:relative;overflow:hidden;
+  font-family:inherit;color:inherit;-webkit-appearance:none;
+  border:none;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+}
+.channel:active{transform:scale(0.97)}
+.channel:hover{background:var(--surface-2)}
+.channel.active{
+  background:linear-gradient(180deg,rgba(212,175,55,0.18) 0%,rgba(212,175,55,0.06) 100%);
+  box-shadow:inset 0 0 0 2px var(--gold),inset 0 -2px 0 var(--gold-deep);
+  z-index:2;position:relative;
+}
+.channel.fifa::after{
+  content:'';position:absolute;top:0;right:0;width:0;height:0;
+  border-style:solid;border-width:0 16px 16px 0;
+  border-color:transparent var(--gold) transparent transparent;
+}
+.channel.fifa.active::after{
+  border-color:transparent var(--gold-bright) transparent transparent;
+}
+.channel-icon{
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  background:var(--surface-2);
+  border:1px solid var(--border-2);
+  border-radius:2px;
+  margin-bottom:2px;
+}
+.channel.fifa .channel-icon{
+  background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));
+  border-color:var(--gold-deep);color:var(--gold);
+}
+.channel-name{
+  font-size:11px;font-weight:700;color:var(--text);
+  line-height:1.2;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+  overflow:hidden;word-break:break-word;letter-spacing:0.01em;
+}
+.channel.active .channel-name{color:var(--gold-bright)}
+.channel-quality{
+  position:absolute;top:4px;left:4px;
+  font-size:8px;font-weight:900;letter-spacing:0.1em;
+  padding:2px 4px;
+  border-radius:1px;
+  text-transform:uppercase;
+}
+.q-fhd{background:var(--gold);color:#000}
+.q-hd{background:var(--green);color:#000}
+.q-sd{background:var(--text-4);color:var(--text-2)}
+.src-badge{
+  position:absolute;bottom:4px;right:4px;
+  font-size:8px;font-weight:800;color:var(--green);
+  letter-spacing:0.08em;text-transform:uppercase;
+  display:flex;align-items:center;gap:3px;
+}
+.src-badge::before{
+  content:'';width:4px;height:4px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 4px var(--green-glow);
+}
+
+/* ── BOTTOM NAV ─────────────────────────────────────────────── */
+.bottom-nav{
+  position:fixed;bottom:0;left:0;right:0;z-index:90;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  background:rgba(0,0,0,0.94);
+  backdrop-filter:blur(16px) saturate(140%);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  border-top:1px solid var(--gold-deep);
+  padding:8px 4px calc(8px + env(safe-area-inset-bottom));
+  gap:0;
+}
+.bottom-nav::before{
+  content:'';position:absolute;top:-1px;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0.5;
+}
+.nav-btn{
+  background:transparent;border:none;color:var(--text-3);
+  padding:6px 4px;border-radius:0;
+  font-size:10px;font-weight:800;letter-spacing:0.12em;
+  font-family:inherit;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  transition:color .2s;position:relative;text-transform:uppercase;
+}
+.nav-btn .nav-ico{
+  font-size:20px;line-height:1;
+  font-family:'JetBrains Mono',monospace;font-weight:900;
+  color:var(--text-3);
+}
+.nav-btn:hover{color:var(--text-2)}
+.nav-btn.active{color:var(--gold-bright)}
+.nav-btn.active .nav-ico{color:var(--gold);text-shadow:0 0 12px var(--gold-glow-strong)}
+.nav-btn.active::before{
+  content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);
+  width:30px;height:2px;background:var(--gold);
+  box-shadow:0 0 8px var(--gold-glow-strong);
+}
+
+/* ── PANELS (JADWAL & KLASEMEN) ─────────────────────────────── */
+.panel{display:none}
+.panel.active{display:block}
+.panel-head{
+  padding:18px 16px 12px;
+  background:
+    linear-gradient(180deg,var(--surface) 0%,transparent 100%);
+  border-bottom:1px solid var(--border);
+  position:relative;
+}
+.panel-head::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--gold) 0%,var(--gold-deep) 100%);
+}
+.panel-title{
+  font-size:18px;font-weight:900;color:var(--text);
+  letter-spacing:0.04em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.panel-title .sub{
+  font-size:10px;font-weight:700;color:var(--gold);
+  letter-spacing:0.18em;
+}
+.panel-sub{
+  font-size:11px;color:var(--text-3);
+  margin-top:6px;letter-spacing:0.06em;
+  text-transform:uppercase;font-weight:600;
+}
+
+/* Schedule list */
+.sched-list{padding:0 16px 24px}
+.sched-day{
+  font-size:11px;font-weight:900;color:var(--gold);
+  text-transform:uppercase;letter-spacing:0.18em;
+  padding:18px 0 8px;border-top:1px solid var(--border);
+  display:flex;align-items:center;gap:8px;
+}
+.sched-day::before{content:'';width:20px;height:1px;background:var(--gold)}
+.sched-day:first-child{border-top:none;padding-top:8px}
+.sched-item{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  padding:12px 14px;margin-bottom:6px;
+  cursor:pointer;transition:all 0.12s;
+  display:block;width:100%;text-align:left;
+  font-family:inherit;color:inherit;-webkit-appearance:none;
+  position:relative;
+}
+.sched-item:active{transform:scale(0.99)}
+.sched-item:hover{background:var(--surface-2);border-color:var(--border-2)}
+.sched-item.live{
+  border-left-color:var(--red);
+  background:linear-gradient(90deg,rgba(255,23,68,0.08) 0%,var(--surface) 30%);
+}
+.sched-item.done{opacity:0.5;border-left-color:var(--text-4)}
+.sched-time{
+  font-size:10px;color:var(--text-3);font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.sched-time .live-pill{
+  display:inline-flex;align-items:center;gap:4px;
+  background:var(--red);color:#fff;
+  padding:2px 6px;font-size:9px;font-weight:900;
+  letter-spacing:0.15em;border-radius:1px;
+}
+.sched-time .live-pill::before{
+  content:'';width:5px;height:5px;border-radius:50%;background:#fff;
+  animation:pulse 1.4s infinite;
+}
+.sched-match{
+  font-size:14px;font-weight:700;color:var(--text);
+  margin:6px 0 6px;line-height:1.3;letter-spacing:-0.01em;
+}
+.sched-meta{
+  font-size:10px;color:var(--text-2);
+  display:flex;gap:10px;flex-wrap:wrap;
+  letter-spacing:0.05em;text-transform:uppercase;font-weight:600;
+}
+.sched-meta .stage{color:var(--gold);font-weight:700}
+.sched-empty{
+  text-align:center;padding:40px 20px;
+  color:var(--text-3);font-size:12px;
+  letter-spacing:0.05em;text-transform:uppercase;font-weight:600;
+}
+
+/* Standings */
+.standings{padding:0 16px 24px}
+.group-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  margin-bottom:10px;overflow:hidden;
+  position:relative;
+}
+.group-head{
+  display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(90deg,var(--gold) 0%,var(--gold-deep) 100%);
+  color:#000;
+  padding:10px 14px;
+  font-weight:900;font-size:12px;letter-spacing:0.18em;
+  border-bottom:1px solid var(--gold-deep);
+}
+.group-head .group-flag{font-size:14px;margin-right:6px}
+.group-head .group-stage{
+  font-size:9px;font-weight:700;color:rgba(0,0,0,0.6);
+  letter-spacing:0.15em;
+}
+.standings-table{
+  width:100%;border-collapse:collapse;font-size:12px;
+}
+.standings-table th,.standings-table td{
+  padding:10px 6px;text-align:center;color:var(--text-2);
+  font-variant-numeric:tabular-nums;
+}
+.standings-table th{
+  font-size:9px;font-weight:800;color:var(--text-3);
+  text-transform:uppercase;letter-spacing:0.12em;
+  border-bottom:1px solid var(--border);
+  background:var(--surface-2);
+}
+.standings-table .team{
+  text-align:left;padding-left:12px;
+  font-weight:700;color:var(--text);font-size:12px;
+  display:flex;align-items:center;gap:6px;
+  letter-spacing:0.01em;
+}
+.standings-table .flag{font-size:14px}
+.standings-table tr.qualified td{
+  color:var(--text);background:rgba(0,214,143,0.06);
+  border-left:2px solid var(--green);
+}
+.standings-table tr.qualified .team{font-weight:800;color:var(--gold-bright)}
+.standings-table .pts{font-weight:900;color:var(--gold-bright);font-size:13px}
+.standings-foot{
+  text-align:center;padding:16px 12px 8px;
+  font-size:10px;color:var(--text-3);
+  letter-spacing:0.1em;text-transform:uppercase;font-weight:700;
+}
+
+/* ── FOOTER ─────────────────────────────────────────────────── */
+footer{
+  padding:24px 16px 16px;text-align:center;
+  color:var(--text-3);font-size:10px;
+  line-height:1.6;
+  border-top:1px solid var(--border);
+  background:var(--bg-2);
+}
+.footer-stats{
+  display:flex;justify-content:center;gap:0;
+  margin:8px 0;
+  border:1px solid var(--border-2);
+  border-radius:2px;overflow:hidden;
+}
+.footer-stats > div{
+  flex:1;padding:10px 6px;
+  border-right:1px solid var(--border-2);
+  letter-spacing:0.08em;text-transform:uppercase;
+  font-size:9px;font-weight:700;color:var(--text-3);
+}
+.footer-stats > div:last-child{border-right:none}
+.footer-stats span{
+  display:block;font-weight:900;color:var(--gold-bright);
+  font-size:14px;font-family:'JetBrains Mono',monospace;
+  letter-spacing:0;margin-bottom:4px;
+}
+footer a{color:var(--text-2)}
+.footer-brand{
+  color:var(--gold);font-weight:800;letter-spacing:0.12em;
+  text-transform:uppercase;
+}
+</style>
 </head>
 <body>
 
-<header>
-  <div class="header-row">
-    <div class="brand">
-      <span class="brand-icon">⚽</span>
-      <div>
-        <div class="brand-text">Piala Dunia Live</div>
-        <div class="brand-sub">FIFA World Cup Streaming</div>
-      </div>
+<!-- ═══ TOP STATUS STRIP (BREAKING) ═══ -->
+<div class="status-strip">
+  <div class="status-badge"><span class="pulse"></span>LIVE</div>
+  <div class="status-ticker">
+    <div class="status-ticker-track" id="statusTicker">
+      <span class="dot">●</span> STANDBY · Memuat jadwal pertandingan…
     </div>
-    <div class="live-badge">LIVE</div>
+  </div>
+</div>
+
+<!-- ═══ HEADER ═══ -->
+<header class="brand-bar">
+  <div class="brand">
+    <div class="brand-mark">PDL</div>
+    <div class="brand-text">
+      <div class="brand-name">Piala<span class="accent">Dunia</span>Live</div>
+      <div class="brand-tag">World Cup Streaming Hub</div>
+    </div>
+  </div>
+  <div class="brand-meta">
+    <div class="viewers">
+      <div class="viewers-count mono" id="viewerCount">—</div>
+      <div class="viewers-label">Watching</div>
+    </div>
+    <div class="live-dot"></div>
   </div>
 </header>
 
+<!-- ═══ PLAYER ═══ -->
 <div class="player-wrap" id="playerWrap">
   <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
   <video id="player" playsinline controls autoplay muted crossorigin="anonymous" preload="auto"></video>
   <div class="now-playing">
-    <div class="now-playing-name" id="nowPlaying">Pilih channel</div>
+    <div class="now-playing-name" id="nowPlaying">Pilih Channel</div>
     <div class="now-playing-quality" id="nowQuality"></div>
+  </div>
+  <div class="score-bug" id="scoreBug">
+    <div class="score-bug-time">
+      <span class="min" id="scoreMin">0'</span>
+      <span class="live">● LIVE</span>
+    </div>
+    <div class="score-bug-teams">
+      <div class="score-bug-team"><span class="name" id="scoreHome">—</span><span class="sc" id="scoreHomeVal">0</span></div>
+      <div class="score-bug-team"><span class="name" id="scoreAway">—</span><span class="sc" id="scoreAwayVal">0</span></div>
+    </div>
   </div>
   <div class="player-loading" id="loading">
     <div class="spinner"></div>
-    <div id="loadingMsg">Memuat...</div>
+    <div id="loadingMsg" style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700">Memuat…</div>
   </div>
   <div class="player-error" id="error">
-    <div class="player-error-icon">⚠️</div>
+    <div class="player-error-icon">⚠</div>
     <div class="player-error-msg" id="errorMsg">Stream gagal dimuat</div>
     <button class="retry-btn" id="retryBtn">Coba Lagi</button>
   </div>
 </div>
 
+<!-- ═══ TOOLBAR ═══ -->
 <div class="toolbar">
-  <input type="search" id="search" class="search-box" placeholder="🔍 Cari channel..." autocomplete="off">
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input type="search" id="search" class="search-box" placeholder="Cari channel…" autocomplete="off">
+  </div>
   <div class="filters" id="filters"></div>
 </div>
 
-<!-- Live Events (Sedang Tayang) -->
+<!-- ═══ LIVE EVENTS (SEDANG TAYANG) ═══ -->
 <section class="live-events-section" id="liveEventsSection">
   <div class="live-events-header">
     <div class="live-events-title">
       <span class="live-pulse"></span>
-      Sedang Tayang
+      SEDANG TAYANG
+      <span class="badge-live">●</span>
     </div>
     <div class="live-events-count" id="liveEventsCount"></div>
   </div>
   <div class="live-events-scroll" id="liveEventsScroll"></div>
 </section>
 
+<!-- ═══ MAIN CONTENT ═══ -->
 <main id="main">
   <div class="panel panel-home active" id="panelHome">
-    <div class="section-title">⚽ FIFA World Cup</div>
+    <div class="section-head">
+      <div class="section-title fifa">FIFA WORLD CUP<span class="count" id="fifaCount">0</span></div>
+      <div class="section-meta">PRIMARY</div>
+    </div>
     <div class="grid" id="fifaGrid"></div>
 
-    <div class="section-title">🏏 Sports / Cricket</div>
+    <div class="section-head">
+      <div class="section-title">SPORTS<span class="count" id="sportsCount">0</span></div>
+      <div class="section-meta">SPORTSBOOK</div>
+    </div>
     <div class="grid" id="sportsGrid"></div>
 
-    <div class="section-title">📺 Semua Channel</div>
+    <div class="section-head">
+      <div class="section-title">ALL CHANNELS<span class="count" id="allCount">0</span></div>
+      <div class="section-meta">FULL ROSTER</div>
+    </div>
     <div class="grid" id="allGrid"></div>
   </div>
 
   <div class="panel panel-schedule" id="panelSchedule">
-    <div class="panel-title">📅 Jadwal Lengkap</div>
-    <div class="panel-sub">Piala Dunia & event live lainnya (WIB)</div>
+    <div class="panel-head">
+      <div class="panel-title">📅 JADWAL <span class="sub">SCHEDULE</span></div>
+      <div class="panel-sub">Piala Dunia & event live lainnya (WIB)</div>
+    </div>
     <div class="sched-list" id="schedList">
-      <div class="sched-empty">Memuat jadwal...</div>
+      <div class="sched-empty">Memuat jadwal…</div>
     </div>
   </div>
 
   <div class="panel panel-standings" id="panelStandings">
-    <div class="panel-title">🏆 Klasemen</div>
-    <div class="panel-sub" id="standingsStage">Piala Dunia — Group Stage</div>
+    <div class="panel-head">
+      <div class="panel-title">🏆 KLASEMEN <span class="sub">STANDINGS</span></div>
+      <div class="panel-sub" id="standingsStage">Piala Dunia — Group Stage</div>
+    </div>
     <div class="standings" id="standingsList">
-      <div class="sched-empty">Memuat klasemen...</div>
+      <div class="sched-empty">Memuat klasemen…</div>
     </div>
   </div>
 </main>
 
+<!-- ═══ BOTTOM NAV ═══ -->
 <nav class="bottom-nav" role="navigation" aria-label="Navigasi utama">
   <button class="nav-btn active" data-tab="home" type="button">
-    <span class="nav-ico">🏠</span>
+    <span class="nav-ico">◉</span>
     <span>Beranda</span>
   </button>
   <button class="nav-btn" data-tab="schedule" type="button">
-    <span class="nav-ico">📅</span>
+    <span class="nav-ico">▦</span>
     <span>Jadwal</span>
   </button>
   <button class="nav-btn" data-tab="standings" type="button">
-    <span class="nav-ico">🏆</span>
+    <span class="nav-ico">◆</span>
     <span>Klasemen</span>
   </button>
 </nav>
 
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-stats">
-    <div><span id="totalCount">0</span> Stream</div>
-    <div><span id="fhdCount">0</span> FHD</div>
-    <div><span id="hdCount">0</span> HD</div>
-    <div><span id="sourceCount">0</span> Source</div>
+    <div><span id="totalCount">0</span>Stream</div>
+    <div><span id="fhdCount">0</span>FHD</div>
+    <div><span id="hdCount">0</span>HD</div>
+    <div><span id="sourceCount">0</span>Source</div>
   </div>
-  <div>Source: best-effort redundant playlist</div>
-  <div style="margin-top:4px;">Shaka + HLS.js · Auto fallback source</div>
+  <div><span class="footer-brand">PDL</span> · Best-effort redundant playlist</div>
+  <div style="margin-top:4px;opacity:0.6">Shaka + HLS.js · Auto-fallback source</div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13"></script>
-<!-- Shaka Player: plays MPEG-DASH (.mpd) + HLS (.m3u8). Falls back to HLS.js for legacy. -->
 <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.11.6/dist/shaka-player.compiled.min.js"></script>
 
 <script>
-  // === Best-effort channel data: fetched from redundant M3U ===
+  // === Best-effort channel data ===
   let channels = [];
   const M3U_URL = './piala_dunia.m3u';
 
@@ -843,8 +960,6 @@
     return cleanName(name).replace(/\s+/g, ' ').trim();
   }
 
-  // Best-effort parser: duplicate channel names are merged as backup URLs.
-  // Example: best_effort M3U may contain TVRI Nasional 3x with same/different URLs.
   function parseM3U(text) {
     const lines = text.split(/\r?\n/);
     const byName = new Map();
@@ -859,8 +974,7 @@
         const group = groupMatch ? groupMatch[1] : '';
         cur = {
           name: normalizeName(rawName),
-          urls: [],
-          url: '',
+          urls: [], url: '',
           category: categoryFromGroup(group),
           quality: qualityFromName(rawName),
           group: group
@@ -876,8 +990,7 @@
           if (cur.category === 'fifa') existing.category = 'fifa';
           else if (cur.category === 'sports' && existing.category !== 'fifa') existing.category = 'sports';
         } else {
-          cur.url = url;
-          cur.urls = [url];
+          cur.url = url; cur.urls = [url];
           byName.set(key, cur);
         }
         cur = null;
@@ -886,14 +999,12 @@
     return Array.from(byName.values()).map(ch => ({ ...ch, url: ch.urls[0] }));
   }
 
-  function qualityRank(q) {
-    return q === 'fhd' ? 3 : q === 'hd' ? 2 : 1;
-  }
+  function qualityRank(q) { return q === 'fhd' ? 3 : q === 'hd' ? 2 : 1; }
 
   function showLoading() {
-    ['fifaGrid', 'sportsGrid', 'allGrid'].forEach(id => {
+    ['fifaGrid','sportsGrid','allGrid'].forEach(id => {
       const el = document.getElementById(id);
-      if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:13px;">⏳ Memuat playlist best-effort…</div>';
+      if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-3);font-size:11px;letter-spacing:0.1em;font-weight:700">⏳ MEMUAT PLAYLIST…</div>';
     });
   }
 
@@ -905,15 +1016,15 @@
       const text = await res.text();
       channels = parseM3U(text);
       const sourceCount = channels.reduce((sum, ch) => sum + (ch.urls ? ch.urls.length : 1), 0);
-      console.log(`[piala-dunia-live] Loaded ${channels.length} channels / ${sourceCount} sources (best-effort)`);
+      console.log(`[piala-dunia-live] Loaded ${channels.length} channels / ${sourceCount} sources`);
       renderStats();
       renderFilters();
       renderChannels();
     } catch (err) {
       console.error('[piala-dunia-live] M3U load failed:', err);
-      ['fifaGrid', 'sportsGrid', 'allGrid'].forEach(id => {
+      ['fifaGrid','sportsGrid','allGrid'].forEach(id => {
         const el = document.getElementById(id);
-        if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--danger);font-size:13px;">⚠️ Gagal memuat playlist. Coba refresh halaman.</div>';
+        if (el) el.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--red);font-size:11px;letter-spacing:0.1em;font-weight:700">⚠ GAGAL MEMUAT PLAYLIST</div>';
       });
     }
   }
@@ -924,16 +1035,29 @@
     document.getElementById('hdCount').textContent = channels.filter(c => c.quality === 'hd').length;
     const srcEl = document.getElementById('sourceCount');
     if (srcEl) srcEl.textContent = channels.reduce((sum, ch) => sum + (ch.urls ? ch.urls.length : 1), 0);
+    // Update section counts
+    const fc = document.getElementById('fifaCount'); if (fc) fc.textContent = channels.filter(c => c.category === 'fifa').length;
+    const sc = document.getElementById('sportsCount'); if (sc) sc.textContent = channels.filter(c => c.category === 'sports').length;
+    const ac = document.getElementById('allCount'); if (ac) ac.textContent = channels.length;
+    // Pseudo viewer count (random oscillation for vibe)
+    const baseViewers = 12000 + (channels.length * 47);
+    let v = baseViewers;
+    setInterval(() => {
+      v = baseViewers + Math.floor(Math.random() * 800 - 400);
+      const el = document.getElementById('viewerCount');
+      if (el) el.textContent = v.toLocaleString('id-ID');
+    }, 4000);
+    document.getElementById('viewerCount').textContent = baseViewers.toLocaleString('id-ID');
   }
 
   const filtersEl = document.getElementById('filters');
   const filterDefs = [
-    { id: 'all', label: 'Semua', icon: '🎬' },
-    { id: 'fifa', label: 'FIFA WC', icon: '⚽' },
-    { id: 'sports', label: 'Sports', icon: '🏏' },
-    { id: 'fhd', label: 'FHD 1080p', icon: '🟣' },
-    { id: 'hd', label: 'HD 720p', icon: '🟢' },
-    { id: 'sd', label: 'SD 480p', icon: '⚪' },
+    { id: 'all', label: 'Semua' },
+    { id: 'fifa', label: 'FIFA WC' },
+    { id: 'sports', label: 'Sports' },
+    { id: 'fhd', label: 'FHD 1080' },
+    { id: 'hd', label: 'HD 720' },
+    { id: 'sd', label: 'SD 480' },
   ];
   let activeFilter = 'all';
 
@@ -942,7 +1066,7 @@
     filterDefs.forEach(f => {
       const btn = document.createElement('button');
       btn.className = 'chip' + (activeFilter === f.id ? ' active' : '');
-      btn.innerHTML = `${f.icon} ${f.label}<span class="chip-count">${countByFilter(f.id)}</span>`;
+      btn.innerHTML = `${f.label}<span class="chip-count">${countByFilter(f.id)}</span>`;
       btn.onclick = () => { activeFilter = f.id; renderFilters(); renderChannels(); };
       filtersEl.appendChild(btn);
     });
@@ -950,8 +1074,8 @@
 
   function countByFilter(id) {
     if (id === 'all') return channels.length;
-    if (['fifa', 'sports', 'other'].includes(id)) return channels.filter(c => c.category === id).length;
-    if (['fhd', 'hd', 'sd'].includes(id)) return channels.filter(c => c.quality === id).length;
+    if (['fifa','sports','other'].includes(id)) return channels.filter(c => c.category === id).length;
+    if (['fhd','hd','sd'].includes(id)) return channels.filter(c => c.quality === id).length;
     return 0;
   }
 
@@ -962,16 +1086,13 @@
     card.dataset.url = ch.url;
     card.dataset.quality = ch.quality;
     card.dataset.category = ch.category;
-    const icon = ch.category === 'fifa' ? '⚽' : (ch.category === 'sports' ? '🏏' : '📺');
+    const icon = ch.category === 'fifa' ? '⚽' : (ch.category === 'sports' ? '🏏' : '▦');
     const qLabel = ch.quality === 'fhd' ? '<div class="channel-quality q-fhd">FHD</div>' :
                    ch.quality === 'hd' ? '<div class="channel-quality q-hd">HD</div>' :
                    '<div class="channel-quality q-sd">SD</div>';
-    const srcBadge = (ch.urls && ch.urls.length > 1) ? `<div style="position:absolute;left:6px;bottom:5px;font-size:9px;color:var(--success);font-weight:800;">${ch.urls.length} SRC</div>` : '';
-    card.innerHTML = `${qLabel}${srcBadge}<span class="channel-icon">${icon}</span><div class="channel-name">${ch.name}</div>`;
-    card.onclick = () => {
-      captureUserGesture();
-      playChannel(ch);
-    };
+    const srcBadge = (ch.urls && ch.urls.length > 1) ? `<div class="src-badge">${ch.urls.length} SRC</div>` : '';
+    card.innerHTML = `${qLabel}${srcBadge}<div class="channel-icon">${icon}</div><div class="channel-name">${ch.name}</div>`;
+    card.onclick = () => { captureUserGesture(); playChannel(ch); };
     return card;
   }
 
@@ -980,8 +1101,8 @@
     const filterFn = (ch) => {
       if (search && !ch.name.toLowerCase().includes(search)) return false;
       if (activeFilter === 'all') return true;
-      if (['fifa', 'sports', 'other'].includes(activeFilter)) return ch.category === activeFilter;
-      if (['fhd', 'hd', 'sd'].includes(activeFilter)) return ch.quality === activeFilter;
+      if (['fifa','sports','other'].includes(activeFilter)) return ch.category === activeFilter;
+      if (['fhd','hd','sd'].includes(activeFilter)) return ch.quality === activeFilter;
       return true;
     };
     const fifa = channels.filter(ch => ch.category === 'fifa' && filterFn(ch));
@@ -993,9 +1114,9 @@
     fifa.forEach(ch => document.getElementById('fifaGrid').appendChild(makeCard(ch)));
     sports.forEach(ch => document.getElementById('sportsGrid').appendChild(makeCard(ch)));
     others.forEach(ch => document.getElementById('allGrid').appendChild(makeCard(ch)));
-    document.querySelectorAll('.section-title').forEach((el) => {
+    document.querySelectorAll('.section-head').forEach((el) => {
       const grid = el.nextElementSibling;
-      el.style.display = grid.children.length === 0 ? 'none' : 'flex';
+      el.style.display = grid && grid.children.length === 0 ? 'none' : 'flex';
     });
     if (currentChannel) {
       document.querySelectorAll('.channel').forEach(c => {
@@ -1019,12 +1140,6 @@
   let playToken = 0;
   let activeVideoListeners = [];
 
-  // Capture user gesture for autoplay policy. Must be called SYNCHRONOUSLY
-  // from a click/tap/pointerdown handler — Chrome tracks the gesture chain
-  // microtask-by-microtask, so any await before play() breaks the chain and
-  // the call is rejected with NotAllowedError. We swallow errors because the
-  // actual source may not be loaded yet; the real play() call inside
-  // playChannel() will pick up the gesture marker for the same element.
   function captureUserGesture() {
     try {
       video.muted = true;
@@ -1067,15 +1182,9 @@
 
   async function playChannel(ch, sourceIndex = 0) {
     if (!ch) return;
-    // Capture user gesture synchronously when invoked from a click handler.
-    // Idempotent: no-op if no source loaded yet (the real play() inside the
-    // shaka/hls branches will pick up the gesture marker for this element).
     captureUserGesture();
     const sources = sourceList(ch).filter(Boolean);
-    if (!sources.length) {
-      console.warn('[playChannel] no sources for', ch && ch.name);
-      return;
-    }
+    if (!sources.length) { console.warn('[playChannel] no sources for', ch && ch.name); return; }
     const token = ++playToken;
     currentChannel = ch;
     currentSourceIndex = Math.max(0, Math.min(sourceIndex, sources.length - 1));
@@ -1097,7 +1206,7 @@
     let failoverTimer = null;
     const startFailoverTimer = (reason) => {
       if (failoverTimer) return;
-      console.warn(`[playChannel] failover pending: ${reason} (source ${currentSourceIndex + 1}/${sources.length})`);
+      console.warn(`[playChannel] failover pending: ${reason}`);
       failoverTimer = setTimeout(() => {
         if (token !== playToken) return;
         if (currentSourceIndex + 1 < sources.length) {
@@ -1114,12 +1223,11 @@
     const cancelFailoverTimer = () => { if (failoverTimer) { clearTimeout(failoverTimer); failoverTimer = null; } };
 
     const startTimeout = setTimeout(() => {
-      console.error(`[playChannel] STARTUP TIMEOUT (25s) on source ${currentSourceIndex + 1}:`, url);
+      console.error(`[playChannel] STARTUP TIMEOUT (25s)`);
       startFailoverTimer('startup timeout 25s');
     }, 25000);
     const clearStartTimeout = () => { clearTimeout(startTimeout); cancelFailoverTimer(); };
 
-    // Track STALLED/ERROR on the <video> element itself (catches both Shaka + Hls.js silently)
     const onVideoError = () => {
       if (token !== playToken) return;
       const err = video.error;
@@ -1141,15 +1249,12 @@
         console.log('[playChannel] trying Shaka Player…');
         const player = await ensureShaka();
         await player.attach(video);
-        // re-assert: shaka.attach() resets media element. Warm play keeps
-        // the user-gesture chain alive across the long async load() below.
         video.muted = true;
         const warmupP = video.play();
         if (warmupP && warmupP.catch) warmupP.catch(() => {});
         player.addEventListener('error', (e) => {
           const d = e.detail || {};
           console.error('[Shaka] stream error:', d.code, d.message, d.severity);
-          // Severity 2 = CRITICAL, that's fatal
           if (d.severity === 2) startFailoverTimer('shaka critical ' + d.code);
         }, { once: false });
         await player.load(url);
@@ -1157,12 +1262,11 @@
         clearStartTimeout();
         console.log('[Shaka] playing:', url);
         loadingEl.classList.add('hidden');
-        // muted is set by click handler to capture user gesture; re-assert defensively
         try { video.muted = true; } catch (_) {}
         try { await video.play(); } catch (e) { console.warn('[playChannel] autoplay blocked:', e && e.message); }
         return;
       } catch (err) {
-        console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message, err && err.code);
+        console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message);
         try { if (shakaPlayer) await shakaPlayer.detach(); } catch (e) {}
       }
     }
@@ -1170,16 +1274,10 @@
     if (Hls.isSupported()) {
       console.log('[playChannel] using Hls.js for:', url);
       hls = new Hls({
-        enableWorker: true,
-        lowLatencyMode: false,
-        manifestLoadingTimeOut: 20000,
-        manifestLoadingMaxRetry: 3,
-        manifestLoadingRetryDelay: 1000,
-        fragLoadingTimeOut: 25000,
-        fragLoadingMaxRetry: 5,
-        fragLoadingRetryDelay: 1000,
-        levelLoadingTimeOut: 20000,
-        levelLoadingMaxRetry: 3,
+        enableWorker: true, lowLatencyMode: false,
+        manifestLoadingTimeOut: 20000, manifestLoadingMaxRetry: 3, manifestLoadingRetryDelay: 1000,
+        fragLoadingTimeOut: 25000, fragLoadingMaxRetry: 5, fragLoadingRetryDelay: 1000,
+        levelLoadingTimeOut: 20000, levelLoadingMaxRetry: 3,
         xhrSetup: (xhr) => { xhr.withCredentials = false; }
       });
       hls.loadSource(url);
@@ -1193,14 +1291,13 @@
         loadingEl.classList.add('hidden');
       });
       hls.on(Hls.Events.LEVEL_SWITCHED, (e, data) => {
-        console.log(`[Hls.js] level switched to ${data.level} (${data.level && data.level.width}x${data.level && data.level.height})`);
+        console.log(`[Hls.js] level switched to ${data.level}`);
       });
       hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn(`[Hls.js] ${data.fatal ? 'FATAL' : 'warn'}: type=${data.type} detail=${data.details} err=${data.error && data.error.message || ''}`);
+        console.warn(`[Hls.js] ${data.fatal ? 'FATAL' : 'warn'}: type=${data.type} detail=${data.details}`);
         if (!data.fatal) return;
         if (token !== playToken) return;
         if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
-          console.log('[Hls.js] attempting media error recovery…');
           try { hls.recoverMediaError(); return; } catch (e) { console.warn('[Hls.js] recovery failed:', e); }
         }
         clearStartTimeout();
@@ -1212,8 +1309,7 @@
       video.addEventListener('loadedmetadata', () => {
         if (token !== playToken) return;
         clearStartTimeout();
-        video.muted = true;
-        video.play();
+        video.muted = true; video.play();
         loadingEl.classList.add('hidden');
       }, { once: true });
       video.addEventListener('error', () => { clearStartTimeout(); startFailoverTimer('native video error'); }, { once: true });
@@ -1254,16 +1350,17 @@
     currentChannel = null;
     currentSourceIndex = 0;
     setMini(false);
-    nowPlaying.textContent = 'Pilih channel';
+    nowPlaying.textContent = 'Pilih Channel';
     nowQuality.textContent = '';
     loadingEl.classList.add('hidden');
     errorEl.classList.remove('show');
+    document.getElementById('scoreBug').classList.remove('show');
     document.querySelectorAll('.channel.active').forEach(c => c.classList.remove('active'));
   };
 
   document.getElementById('search').addEventListener('input', renderChannels);
 
-  // === Live Events (Sedang Tayang) ===
+  // === Live Events ===
   const LIVE_EVENTS_URL = './live_events.json';
   const liveSection = document.getElementById('liveEventsSection');
   const liveScroll = document.getElementById('liveEventsScroll');
@@ -1325,6 +1422,9 @@
       liveSection.classList.remove('show');
       liveScroll.innerHTML = '';
       liveCount.textContent = '';
+      // Hide score bug if no active events
+      const sb = document.getElementById('scoreBug');
+      if (sb) sb.classList.remove('show');
       return;
     }
     active.sort((a, b) => new Date(a.start) - new Date(b.start));
@@ -1352,6 +1452,27 @@
     });
     liveSection.classList.add('show');
     liveCount.textContent = `${active.length} event`;
+
+    // Update score bug with first active event
+    const sb = document.getElementById('scoreBug');
+    if (sb && active.length > 0) {
+      const ev = active[0];
+      const title = ev.title || '';
+      // Try to split title like "Team A vs Team B"
+      const m = title.split(/\s+vs\.?\s+|\s+VS\.?\s+|\s+v\s+/i);
+      if (m.length >= 2) {
+        document.getElementById('scoreHome').textContent = m[0].trim().substring(0,20);
+        document.getElementById('scoreAway').textContent = m[1].trim().substring(0,20);
+      } else {
+        document.getElementById('scoreHome').textContent = title.substring(0,20);
+        document.getElementById('scoreAway').textContent = '';
+      }
+      // Compute minute from start time
+      const startMs = new Date(ev.start).getTime();
+      const min = Math.max(1, Math.floor((Date.now() - startMs) / 60000));
+      document.getElementById('scoreMin').textContent = min + "'";
+      sb.classList.add('show');
+    }
   }
 
   async function loadLiveEvents() {
@@ -1360,9 +1481,40 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       liveEventsData = await res.json();
       renderLiveEvents();
+      renderStatusTicker();
     } catch (err) {
       console.warn('[live-events] load failed:', err);
     }
+  }
+
+  // Top status ticker — show upcoming + live events
+  function renderStatusTicker() {
+    const ticker = document.getElementById('statusTicker');
+    if (!ticker) return;
+    const events = getEventsArray(liveEventsData);
+    if (events.length === 0) {
+      ticker.innerHTML = '<span class="dot">●</span> STANDBY · Memuat jadwal pertandingan…';
+      return;
+    }
+    const now = Date.now();
+    const upcoming = events
+      .filter(e => new Date(e.start).getTime() > now)
+      .slice(0, 8)
+      .sort((a, b) => new Date(a.start) - new Date(b.start));
+    const live = events.filter(isEventActive);
+    let html = '';
+    live.forEach(ev => {
+      const t = formatTimeRange(ev);
+      html += `<span class="dot">● LIVE</span><span>${ev.title || ''}</span><span class="v-mid">${t} WIB</span>`;
+    });
+    upcoming.forEach(ev => {
+      const d = new Date(ev.start);
+      const t = d.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Jakarta' });
+      html += `<span class="dot">◆</span><span>${ev.title || ''}</span><span class="v-mid">${t} WIB</span>`;
+    });
+    if (!html) html = '<span class="dot">●</span> STANDBY · Tidak ada event terjadwal';
+    // Duplicate for seamless marquee loop
+    ticker.innerHTML = html + '<span style="margin:0 32px"></span>' + html;
   }
 
   setInterval(() => {
@@ -1376,8 +1528,12 @@
     document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel' + tab.charAt(0).toUpperCase() + tab.slice(1)));
     const playerWrap = document.getElementById('playerWrap');
     if (playerWrap) {
-      if (tab === 'home') playerWrap.classList.remove('hidden-from-nav');
-      else { playerWrap.classList.add('hidden-from-nav'); playerWrap.classList.remove('mini'); }
+      if (tab === 'home') {
+        playerWrap.classList.remove('hidden-from-nav');
+      } else {
+        playerWrap.classList.add('hidden-from-nav');
+        playerWrap.classList.remove('mini');
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     if (tab === 'schedule') loadSchedule();
@@ -1399,7 +1555,7 @@
       scheduleData = getEventsArray(data);
       renderSchedule();
     } catch (err) {
-      container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat jadwal<br><small>' + err.message + '</small></div>';
+      container.innerHTML = '<div class="sched-empty">⚠ Gagal memuat jadwal<br><small style="opacity:0.6;letter-spacing:0">' + err.message + '</small></div>';
     }
   }
 
@@ -1428,7 +1584,7 @@
         const isLive = now >= start && now < end;
         const isDone = now >= end;
         const statusCls = isLive ? 'live' : (isDone ? 'done' : '');
-        const livePill = isLive ? '<span class="live-pill">● LIVE</span>' : '';
+        const livePill = isLive ? '<span class="live-pill">LIVE</span>' : '';
         html += `
           <button class="sched-item ${statusCls}" type="button" data-id="${ev.id || ''}">
             <div class="sched-time">${formatTimeRange(ev)} WIB ${livePill}</div>
@@ -1466,7 +1622,7 @@
       standingsData = await res.json();
       renderStandings();
     } catch (err) {
-      container.innerHTML = '<div class="sched-empty">⚠️ Gagal memuat klasemen<br><small>' + err.message + '</small></div>';
+      container.innerHTML = '<div class="sched-empty">⚠ Gagal memuat klasemen<br><small style="opacity:0.6;letter-spacing:0">' + err.message + '</small></div>';
     }
   }
 
@@ -1483,7 +1639,7 @@
     let html = '';
     groups.forEach(g => {
       const teams = (g.teams || []).slice().sort((a, b) => (a.rank || 99) - (b.rank || 99));
-      html += `<div class="group-card"><div class="group-head">GROUP ${g.name}</div><table class="standings-table"><thead><tr><th>#</th><th class="team">Tim</th><th>M</th><th>W</th><th>D</th><th>L</th><th>SG</th><th>Pts</th></tr></thead><tbody>${teams.map(t => `<tr class="${t.rank <= 2 ? 'qualified' : ''}"><td>${t.rank}</td><td class="team"><span class="flag">${t.flag || '🏳️'}</span>${t.country}</td><td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td><td>${t.gd > 0 ? '+' + t.gd : t.gd}</td><td class="pts">${t.pts}</td></tr>`).join('')}</tbody></table></div>`;
+      html += `<div class="group-card"><div class="group-head"><span><span class="group-flag">◆</span>GROUP ${g.name}</span><span class="group-stage">${g.teams.length} TEAMS</span></div><table class="standings-table"><thead><tr><th>#</th><th class="team">TIM</th><th>M</th><th>W</th><th>D</th><th>L</th><th>SG</th><th>PTS</th></tr></thead><tbody>${teams.map(t => `<tr class="${t.rank <= 2 ? 'qualified' : ''}"><td>${t.rank}</td><td class="team"><span class="flag">${t.flag || '🏳️'}</span>${t.country}</td><td>${t.p}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td><td>${t.gd > 0 ? '+' + t.gd : t.gd}</td><td class="pts">${t.pts}</td></tr>`).join('')}</tbody></table></div>`;
     });
     if (standingsData.last_updated) {
       const dt = new Date(standingsData.last_updated);
