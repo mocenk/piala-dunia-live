@@ -723,7 +723,7 @@
 
 <div class="player-wrap" id="playerWrap">
   <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
-  <video id="player" playsinline controls></video>
+  <video id="player" playsinline controls autoplay muted crossorigin="anonymous" preload="auto"></video>
   <div class="now-playing">
     <div class="now-playing-name" id="nowPlaying">Pilih channel</div>
     <div class="now-playing-quality" id="nowQuality"></div>
@@ -968,7 +968,10 @@
                    '<div class="channel-quality q-sd">SD</div>';
     const srcBadge = (ch.urls && ch.urls.length > 1) ? `<div style="position:absolute;left:6px;bottom:5px;font-size:9px;color:var(--success);font-weight:800;">${ch.urls.length} SRC</div>` : '';
     card.innerHTML = `${qLabel}${srcBadge}<span class="channel-icon">${icon}</span><div class="channel-name">${ch.name}</div>`;
-    card.onclick = () => playChannel(ch);
+    card.onclick = () => {
+      captureUserGesture();
+      playChannel(ch);
+    };
     return card;
   }
 
@@ -1014,6 +1017,21 @@
   let hls = null;
   let shakaPlayer = null;
   let playToken = 0;
+  let activeVideoListeners = [];
+
+  // Capture user gesture for autoplay policy. Must be called SYNCHRONOUSLY
+  // from a click/tap/pointerdown handler — Chrome tracks the gesture chain
+  // microtask-by-microtask, so any await before play() breaks the chain and
+  // the call is rejected with NotAllowedError. We swallow errors because the
+  // actual source may not be loaded yet; the real play() call inside
+  // playChannel() will pick up the gesture marker for the same element.
+  function captureUserGesture() {
+    try {
+      video.muted = true;
+      const p = video.play();
+      if (p && typeof p.catch === 'function') p.catch(() => {});
+    } catch (_) {}
+  }
 
   if (window.shaka && shaka.polyfill) shaka.polyfill.installAll();
 
@@ -1035,15 +1053,29 @@
   }
 
   async function cleanupPlayers() {
+    if (activeVideoListeners && activeVideoListeners.length) {
+      activeVideoListeners.forEach(fn => {
+        video.removeEventListener('error', fn);
+        video.removeEventListener('stalled', fn);
+      });
+      activeVideoListeners = [];
+    }
     if (hls) { try { hls.destroy(); } catch(e) {} hls = null; }
-    if (shakaPlayer) { try { await shakaPlayer.detach(); } catch (e) {} }
+    if (shakaPlayer) { try { await shakaPlayer.detach(); shakaPlayer.destroy(); } catch (e) {} shakaPlayer = null; }
     try { video.pause(); video.removeAttribute('src'); video.load(); } catch(e) {}
   }
 
   async function playChannel(ch, sourceIndex = 0) {
     if (!ch) return;
+    // Capture user gesture synchronously when invoked from a click handler.
+    // Idempotent: no-op if no source loaded yet (the real play() inside the
+    // shaka/hls branches will pick up the gesture marker for this element).
+    captureUserGesture();
     const sources = sourceList(ch).filter(Boolean);
-    if (!sources.length) return;
+    if (!sources.length) {
+      console.warn('[playChannel] no sources for', ch && ch.name);
+      return;
+    }
     const token = ++playToken;
     currentChannel = ch;
     currentSourceIndex = Math.max(0, Math.min(sourceIndex, sources.length - 1));
@@ -1054,6 +1086,7 @@
     loadingEl.classList.remove('hidden');
     errorEl.classList.remove('show');
     loadingMsg.textContent = 'Memuat ' + ch.name + (sources.length > 1 ? ` — source ${currentSourceIndex + 1}/${sources.length}` : '') + '...';
+    console.log(`[playChannel] ${ch.name} → source ${currentSourceIndex + 1}/${sources.length}:`, url);
 
     document.querySelectorAll('.channel').forEach(c => {
       c.classList.toggle('active', c.dataset.name === ch.name);
@@ -1061,77 +1094,140 @@
 
     await cleanupPlayers();
 
-    const failover = (reason) => {
-      if (token !== playToken) return;
-      console.warn('[best-effort] source failed:', reason, url);
-      if (currentSourceIndex + 1 < sources.length) {
-        loadingMsg.textContent = 'Source gagal, coba backup ' + (currentSourceIndex + 2) + '/' + sources.length + '...';
-        setTimeout(() => playChannel(ch, currentSourceIndex + 1), 250);
-      } else {
-        loadingEl.classList.add('hidden');
-        errorMsg.textContent = sources.length > 1 ? 'Semua source gagal — coba channel lain' : 'Stream error — coba channel lain';
-        errorEl.classList.add('show');
-      }
+    let failoverTimer = null;
+    const startFailoverTimer = (reason) => {
+      if (failoverTimer) return;
+      console.warn(`[playChannel] failover pending: ${reason} (source ${currentSourceIndex + 1}/${sources.length})`);
+      failoverTimer = setTimeout(() => {
+        if (token !== playToken) return;
+        if (currentSourceIndex + 1 < sources.length) {
+          console.log(`[playChannel] auto-failover to source ${currentSourceIndex + 2}/${sources.length}`);
+          playChannel(ch, currentSourceIndex + 1);
+        } else {
+          console.error('[playChannel] all sources exhausted for', ch.name);
+          loadingEl.classList.add('hidden');
+          errorMsg.textContent = 'Semua ' + sources.length + ' source gagal — coba channel lain atau tunggu 30 detik';
+          errorEl.classList.add('show');
+        }
+      }, 6000);
     };
+    const cancelFailoverTimer = () => { if (failoverTimer) { clearTimeout(failoverTimer); failoverTimer = null; } };
 
-    const startTimeout = setTimeout(() => failover('startup timeout'), 12000);
-    const clearStartTimeout = () => clearTimeout(startTimeout);
+    const startTimeout = setTimeout(() => {
+      console.error(`[playChannel] STARTUP TIMEOUT (25s) on source ${currentSourceIndex + 1}:`, url);
+      startFailoverTimer('startup timeout 25s');
+    }, 25000);
+    const clearStartTimeout = () => { clearTimeout(startTimeout); cancelFailoverTimer(); };
+
+    // Track STALLED/ERROR on the <video> element itself (catches both Shaka + Hls.js silently)
+    const onVideoError = () => {
+      if (token !== playToken) return;
+      const err = video.error;
+      console.error('[playChannel] <video> error:', err && err.code, err && err.message);
+      startFailoverTimer('video element error ' + (err && err.code));
+    };
+    const onVideoStalled = () => {
+      if (token !== playToken) return;
+      console.warn('[playChannel] <video> stalled (no data)');
+      startFailoverTimer('video stalled');
+    };
+    video.addEventListener('error', onVideoError);
+    video.addEventListener('stalled', onVideoStalled);
+    activeVideoListeners.push(onVideoError, onVideoStalled);
 
     const tryShaka = window.shaka && shaka.Player && shaka.Player.isBrowserSupported();
     if (tryShaka) {
       try {
+        console.log('[playChannel] trying Shaka Player…');
         const player = await ensureShaka();
         await player.attach(video);
+        // re-assert: shaka.attach() resets media element. Warm play keeps
+        // the user-gesture chain alive across the long async load() below.
+        video.muted = true;
+        const warmupP = video.play();
+        if (warmupP && warmupP.catch) warmupP.catch(() => {});
+        player.addEventListener('error', (e) => {
+          const d = e.detail || {};
+          console.error('[Shaka] stream error:', d.code, d.message, d.severity);
+          // Severity 2 = CRITICAL, that's fatal
+          if (d.severity === 2) startFailoverTimer('shaka critical ' + d.code);
+        }, { once: false });
         await player.load(url);
         if (token !== playToken) return;
         clearStartTimeout();
         console.log('[Shaka] playing:', url);
-        video.play().catch(e => console.log('Autoplay blocked:', e));
         loadingEl.classList.add('hidden');
+        // muted is set by click handler to capture user gesture; re-assert defensively
+        try { video.muted = true; } catch (_) {}
+        try { await video.play(); } catch (e) { console.warn('[playChannel] autoplay blocked:', e && e.message); }
         return;
       } catch (err) {
-        console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message);
+        console.warn('[Shaka] failed, falling back to HLS.js:', err && err.message, err && err.code);
         try { if (shakaPlayer) await shakaPlayer.detach(); } catch (e) {}
       }
     }
 
     if (Hls.isSupported()) {
-      hls = new Hls({ enableWorker: true, lowLatencyMode: false, manifestLoadingTimeOut: 10000, fragLoadingTimeOut: 12000 });
+      console.log('[playChannel] using Hls.js for:', url);
+      hls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: false,
+        manifestLoadingTimeOut: 20000,
+        manifestLoadingMaxRetry: 3,
+        manifestLoadingRetryDelay: 1000,
+        fragLoadingTimeOut: 25000,
+        fragLoadingMaxRetry: 5,
+        fragLoadingRetryDelay: 1000,
+        levelLoadingTimeOut: 20000,
+        levelLoadingMaxRetry: 3,
+        xhrSetup: (xhr) => { xhr.withCredentials = false; }
+      });
       hls.loadSource(url);
       hls.attachMedia(video);
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         if (token !== playToken) return;
+        console.log(`[Hls.js] manifest parsed: ${hls.levels.length} levels`);
         clearStartTimeout();
-        video.play().catch(e => console.log('Autoplay blocked:', e));
+        try { video.muted = true; } catch (_) {}
+        try { video.play().catch(e => console.warn('[Hls.js] autoplay blocked:', e && e.message)); } catch (e) {}
         loadingEl.classList.add('hidden');
       });
+      hls.on(Hls.Events.LEVEL_SWITCHED, (e, data) => {
+        console.log(`[Hls.js] level switched to ${data.level} (${data.level && data.level.width}x${data.level && data.level.height})`);
+      });
       hls.on(Hls.Events.ERROR, (event, data) => {
-        if (!data.fatal || token !== playToken) return;
-        if (data.type === Hls.ErrorTypes.MEDIA_ERROR && hls) {
-          try { hls.recoverMediaError(); return; } catch (e) {}
+        console.warn(`[Hls.js] ${data.fatal ? 'FATAL' : 'warn'}: type=${data.type} detail=${data.details} err=${data.error && data.error.message || ''}`);
+        if (!data.fatal) return;
+        if (token !== playToken) return;
+        if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+          console.log('[Hls.js] attempting media error recovery…');
+          try { hls.recoverMediaError(); return; } catch (e) { console.warn('[Hls.js] recovery failed:', e); }
         }
         clearStartTimeout();
-        failover(data.type || 'hls fatal');
+        startFailoverTimer('hls fatal ' + data.type + '/' + data.details);
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      console.log('[playChannel] using native HLS (Safari) for:', url);
       video.src = url;
       video.addEventListener('loadedmetadata', () => {
         if (token !== playToken) return;
         clearStartTimeout();
+        video.muted = true;
         video.play();
         loadingEl.classList.add('hidden');
       }, { once: true });
-      video.addEventListener('error', () => { clearStartTimeout(); failover('native video error'); }, { once: true });
+      video.addEventListener('error', () => { clearStartTimeout(); startFailoverTimer('native video error'); }, { once: true });
     } else {
       clearStartTimeout();
-      errorMsg.textContent = 'Browser tidak support HLS/DASH';
+      console.error('[playChannel] no HLS support in this browser');
+      errorMsg.textContent = 'Browser tidak support HLS/DASH. Coba Chrome/Edge/Firefox.';
       errorEl.classList.add('show');
     }
   }
 
   video.addEventListener('playing', () => loadingEl.classList.add('hidden'));
   video.addEventListener('waiting', () => loadingEl.classList.remove('hidden'));
-  retryBtn.onclick = () => { if (currentChannel) playChannel(currentChannel, currentSourceIndex); };
+  retryBtn.onclick = () => { captureUserGesture(); if (currentChannel) playChannel(currentChannel, currentSourceIndex); };
 
   const playerWrap = document.getElementById('playerWrap');
   const miniClose = document.getElementById('miniClose');
@@ -1246,6 +1342,7 @@
           <span class="live-event-countdown">⏱ ${formatCountdown(ev)}</span>
         </div>`;
       card.onclick = () => {
+        captureUserGesture();
         const matched = resolveEventChannel(ev);
         if (matched) playChannel(matched);
         else if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) playChannel({ name: ev.channel_name || 'Live Event', url: ev.channel_url, urls: [ev.channel_url], quality: 'fhd', category: 'fifa' });
@@ -1343,6 +1440,7 @@
     container.innerHTML = html;
     container.querySelectorAll('.sched-item').forEach((el, idx) => {
       el.addEventListener('click', () => {
+        captureUserGesture();
         const ev = sorted[idx];
         switchTab('home');
         setTimeout(() => {
