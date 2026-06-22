@@ -324,6 +324,58 @@ input{font-family:inherit}
 .mini-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
 .player-wrap.mini .mini-close{display:flex}
 
+/* ── STICKY PLAYER (auto-attach top saat scroll) ─────────────── */
+.player-wrap.sticky{
+  position:fixed;top:0;left:0;right:0;
+  z-index:90;
+  width:100%;
+  aspect-ratio:auto;
+  height:auto;
+  max-height:42vh;
+  background:#000;
+  border-bottom:2px solid var(--gold);
+  box-shadow:0 8px 28px rgba(0,0,0,0.85), 0 0 0 1px var(--gold);
+  animation:stickySlide 0.22s ease-out;
+  overflow:hidden;
+}
+@keyframes stickySlide{
+  from{transform:translateY(-100%);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+.player-wrap.sticky video{
+  height:42vh;max-height:42vh;width:100%;
+  object-fit:contain;background:#000;
+}
+.player-wrap.sticky::before{background:
+  repeating-linear-gradient(135deg,transparent 0 12px,rgba(255,255,255,0.012) 12px 24px),
+  radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.45) 100%)}
+.player-wrap.sticky::after{width:4px}
+.player-wrap.sticky .now-playing{font-size:10px;padding:5px 9px;gap:6px}
+.player-wrap.sticky .now-playing-name{max-width:65%;font-size:10px;padding:5px 9px}
+.player-wrap.sticky .now-playing-quality{font-size:8px;padding:4px 7px}
+.player-wrap.sticky .score-bug{font-size:10px;bottom:8px;left:8px;gap:0}
+.player-wrap.sticky .score-bug-time{padding:4px 6px}
+.player-wrap.sticky .score-bug-time .min{font-size:11px}
+.player-wrap.sticky .score-bug-team{min-width:140px}
+.player-wrap.sticky .player-error{font-size:10px;padding:10px;gap:6px}
+.player-wrap.sticky .player-error-icon{font-size:22px}
+.player-wrap.sticky .spinner{width:24px;height:24px;border-width:2px}
+.sticky-close{
+  position:absolute;top:8px;right:8px;width:30px;height:30px;
+  border-radius:2px;background:rgba(0,0,0,0.85);color:var(--gold);
+  font-size:16px;font-weight:900;line-height:1;
+  display:none;align-items:center;justify-content:center;
+  cursor:pointer;z-index:9;pointer-events:auto;
+  border:1px solid var(--gold-deep);font-family:inherit;padding:0;
+}
+.sticky-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.player-wrap.sticky .sticky-close{display:flex}
+
+/* Sticky mode + mini mode mutually exclusive */
+.player-wrap.sticky.mini{position:fixed;bottom:max(80px,calc(env(safe-area-inset-bottom) + 80px));right:12px;top:auto;left:auto;width:160px;max-height:none;aspect-ratio:16/9;animation:miniPop 0.22s ease-out}
+.player-wrap.sticky.mini video{height:auto;aspect-ratio:16/9;max-height:none}
+.player-wrap.sticky.mini::after{width:3px}
+
 /* ── TOOLBAR (search + filters) ─────────────────────────────── */
 .toolbar{
   padding:12px 16px 8px;
@@ -810,6 +862,7 @@ footer a{color:var(--text-2)}
 <!-- ═══ PLAYER ═══ -->
 <div class="player-wrap" id="playerWrap">
   <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
+  <button class="sticky-close" id="stickyClose" type="button" aria-label="Unstick player">↓</button>
   <video id="player" playsinline controls autoplay muted crossorigin="anonymous" preload="auto"></video>
   <div class="now-playing">
     <div class="now-playing-name" id="nowPlaying">Pilih Channel</div>
@@ -1350,6 +1403,8 @@ footer a{color:var(--text-2)}
     currentChannel = null;
     currentSourceIndex = 0;
     setMini(false);
+    setSticky(false);
+    userUnsticked = false;
     nowPlaying.textContent = 'Pilih Channel';
     nowQuality.textContent = '';
     loadingEl.classList.add('hidden');
@@ -1357,6 +1412,46 @@ footer a{color:var(--text-2)}
     document.getElementById('scoreBug').classList.remove('show');
     document.querySelectorAll('.channel.active').forEach(c => c.classList.remove('active'));
   };
+
+  // === Sticky Player (auto-attach top on scroll, kayak YouTube mobile) ===
+  const stickyClose = document.getElementById('stickyClose');
+  let isSticky = false;
+  let userUnsticked = false;
+  const STICKY_THRESHOLD = 220;
+  const UNSTICK_THRESHOLD = 60;
+  let stickyTicking = false;
+
+  function setSticky(shouldSticky) {
+    if (shouldSticky === isSticky) return;
+    isSticky = shouldSticky;
+    playerWrap.classList.toggle('sticky', shouldSticky);
+  }
+
+  function updateSticky() {
+    if (stickyTicking) return;
+    stickyTicking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY || document.documentElement.scrollTop || 0;
+      const wrapVisible = playerWrap.offsetParent !== null && !playerWrap.classList.contains('hidden-from-nav');
+      if (!isSticky && !userUnsticked && wrapVisible && currentChannel && y > STICKY_THRESHOLD) {
+        setSticky(true);
+      } else if (isSticky && y < UNSTICK_THRESHOLD) {
+        setSticky(false);
+        userUnsticked = false;
+      }
+      stickyTicking = false;
+    });
+  }
+
+  window.addEventListener('scroll', updateSticky, { passive: true });
+  window.addEventListener('resize', updateSticky);
+
+  stickyClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    setSticky(false);
+    userUnsticked = true;
+    playerWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 
   document.getElementById('search').addEventListener('input', renderChannels);
 
