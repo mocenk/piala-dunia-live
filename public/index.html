@@ -1296,7 +1296,11 @@ footer a{color:var(--text-2)}
     video.addEventListener('stalled', onVideoStalled);
     activeVideoListeners.push(onVideoError, onVideoStalled);
 
-    const tryShaka = window.shaka && shaka.Player && shaka.Player.isBrowserSupported();
+    // Use Shaka only for DASH (.mpd). For HLS (.m3u8), go straight to HLS.js.
+    // Detik/Trans7/TransTV HLS manifests are valid, but Shaka's HLS path can stall/fail
+    // in Chromium; HLS.js handles these Detik live playlists reliably.
+    const isDash = /\.mpd(\?|$)/i.test(url);
+    const tryShaka = isDash && window.shaka && shaka.Player && shaka.Player.isBrowserSupported();
     if (tryShaka) {
       try {
         console.log('[playChannel] trying Shaka Player…');
