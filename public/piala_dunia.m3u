@@ -7,12 +7,14 @@
 # === MNC GROUP + TRANS FALLBACK (YOR PATCH 2026-06-23) ===
 #EXTINF:-1 tvg-id="RCTI.id@VPLUS" tvg-name="RCTI HD (V+)" group-title="🇮🇩 TV Indonesia Official",RCTI HD (V+)
 https://d2xz2v5wuvgur6.cloudfront.net/out/v1/997ce8767b604fae9fce05379b3b8b3a/index.mpd
+youtube:UCE9-bV_MCGgLnH7v4HSApDg
 #EXTINF:-1 tvg-id="MNCTV.id@VPLUS" tvg-name="MNC TV (V+)" group-title="🇮🇩 TV Indonesia Official",MNC TV (V+)
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/d6b026ad50f14b7f9af5ddd5450007d4/index.mpd
+youtube:UC34xi8JB1AKSotPUKHywbaA
 #EXTINF:-1 tvg-id="GTV.id@VPLUS" tvg-name="GTV (V+)" group-title="🇮🇩 TV Indonesia Official",GTV (V+)
-https://d2tjypxxy769fn.cloudfront.net/out/v1/b8b9b1d5f80f45649b4a3619291551ab/index.mpd
+youtube:UCZgAny8kv3i7n_DdvTQznAA
 #EXTINF:-1 tvg-id="iNews.id@VPLUS" tvg-name="iNews (V+)" group-title="🇮🇩 TV Indonesia Official",iNews (V+)
 https://d84q7nw4qf3j3.cloudfront.net/out/v1/34d8dd29eb1d4eba931c7c5ab5f4be09/index.mpd
+youtube:UCoSkllfpgmFHtbVK835QaQg
 # Direct Detik chunklist fallbacks. Same display names as existing entries so frontend merges them as extra sources.
 #EXTINF:-1 tvg-id="Trans7.id@DETIK-FALLBACK" tvg-name="Trans7 (720p)" group-title="🇮🇩 TV Indonesia Official",Trans7 (720p)
 https://video.detik.com/trans7/smil:trans7.smil/chunklist_w1758539238_b744100_sleng.m3u8

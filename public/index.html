@@ -864,6 +864,7 @@ footer a{color:var(--text-2)}
   <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
   <button class="sticky-close" id="stickyClose" type="button" aria-label="Unstick player">↓</button>
   <video id="player" playsinline controls autoplay muted crossorigin="anonymous" preload="auto"></video>
+  <iframe id="ytPlayer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="display:none;position:absolute;inset:0;width:100%;height:100%;border:0;background:#000"></iframe>
   <div class="now-playing">
     <div class="now-playing-name" id="nowPlaying">Pilih Channel</div>
     <div class="now-playing-quality" id="nowQuality"></div>
@@ -1231,6 +1232,9 @@ footer a{color:var(--text-2)}
     if (hls) { try { hls.destroy(); } catch(e) {} hls = null; }
     if (shakaPlayer) { try { await shakaPlayer.detach(); shakaPlayer.destroy(); } catch (e) {} shakaPlayer = null; }
     try { video.pause(); video.removeAttribute('src'); video.load(); } catch(e) {}
+    const yt = document.getElementById('ytPlayer');
+    if (yt) { try { yt.removeAttribute('src'); } catch(e) {} yt.style.display = 'none'; }
+    if (video) video.style.display = '';
   }
 
   async function playChannel(ch, sourceIndex = 0) {
@@ -1255,6 +1259,29 @@ footer a{color:var(--text-2)}
     });
 
     await cleanupPlayers();
+
+    // === YouTube iframe fallback (OPSI 2) ===
+    if (url.startsWith('youtube:')) {
+      const channelId = url.slice('youtube:'.length).replace(/[^A-Za-z0-9_-]/g, '');
+      if (!channelId) {
+        console.warn('[playChannel] invalid youtube channel id from', url);
+        loadingEl.classList.add('hidden');
+        errorMsg.textContent = 'YouTube channel ID tidak valid';
+        errorEl.classList.add('show');
+        return;
+      }
+      const yt = document.getElementById('ytPlayer');
+      if (!yt) { console.error('[playChannel] ytPlayer iframe missing'); return; }
+      const embedUrl = `https://www.youtube-nocookie.com/embed/live_stream?channel=${channelId}&autoplay=1&mute=1&modestbranding=1&rel=0`;
+      console.log(`[playChannel] ${ch.name} → YouTube iframe channel=${channelId}`);
+      yt.src = embedUrl;
+      yt.style.display = 'block';
+      video.style.display = 'none';
+      loadingEl.classList.add('hidden');
+      errorEl.classList.remove('show');
+      // YouTube embed doesn't expose reliable error events — rely on user retry button
+      return;
+    }
 
     let failoverTimer = null;
     const startFailoverTimer = (reason) => {
