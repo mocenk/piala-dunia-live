@@ -1615,10 +1615,11 @@ footer a{color:var(--text-2)}
     const start = new Date(ev.start).getTime();
     const end = new Date(ev.end).getTime();
     if (!(now >= start && now < end)) return false;
-    // Only show events that have at least one playable stream server.
-    // Excludes "Sedang Tayang" placeholders (e.g. YONEX US Open without streams.center link).
-    const hasServers = Array.isArray(ev.stream_servers) && ev.stream_servers.some(s => s && s.url);
-    return !!hasServers;
+    // Only show events that have at least one RESOLVED stream server.
+    // Skips placeholders (YONEX/BWF without playable URLs) AND events whose
+    // servers are still un-resolved (resolve_specific hasn't run yet).
+    const servers = Array.isArray(ev.stream_servers) ? ev.stream_servers : [];
+    return servers.some(s => s && s.url && s.resolved_m3u8 && s.resolution_status === 'ok');
   }
 
   function formatCountdown(ev) {

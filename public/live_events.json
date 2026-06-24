@@ -25,67 +25,131 @@
       "stream_servers": [
         {
           "server": "C1",
-          "url": "https://streams.esportex.site/player#ZW0vYndmMQ=="
+          "url": "https://streams.esportex.site/player#ZW0vYndmMQ==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel49.m3u8",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C2",
-          "url": "https://streams.esportex.site/player#ZW0vYndmMg=="
+          "url": "https://streams.esportex.site/player#ZW0vYndmMg==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel50.m3u8",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C3",
-          "url": "https://streams.esportex.site/player#ZW0vYndmMw=="
+          "url": "https://streams.esportex.site/player#ZW0vYndmMw==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel51.m3u8",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C4",
-          "url": "https://streams.esportex.site/player#ZW0vYndmNA=="
+          "url": "https://streams.esportex.site/player#ZW0vYndmNA==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel48.m3u8",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1+",
-          "url": "https://streams.esportex.site/player#dGMvYndmMQ=="
+          "url": "https://streams.esportex.site/player#dGMvYndmMQ==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://2a6096f50ffc05c7c7766fbd1358fce6.v.smtcdns.net/play.cbalive.weibisai.com/live/4239071645568061_AiHD.m3u8?txSecret=7c3734e98c4a8b5cb2e17c02fe6a6e0a&txTime=6A389720",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C2+",
-          "url": "https://streams.esportex.site/player#dGMvYndmMg=="
+          "url": "https://streams.esportex.site/player#dGMvYndmMg==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://2a6096f50ffc05c7c7766fbd1358fce6.v.smtcdns.net/play.cbalive.weibisai.com/live/4248215721428061_AiHD.m3u8?txSecret=e2d099ee51d4edff5c9666c565e348d1&txTime=6A361040",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C3+",
-          "url": "https://streams.esportex.site/player#dGMvYndmMw=="
+          "url": "https://streams.esportex.site/player#dGMvYndmMw==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://2a6096f50ffc05c7c7766fbd1358fce6.v.smtcdns.net/play.cbalive.weibisai.com/live/4239070459780061_AiHD.m3u8?txSecret=8d4ea47c319bea84f8567c934a82d108&txTime=6A364880",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C4+",
-          "url": "https://streams.esportex.site/player#dGMvYndmNA=="
+          "url": "https://streams.esportex.site/player#dGMvYndmNA==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://576572429726c2abb81829f2b3d1d81c.v.smtcdns.net/play.cbalive.weibisai.com/live/4229622341925061_AiHD.m3u8?txSecret=292184851b659914df05261c97b73ed1&txTime=6A31E380",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1cn",
-          "url": "https://streams.esportex.site/player#eWsvYndmMQ=="
+          "url": "https://streams.esportex.site/player#eWsvYndmMQ==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8213315",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C2cn",
-          "url": "https://streams.esportex.site/player#eWsvYndmMg=="
+          "url": "https://streams.esportex.site/player#eWsvYndmMg==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8213316",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C3cn",
-          "url": "https://streams.esportex.site/player#eWsvYndmMw=="
+          "url": "https://streams.esportex.site/player#eWsvYndmMw==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8213317",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C4cn",
-          "url": "https://streams.esportex.site/player#eWsvYndmNA=="
+          "url": "https://streams.esportex.site/player#eWsvYndmNA==",
+          "last_resolved_at": 1782338815,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8212983",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1vn",
-          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE="
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel50.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "C2vn",
-          "url": "https://streams.esportex.site/player#eG9pL2J3ZjI="
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjI=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel51.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "C3vn",
-          "url": "https://streams.esportex.site/player#eG9pL2J3ZjM="
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjM=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel49.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "C4vn",
-          "url": "https://streams.esportex.site/player#eG9pL2J3ZjQ="
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjQ=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel48.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -112,15 +176,25 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTI="
+          "url": "https://streams.esportex.site/player#c20vdm9saTI=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/Y1NhddbN/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTI="
+          "url": "https://streams.esportex.site/player#amwvdm9saTI=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-101.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzkw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkw",
+          "last_resolved_at": 1782338817,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -147,15 +221,25 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTE="
+          "url": "https://streams.esportex.site/player#c20vdm9saTE=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/NysjqFz3/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTE="
+          "url": "https://streams.esportex.site/player#amwvdm9saTE=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-19.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzkx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkx",
+          "last_resolved_at": 1782338816,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -183,19 +267,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTM="
+          "url": "https://streams.esportex.site/player#c20vdm9saTM=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/fArVexsE/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTM="
+          "url": "https://streams.esportex.site/player#amwvdm9saTM=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-103.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzky"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzky",
+          "last_resolved_at": 1782338817,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -221,11 +319,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzky"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzky",
+          "last_resolved_at": 1782338817,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -252,15 +356,27 @@
       "stream_servers": [
         {
           "server": "AUTO/iOS",
-          "url": "https://streams.esportex.site/player#amwvaWJsMQ=="
+          "url": "https://streams.esportex.site/player#amwvaWJsMQ==",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://video-translations.top-parser.com/maxline/iframe?ref=https%3A%2F%2Fw1.soft4game.com%2Fo18%2Fstream345%2Fplaylist.m3u8&ts=1782302582&sign=b1b255d3946c28b8d18de82567485ccdeee6ca521cd09469bd1ffd7c429a2d5e",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ID1/iOS",
-          "url": "https://streams.esportex.site/player#amwvaWJsMg=="
+          "url": "https://streams.esportex.site/player#amwvaWJsMg==",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://play.heyangstream.com/live/5006379_F5hd01.m3u8?expire=1782315615&sign=d0d4edeaa927fdda33fea8dc744e6f16",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ID2/iOS",
-          "url": "https://streams.esportex.site/player#amwvaWJsMw=="
+          "url": "https://streams.esportex.site/player#amwvaWJsMw==",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://play.heyangstream.com/live/5006382_F5hd01.m3u8?expire=1782315736&sign=8d483d6a2851f74017f94bf8de498cba",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -288,19 +404,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTQ="
+          "url": "https://streams.esportex.site/player#c20vdm9saTQ=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/GM6snNT4/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTQ="
+          "url": "https://streams.esportex.site/player#amwvdm9saTQ=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-19.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzkz"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkz",
+          "last_resolved_at": 1782338817,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -328,19 +458,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTU="
+          "url": "https://streams.esportex.site/player#c20vdm9saTU=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/CBUXmAmT/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTU="
+          "url": "https://streams.esportex.site/player#amwvdm9saTU=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-101.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzk0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk0",
+          "last_resolved_at": 1782338817,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -368,19 +512,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTY="
+          "url": "https://streams.esportex.site/player#c20vdm9saTY=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/JsH8BgQt/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTY="
+          "url": "https://streams.esportex.site/player#amwvdm9saTY=",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-103.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338816,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzk1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk1",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -407,15 +565,21 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTc="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTc=",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYxNA=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNA==",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc0",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -442,15 +606,23 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTg="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTg=",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYxNw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNw==",
+          "last_resolved_at": 1782338817,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=617",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc1",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -478,19 +650,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTc="
+          "url": "https://streams.esportex.site/player#c20vdm9saTc=",
+          "last_resolved_at": 1782338817,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/wTN8x3fI/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTc="
+          "url": "https://streams.esportex.site/player#amwvdm9saTc=",
+          "last_resolved_at": 1782338817,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-994.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338817,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzk2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk2",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -517,15 +703,23 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTk="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTk=",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYwNQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYwNQ==",
+          "last_resolved_at": 1782338817,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=605",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc2",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -553,19 +747,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTg="
+          "url": "https://streams.esportex.site/player#c20vdm9saTg=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/Wc7oaHth/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTg="
+          "url": "https://streams.esportex.site/player#amwvdm9saTg=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-103.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzk4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk4",
+          "last_resolved_at": 1782338818,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -593,19 +801,33 @@
       "stream_servers": [
         {
           "server": "PPV/iOS",
-          "url": "https://streams.esportex.site/player#c20vdm9saTk="
+          "url": "https://streams.esportex.site/player#c20vdm9saTk=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://livecdn.euw1-0008.jwplive.com/live/sites/fM9jRrkn/media/admZ9YkM/live.isml/.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#amwvdm9saTk="
+          "url": "https://streams.esportex.site/player#amwvdm9saTk=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-19.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzk3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk3",
+          "last_resolved_at": 1782338819,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -657,15 +879,27 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "TUR",
-          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ=="
+          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://rxne77juptdeyke3tytvgqwyh.medya.trt.com.tr/master.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "WCTV",
@@ -673,39 +907,75 @@
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "FOX",
-          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ISR",
-          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://d1zqtf09wb8nt5.cloudfront.net/livedash/oil/kancdn-live/live/kan11/live.livx",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -713,43 +983,81 @@
         },
         {
           "server": "RU",
-          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsMQ=="
+          "url": "https://streams.esportex.site/player#djIvZXBsMQ==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsMQ=="
+          "url": "https://streams.esportex.site/player#djIvdWNsMQ==",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://xyzstreams.shop/wc-1-embed.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "RTB/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x"
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://tenggo.02anutv.workers.dev/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjM2LjY1LjMuMTI0IiwiZXhwIjoxNzgyMjQ2NDk2fQ.Ho6y7A9bVWi5EoIXRJKddkshRACbr1PuIufozqR2VAY/smil:rtbgo/manifest.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTE="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTE=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel16.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2M="
+          "url": "https://streams.esportex.site/player#YXIvd2M=",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://cp11.adabmedia.com/hls2/sport.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338818,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjE="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjE=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair1/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjI="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjI=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzM="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzM=",
+          "last_resolved_at": 1782338819,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "SD1/iOS",
@@ -757,15 +1065,25 @@
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjM3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjM3",
+          "last_resolved_at": 1782338819,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -794,15 +1112,27 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "TUR",
-          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ=="
+          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://rxne77juptdeyke3tytvgqwyh.medya.trt.com.tr/master.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "WCTV",
@@ -810,39 +1140,75 @@
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "FOX",
-          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ISR",
-          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://d1zqtf09wb8nt5.cloudfront.net/livedash/oil/kancdn-live/live/kan11/live.livx",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -850,55 +1216,103 @@
         },
         {
           "server": "RU",
-          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsMQ=="
+          "url": "https://streams.esportex.site/player#djIvZXBsMQ==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsMQ=="
+          "url": "https://streams.esportex.site/player#djIvdWNsMQ==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://xyzstreams.shop/wc-1-embed.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "RTB/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x"
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://tenggo.02anutv.workers.dev/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjM2LjY1LjMuMTI0IiwiZXhwIjoxNzgyMjQ2NDk2fQ.Ho6y7A9bVWi5EoIXRJKddkshRACbr1PuIufozqR2VAY/smil:rtbgo/manifest.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTE="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTE=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel16.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2M="
+          "url": "https://streams.esportex.site/player#YXIvd2M=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://cp11.adabmedia.com/hls2/sport.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjE="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjE=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair1/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjI="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjI=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzQ="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzQ=",
+          "last_resolved_at": 1782338820,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjQ1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjQ1",
+          "last_resolved_at": 1782338820,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -942,8 +1356,8 @@
         {
           "server": "FHD/iOS",
           "url": "https://streams.esportex.site/player#cHB2LzIzNzc3",
-          "resolution_status": "fail: json parse failed: Expecting value: line 1 column 1 (char 0)",
-          "last_resolved_at": 1782338260
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)",
+          "last_resolved_at": 1782338820
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -970,15 +1384,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjE="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjE=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://streams.center/embed/ch19.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYxMg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYxMg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=612",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc4",
+          "last_resolved_at": 1782338820,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1007,35 +1431,67 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "KZ",
-          "url": "https://streams.esportex.site/player#a3ovcWF6"
+          "url": "https://streams.esportex.site/player#a3ovcWF6",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://fo03-bkm.beetv.kz/bpk-tv/000003038/tve/index.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -1043,59 +1499,113 @@
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "FOX",
-          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg==",
+          "last_resolved_at": 1782338819,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsMw=="
+          "url": "https://streams.esportex.site/player#djIvZXBsMw==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsMw=="
+          "url": "https://streams.esportex.site/player#djIvdWNsMw==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5198535_2.m3u8?auth_key=1782424393-0-0-e3ad7ea721100db3fe76e156540a5f8e",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTM="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTM=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel5.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2M="
+          "url": "https://streams.esportex.site/player#YXIvd2M=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://cp11.adabmedia.com/hls2/sport.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjU="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjU=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair1/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjY="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjY=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzU="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzU=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://streams.center/embed/ch1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjUz"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjUz",
+          "last_resolved_at": 1782338821,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1124,11 +1634,19 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "WCTV",
@@ -1136,43 +1654,83 @@
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#ZXMvcnR2ZQ=="
+          "url": "https://streams.esportex.site/player#ZXMvcnR2ZQ==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/c7di7zkdor/out/v1/f7d5b356e048494a8325563e8916d50b/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP3",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "MNE",
-          "url": "https://streams.esportex.site/player#bW5lL3R2Y2cx"
+          "url": "https://streams.esportex.site/player#bW5lL3R2Y2cx",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://bpkcdn.telekom.me/bpk-tv/rtcg_1/default/index.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "CZ",
-          "url": "https://streams.esportex.site/player#Y3ovY3Q="
+          "url": "https://streams.esportex.site/player#Y3ovY3Q=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://dash2.antik.sk/stream/nvidia_ct_sport/playlist_cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "KZ",
-          "url": "https://streams.esportex.site/player#a3ovcWF6"
+          "url": "https://streams.esportex.site/player#a3ovcWF6",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://fo03-bkm.beetv.kz/bpk-tv/000003038/tve/index.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ISR",
-          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://d1zqtf09wb8nt5.cloudfront.net/livedash/oil/kancdn-live/live/kan11/live.livx",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -1180,63 +1738,121 @@
         },
         {
           "server": "RU",
-          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://video.beeline.tv/live/d/channel319.isml/manifest-stb.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "FOX",
-          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ajfoeddkbz/out/v1/b78800b9b2304879b15843f455836829/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsMg=="
+          "url": "https://streams.esportex.site/player#djIvZXBsMg==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsMg=="
+          "url": "https://streams.esportex.site/player#djIvdWNsMg==",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://xyzstreams.shop/wc-2-embed.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTI="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTI=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel18.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2M="
+          "url": "https://streams.esportex.site/player#YXIvd2M=",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://cp11.adabmedia.com/hls2/sport.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338820,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjM="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjM=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1YjQ="
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjQ=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://virazo.sx/ch?id=81",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzY="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzY=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch3.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjYx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjYx",
+          "last_resolved_at": 1782338821,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1263,15 +1879,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjI="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjI=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch20.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyNg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyNg==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=626",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc5"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc5",
+          "last_resolved_at": 1782338821,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1298,15 +1924,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjM="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjM=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch21.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYwOQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYwOQ==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=609",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzgw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgw",
+          "last_resolved_at": 1782338821,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1333,15 +1969,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjQ="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjQ=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch22.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyMQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMQ==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=621",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzgx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgx",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1368,15 +2014,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjU="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjU=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch23.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyOQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyOQ==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=629",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzgy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgy",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1403,15 +2059,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjY="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjY=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch24.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyOA=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyOA==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=628",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzgz"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgz",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1438,15 +2104,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjg="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjg=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch26.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYwNg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYwNg==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=606",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzg1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg1",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1472,11 +2148,17 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTQ="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTQ=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch71.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzcx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcx",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1502,11 +2184,17 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTM="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTM=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch70.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzcw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcw",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1533,15 +2221,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjk="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjk=",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://streams.center/embed/ch27.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYxNg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNg==",
+          "last_resolved_at": 1782338821,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=616",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzg2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg2",
+          "last_resolved_at": 1782338822,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1568,15 +2266,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzA="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzA=",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://streams.center/embed/ch28.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyNQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyNQ==",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=625",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzg3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg3",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1601,7 +2309,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzIx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzIx",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1627,11 +2337,17 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTU="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTU=",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://streams.center/embed/ch72.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzcy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcy",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1656,7 +2372,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjE0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjE0",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -1683,15 +2401,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzE="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzE=",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://streams.center/embed/ch29.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyMg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMg==",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=622",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzg4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg4",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1720,35 +2448,67 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "KZ",
-          "url": "https://streams.esportex.site/player#a3ovcWF6"
+          "url": "https://streams.esportex.site/player#a3ovcWF6",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://fo03-bkm.beetv.kz/bpk-tv/000003038/tve/index.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338822,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -1756,55 +2516,105 @@
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsNA=="
+          "url": "https://streams.esportex.site/player#djIvZXBsNA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsNA=="
+          "url": "https://streams.esportex.site/player#djIvdWNsNA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://xyzstreams.shop/wc-2-embed.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel19.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2Mx"
+          "url": "https://streams.esportex.site/player#YXIvd2Mx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://embedindia.st/embed/wc/2026-06-24/sui-can/bein",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc="
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg="
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://virazo.sx/ch?id=81",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzc="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzc=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://streams.center/embed/ch3.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjY5"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjY5",
+          "last_resolved_at": 1782338823,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1833,35 +2643,67 @@
       "stream_servers": [
         {
           "server": "VIP1/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://yallavoide.yalla-shoot-zhubo.com/sport/202_5116028_2.m3u8?auth_key=1782352133-0-0-247fe88c3a7f474416f45d74d6a1e487",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP2/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://player.787200.com/live/index.html?liveUrl=https%3A%2F%2Flive.vivo200.com%2Flive%2Fsd-1-4460974.m3u8%3FtxSecret%3D61975234d05dc78641010be2f8abe445%26txTime%3D6A3B4D12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "KZ",
-          "url": "https://streams.esportex.site/player#a3ovcWF6"
+          "url": "https://streams.esportex.site/player#a3ovcWF6",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://fo03-bkm.beetv.kz/bpk-tv/000003038/tve/index.m3u8",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP",
-          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/x0srg3jjpz/out/v1/f779c49314394d61886d63f58d9d52e4/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP2",
-          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://proxy.sevaexchange.com/https://live-oneapp-prd-news.akamaized.net/Content/CMAF_OL2-CTR-4s-v2/Live/channel(kvea)/master.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "BRA",
-          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://a121aivottepl-a.akamaihd.net/gru-nitro/live/clients/dash/enc/jo3rmhhp2r/out/v1/50656942ce4e40a1be824c9d83578fe9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN1",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/155/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzE1NS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA1Mn0.QulTJmgHkpasCmnqYKZZnRHYu6M6iJXJXKkJ4xdtxTx1WwM9Y0Xn6jGrczxjE2qnhs5w_NXXP7Lh8Fdb4DxAFA&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "VN2",
-          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://rr1-ateme.tv360.vn/live/eds/479/HLS_Clean_MHL_2s/index.m3u8?cdntoken=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJwYXRoIjoiL2xpdmUvZWRzLzQ3OS9ITFNfQ2xlYW5fTUhMXzJzLyIsImV4cCI6MTc4MjM1MzA2N30.mHDj0aLypP36TNxvdLdrGAHtBlsyW-1cpvgqGM7QyIPSk2v4QWHarSivQMcjq0cBVSa_jPtuFoPzMGK1YIoPhg&screen=MHN&uid=19680",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TVRI",
@@ -1869,55 +2711,105 @@
         },
         {
           "server": "POL",
-          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuMQ=="
+          "url": "https://streams.esportex.site/player#dHNuMQ==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN/iOS",
-          "url": "https://streams.esportex.site/player#djIvZXBsNA=="
+          "url": "https://streams.esportex.site/player#djIvZXBsNA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://virazo.sx/ch?id=31",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ESP/iOS",
-          "url": "https://streams.esportex.site/player#djIvdWNsNA=="
+          "url": "https://streams.esportex.site/player#djIvdWNsNA==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://xyzstreams.shop/wc-2-embed.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "VN/iOS",
-          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ="
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://xo-cdn-stream.lapakstreaming.live/live/channel19.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "Arab/iOS",
-          "url": "https://streams.esportex.site/player#YXIvd2Mx"
+          "url": "https://streams.esportex.site/player#YXIvd2Mx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://embedindia.st/embed/wc/2026-06-24/sui-can/bein",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG/iOS",
-          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+          "url": "https://streams.esportex.site/player#Ym8vcnRi",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://sportspass.cfd/soccer/fifa2026.html",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc="
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg="
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://virazo.sx/ch?id=81",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzg="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzg=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://streams.center/embed/ch1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjc3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjc3",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1944,15 +2836,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMzI="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzI=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://streams.center/embed/ch30.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYyMw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMw==",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=623",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzg5"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg5",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -1978,11 +2880,17 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMTY="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTY=",
+          "last_resolved_at": 1782338823,
+          "resolved_m3u8": "https://streams.center/embed/ch73.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzcz"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcz",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2007,7 +2915,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTk3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk3",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2032,7 +2942,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA0",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2058,11 +2970,19 @@
       "stream_servers": [
         {
           "server": "AUTO",
-          "url": "https://streams.esportex.site/player#cmFsbHl0dg=="
+          "url": "https://streams.esportex.site/player#cmFsbHl0dg==",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "AUTO/iOS",
-          "url": "https://streams.esportex.site/player#cmFsbHk="
+          "url": "https://streams.esportex.site/player#cmFsbHk=",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master_20260509_3000.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2088,11 +3008,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzIy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzIy",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2118,11 +3044,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzMw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzMw",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2149,15 +3081,25 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzIy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzIy",
+          "last_resolved_at": 1782338824,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2184,15 +3126,25 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzMw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzMw",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2218,11 +3170,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzM4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzM4",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2248,11 +3206,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzQ2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzQ2",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2279,15 +3243,25 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzM4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzM4",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2314,15 +3288,25 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338824,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzQ2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzQ2",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2347,7 +3331,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTUx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTUx",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2372,7 +3358,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjE1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjE1",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2398,11 +3386,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzU0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzU0",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2427,7 +3421,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzYy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzYy",
+          "last_resolved_at": 1782338825,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2454,15 +3450,25 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzU0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzU0",
+          "last_resolved_at": 1782338826,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2488,11 +3494,17 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzYy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzYy",
+          "last_resolved_at": 1782338826,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2528,11 +3540,19 @@
       "stream_servers": [
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVncDI="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVncDI=",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/inpyms8ezu/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TNT",
-          "url": "https://streams.esportex.site/player#dWsvdG50Mg=="
+          "url": "https://streams.esportex.site/player#dWsvdG50Mg==",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3j04z3pbit/out/v1/042ee0757ed348bf8c26f75895cae871/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "SPOTV",
@@ -2540,39 +3560,75 @@
         },
         {
           "server": "MGP",
-          "url": "https://streams.esportex.site/player#dWsvbWdwMg=="
+          "url": "https://streams.esportex.site/player#dWsvbWdwMg==",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://s2.strea.ru/index_src/index.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         },
         {
           "server": "TNT/iOS",
-          "url": "https://streams.esportex.site/player#dG9wL3RudDI="
+          "url": "https://streams.esportex.site/player#dG9wL3RudDI=",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://virazo.sx/ch?id=12",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cGUvZXZlbnQx"
+          "url": "https://streams.esportex.site/player#cGUvZXZlbnQx",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://pushembdz.store/embed/94ac9b20-6103-4db1-b987-cd32a648ce1a",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cGUvZXZlbnQy"
+          "url": "https://streams.esportex.site/player#cGUvZXZlbnQy",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://pushembdz.store/embed/c953c518-3d35-4d00-9e7b-186b19ae9eed",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD1/iOS",
-          "url": "https://streams.esportex.site/player#c2NlL2NoNDk="
+          "url": "https://streams.esportex.site/player#c2NlL2NoNDk=",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://streams.center/embed/ch49.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzEwNg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzEwNg==",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=106",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#cGUvZXZlbnQz"
+          "url": "https://streams.esportex.site/player#cGUvZXZlbnQz",
+          "last_resolved_at": 1782338825,
+          "resolved_m3u8": "https://virazo.sx/ch?id=30",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD2/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#c3QvbW90b2dwMg=="
+          "url": "https://streams.esportex.site/player#c3QvbW90b2dwMg==",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://pushembdz.store/embed/74ff6ea7-92eb-40a1-9dc7-486d46612612",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2601,47 +3657,91 @@
       "stream_servers": [
         {
           "server": "SKY F1",
-          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ==",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuNQ=="
+          "url": "https://streams.esportex.site/player#dHNuNQ==",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/115",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://pushembdz.store/embed/0e0c1018-e821-456e-ad71-570434cfdf84",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://pushembdz.store/embed/30745a38-a9b6-4190-9c2b-015733ec87f3",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-712.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYuk/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYde/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://maslaz.com/ls/?t=2",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYit/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-60.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "DAZNF1/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-274.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQy"
+          "url": "https://streams.esportex.site/player#c28vaGQy",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd2.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2666,7 +3766,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA1"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA1",
+          "last_resolved_at": 1782338826,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2691,7 +3793,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTk4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk4",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2716,7 +3820,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA2",
+          "last_resolved_at": 1782338826,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2741,7 +3847,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzMzkx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzMzkx",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2770,47 +3878,91 @@
       "stream_servers": [
         {
           "server": "SKY F1",
-          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ==",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuNQ=="
+          "url": "https://streams.esportex.site/player#dHNuNQ==",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/115",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://pushembdz.store/embed/0e0c1018-e821-456e-ad71-570434cfdf84",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://pushembdz.store/embed/30745a38-a9b6-4190-9c2b-015733ec87f3",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-712.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYuk/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYde/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://maslaz.com/ls/?t=2",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYit/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-60.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "DAZNF1/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM=",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-274.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQy"
+          "url": "https://streams.esportex.site/player#c28vaGQy",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd2.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -2836,11 +3988,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2866,11 +4026,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2895,7 +4063,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjE2"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjE2",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2921,11 +4091,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2951,11 +4129,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -2980,7 +4166,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTU0"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTU0",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3006,11 +4194,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcy"
+          "url": "https://streams.esportex.site/player#ZWhkLzcy",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=72",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338826,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3036,11 +4232,19 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+          "url": "https://streams.esportex.site/player#ZWhkLzcx",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=71",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQx"
+          "url": "https://streams.esportex.site/player#c28vaGQx",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd1.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3065,7 +4269,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTk5"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk5",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3090,7 +4296,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA3",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3115,7 +4323,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjAw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAw",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3140,7 +4350,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA4",
+          "last_resolved_at": 1782338827,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3169,47 +4381,91 @@
       "stream_servers": [
         {
           "server": "SKY F1",
-          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ==",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuNQ=="
+          "url": "https://streams.esportex.site/player#dHNuNQ==",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/115",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://pushembdz.store/embed/0e0c1018-e821-456e-ad71-570434cfdf84",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://pushembdz.store/embed/30745a38-a9b6-4190-9c2b-015733ec87f3",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-712.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYuk/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYde/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://maslaz.com/ls/?t=2",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYit/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-60.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "DAZNF1/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-274.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c28vaGQy"
+          "url": "https://streams.esportex.site/player#c28vaGQy",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://ww3.sporttsonline.click/channels/hd/hd2.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3234,7 +4490,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjAx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAx",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3259,7 +4517,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjA5"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjA5",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3288,43 +4548,83 @@
       "stream_servers": [
         {
           "server": "SKY F1",
-          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ==",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TSN",
-          "url": "https://streams.esportex.site/player#dHNuNQ=="
+          "url": "https://streams.esportex.site/player#dHNuNQ==",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/115",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://pushembdz.store/embed/0e0c1018-e821-456e-ad71-570434cfdf84",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://pushembdz.store/embed/30745a38-a9b6-4190-9c2b-015733ec87f3",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-712.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYuk/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYde/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://maslaz.com/ls/?t=2",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYit/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-60.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "DAZNF1/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM=",
+          "last_resolved_at": 1782338827,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-274.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3349,7 +4649,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTcy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTcy",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3374,7 +4676,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTU4"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTU4",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3399,7 +4703,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjE3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjE3",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3424,7 +4730,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjEw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjEw",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3449,7 +4757,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjAy"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAy",
+          "last_resolved_at": 1782338828,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3478,47 +4788,91 @@
       "stream_servers": [
         {
           "server": "SKY F1",
-          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://simplitv-live.mdn.ors.at/live/eds/sky_sport_f1_hd/dash/sky_sport_f1_hd.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Fancode",
-          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/fdb3pubmek/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "SKY",
-          "url": "https://streams.esportex.site/player#bnovc2t5MQ=="
+          "url": "https://streams.esportex.site/player#bnovc2t5MQ==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://dice-live-oc.akamaized.net/hdntl=exp=1781455849~acl=*dash%2flive%2f2093742%2f219026-322453%2f*!*dash%2flive%2f2093742-b%2f219026-322453-b%2f*!%2fv1%2fdashsegment%2f*~id=afe37abb-623d-4a4e-93b9-f6f8e9f4d82a~data=hdntl,dWlkPXZNQ05zSHw1OWY1MDUwZi0zNGU2LTRlNTMtYWNjNi02MWRhNGRjOWY4NjUmaXA9ODUuMjguNTQuOTUmZXhwPTE3ODE1Mjc4NzcmZWlkPTIxOTAyNiZjaWQ9ZGNlLnNreW56Jm9pZD0zMTgmdHlwZT1MSVZF~hmac=d5832622ab1e66e31a1af8b29b273dc83f9a432ab75f5e67931207e7f916045d/dash/live/2093742/219026-322453/manifest-d.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein",
-          "url": "https://streams.esportex.site/player#bW5jL2JlaW4x"
+          "url": "https://streams.esportex.site/player#bW5jL2JlaW4x",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://vplus.pisionpluss14.workers.dev/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpcCI6IjM2LjY1LjEuMjEiLCJleHAiOjE3ODE0NTMxNDV9.oRmOJuDJDo8JMwRhzXimoJm2mJXHTpxs7FYoEAGjw3g/out/v1/3b0660e05eed4d769521eb0275aab3ab/index.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://pushembdz.store/embed/0e0c1018-e821-456e-ad71-570434cfdf84",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://pushembdz.store/embed/30745a38-a9b6-4190-9c2b-015733ec87f3",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-712.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYuk/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://soccerball.st/rampages/unoair2/",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYde/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://maslaz.com/ls/?t=2",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SKYit/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-60.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "DAZNF1/iOS",
-          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-274.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3543,7 +4897,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNjEx"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjEx",
+          "last_resolved_at": 1782338829,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3568,7 +4924,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTc3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTc3",
+          "last_resolved_at": 1782338829,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3593,7 +4951,9 @@
       "stream_servers": [
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNTYw"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTYw",
+          "last_resolved_at": 1782338829,
+          "resolution_status": "fail: Expecting value: line 1 column 1 (char 0)"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3620,15 +4980,27 @@
       "stream_servers": [
         {
           "server": "Bein1",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://a122aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein2",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://a201aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TV4",
-          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://live.streaming.a2d.tv/asset/20465727.isml/dash.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3657,23 +5029,43 @@
       "stream_servers": [
         {
           "server": "C1",
-          "url": "https://streams.esportex.site/player#ZW1iL2J3ZjE="
+          "url": "https://streams.esportex.site/player#ZW1iL2J3ZjE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8213315",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1+",
-          "url": "https://streams.esportex.site/player#dGMvYndmMQ=="
+          "url": "https://streams.esportex.site/player#dGMvYndmMQ==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://2a6096f50ffc05c7c7766fbd1358fce6.v.smtcdns.net/play.cbalive.weibisai.com/live/4239071645568061_AiHD.m3u8?txSecret=7c3734e98c4a8b5cb2e17c02fe6a6e0a&txTime=6A389720",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1hd",
-          "url": "https://streams.esportex.site/player#ZW1jL2J3ZjE="
+          "url": "https://streams.esportex.site/player#ZW1jL2J3ZjE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://wakacha.github.io/embed.html?live&url=https://bf.njscwh.com/live/sd-24-5231312.m3u8?txSecret=60cb0710936525137df71a7dc092775d&txTime=6a37a914",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1cn",
-          "url": "https://streams.esportex.site/player#eWsvYndmMQ=="
+          "url": "https://streams.esportex.site/player#eWsvYndmMQ==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://vku.youku.com/live/ilpshare?id=8213315",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "C1vn",
-          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE="
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE=",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://tfqv3gr5dgmttgha1hcto8yzdncbafisg17ufgrz8yhuxgjtse5ucpf5gk.100ycdn.com/live1.pro2cdnlive.com/live/channel50.m3u8",
+          "resolved_type": "hls",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3703,27 +5095,51 @@
       "stream_servers": [
         {
           "server": "TNT",
-          "url": "https://streams.esportex.site/player#dWsvdG50Mg=="
+          "url": "https://streams.esportex.site/player#dWsvdG50Mg==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3j04z3pbit/out/v1/042ee0757ed348bf8c26f75895cae871/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY3djMQ=="
+          "url": "https://streams.esportex.site/player#c3QvY3djMQ==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://pushembdz.store/embed/b24336b3-3dc9-434b-9a27-cc211eb890de",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "ENG2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvY3djMg=="
+          "url": "https://streams.esportex.site/player#c3QvY3djMg==",
+          "last_resolved_at": 1782338828,
+          "resolved_m3u8": "https://pushembdz.store/embed/b24336b3-3dc9-434b-9a27-cc211eb890de",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c3QvZXVybzE="
+          "url": "https://streams.esportex.site/player#c3QvZXVybzE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/32",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD1/iOS",
-          "url": "https://streams.esportex.site/player#c3QvZXVybzI="
+          "url": "https://streams.esportex.site/player#c3QvZXVybzI=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/445",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "HD2/iOS",
-          "url": "https://streams.esportex.site/player#c3QvZXVybzM="
+          "url": "https://streams.esportex.site/player#c3QvZXVybzM=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/49",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3753,27 +5169,51 @@
       "stream_servers": [
         {
           "server": "ENG",
-          "url": "https://streams.esportex.site/player#dWsvdG50Mw=="
+          "url": "https://streams.esportex.site/player#dWsvdG50Mw==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://otte.live.fly.ww.aiv-cdn.net/sin-nitro/live/dash/enc/2szrn2y3ep/out/v1/eacd8a4207dc4f0d9661a4b085b8fdd9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "CZ",
-          "url": "https://streams.esportex.site/player#Y3ovZXVybzE="
+          "url": "https://streams.esportex.site/player#Y3ovZXVybzE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://dash2.antik.sk/stream/nvidia_eurosport1/playlist_cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD1/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L3dlYzE="
+          "url": "https://streams.esportex.site/player#cHB2L3dlYzE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://pushembdz.store/embed/5882b786-fe57-4120-a52e-ac7029b29951",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "EHD2/iOS",
-          "url": "https://streams.esportex.site/player#cHB2L3dlYzI="
+          "url": "https://streams.esportex.site/player#cHB2L3dlYzI=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://pushembdz.store/embed/5882b786-fe57-4120-a52e-ac7029b29951",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "TNT/iOS",
-          "url": "https://streams.esportex.site/player#c3Qvd2Vj"
+          "url": "https://streams.esportex.site/player#c3Qvd2Vj",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://ddh-cdn-stream.lapakstreaming.live/papi/tv/33",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         },
         {
           "server": "VIP/iOS",
-          "url": "https://streams.esportex.site/player#c3QvYXNpYWN1cDE="
+          "url": "https://streams.esportex.site/player#c3QvYXNpYWN1cDE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://pushembdz.store/embed/5882b786-fe57-4120-a52e-ac7029b29951",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3801,19 +5241,35 @@
       "stream_servers": [
         {
           "server": "Bein1",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a122aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein2",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a201aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TV4",
-          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://live.streaming.a2d.tv/asset/20465727.isml/dash.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c3QvdGVubmlz"
+          "url": "https://streams.esportex.site/player#c3QvdGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-338.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id (api.esportex.site)",
@@ -3838,7 +5294,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI1Nw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI1Nw==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=257",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3863,7 +5323,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI3Nw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI3Nw==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=277",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3888,7 +5352,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI3Mg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI3Mg==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=272",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3913,7 +5381,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI2Mw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI2Mw==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=263",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3938,7 +5410,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI2Nw=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI2Nw==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=267",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3963,7 +5439,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI3OA=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI3OA==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=278",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -3988,7 +5468,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI1Mg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI1Mg==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=252",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -4013,7 +5497,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI3NQ=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI3NQ==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=275",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -4038,7 +5526,11 @@
       "stream_servers": [
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzI4Mg=="
+          "url": "https://streams.esportex.site/player#ZWhkLzI4Mg==",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=282",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -4066,19 +5558,35 @@
       "stream_servers": [
         {
           "server": "Bein1",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a122aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein2",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a201aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TV4",
-          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://live.streaming.a2d.tv/asset/20465727.isml/dash.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c3QvdGVubmlz"
+          "url": "https://streams.esportex.site/player#c3QvdGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-338.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
@@ -4106,19 +5614,35 @@
       "stream_servers": [
         {
           "server": "Bein1",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a122aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "Bein2",
-          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI=",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://a201aivottlinear-a.akamaihd.net/OTTB/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "TV4",
-          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://live.streaming.a2d.tv/asset/20465727.isml/dash.mpd",
+          "resolved_type": "dash",
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#c3QvdGVubmlz"
+          "url": "https://streams.esportex.site/player#c3QvdGVubmlz",
+          "last_resolved_at": 1782338829,
+          "resolved_m3u8": "https://dlhd.pk/stream/stream-338.php",
+          "resolved_type": "iframe",
+          "resolution_status": "ok"
         }
       ],
       "source": "airdropglobalz.my.id",
