@@ -1348,6 +1348,28 @@ footer a{color:var(--text-2)}
 
     await cleanupPlayers();
 
+    // === Iframe wrapper fallback (esportex / embedsportex) ===
+    // URL bentuk https://streams.esportex.site/player#<base64> atau embedsportex.pages.dev
+    // bukan m3u8/mpd — itu HTML iframe page. Embed langsung via iframe, jangan feed ke HLS.
+    const isIframeWrapper =
+      /^https?:\/\/(streams\.esportex\.site|embedsportex\.pages\.dev)\/player/i.test(url) ||
+      /^https?:\/\/embedsportex\.pages\.dev\//i.test(url);
+    if (isIframeWrapper) {
+      const yt = document.getElementById('ytPlayer');
+      if (!yt) { console.error('[playChannel] ytPlayer iframe missing'); return; }
+      // Hash bagian (#base64) cuma anchor — biarin, browser akan pass ke iframe
+      const sep = url.includes('?') ? '&' : '?';
+      const iframeUrl = url + sep + 'autoplay=1';
+      console.log(`[playChannel] ${ch.name} → Iframe wrapper ${iframeUrl}`);
+      yt.src = iframeUrl;
+      yt.style.display = 'block';
+      video.style.display = 'none';
+      loadingEl.classList.add('hidden');
+      errorEl.classList.remove('show');
+      clearStartTimeout();
+      return;
+    }
+
     // === YouTube iframe fallback (OPSI 2) ===
     if (url.startsWith('youtube:')) {
       const channelId = url.slice('youtube:'.length).replace(/[^A-Za-z0-9_-]/g, '');
