@@ -1,956 +1,3067 @@
 {
+  "last_updated": "2026-06-24T17:51:35+07:00",
+  "source": "airdropglobalz.my.id (api.esportex.site)",
+  "upstream_timestamp": 1782298169,
   "events": [
     {
-      "id": "2671156",
-      "title": "Džiugas vs Sūduva",
-      "category": "A Lyga",
-      "channel_name": "Mola TV",
+      "id": "bwf-world-tour-3",
+      "title": "YONEX US Open 2026",
+      "category": "BWF",
+      "channel_name": "C1",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C1+"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T18:15:00+07:00",
-      "end": "2026-06-21T20:15:00+07:00",
-      "time_label": "18:15",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2671156"
-    },
-    {
-      "id": "2655544",
-      "title": "Bryne vs Åsane",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655544"
-    },
-    {
-      "id": "2655545",
-      "title": "Egersund vs Haugesund",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655545"
-    },
-    {
-      "id": "2655546",
-      "title": "Kongsvinger vs Strømsgodset",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655546"
-    },
-    {
-      "id": "2655547",
-      "title": "Moss vs Sandnes",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655547"
-    },
-    {
-      "id": "2655548",
-      "title": "Odd vs Hødd",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655548"
-    },
-    {
-      "id": "2655550",
-      "title": "Raufoss vs Sogndal",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655550"
-    },
-    {
-      "id": "2655551",
-      "title": "Strømmen vs Stabæk",
-      "category": "1. divisjon",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2655551"
-    },
-    {
-      "id": "2692090",
-      "title": "HUSA vs UTS",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692090"
-    },
-    {
-      "id": "2692091",
-      "title": "FAR Rabat vs Kawkab",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692091"
-    },
-    {
-      "id": "2692092",
-      "title": "Maghreb Fès vs Berkane",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692092"
-    },
-    {
-      "id": "2692093",
-      "title": "Olympic Safi vs Yacoub",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692093"
-    },
-    {
-      "id": "2692094",
-      "title": "IR Tanger vs RCA Zemamra",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692094"
-    },
-    {
-      "id": "2692095",
-      "title": "El Jadida vs Wydad AC",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692095"
-    },
-    {
-      "id": "2692096",
-      "title": "Raja Club Athletic vs CODM",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692096"
-    },
-    {
-      "id": "2692097",
-      "title": "FUS Rabat vs Dcheïra",
-      "category": "Botola",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2692097"
-    },
-    {
-      "id": "2669368",
-      "title": "Avaí vs Cuiabá",
-      "category": "Brasileirão Série B Superbet",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2669368"
-    },
-    {
-      "id": "2673839",
-      "title": "Caxias vs Maringá",
-      "category": "Brasileirão Série C",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-21T21:00:00+07:00",
-      "end": "2026-06-21T23:00:00+07:00",
-      "time_label": "21:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2673839"
-    },
-    {
-      "id": "2645070",
-      "title": "Spain vs Saudi Arabia",
-      "category": "FIFA World Cup™",
-      "channel_name": "SCTV",
-      "channel_options": [
-        "SCTV",
-        "MNCTV",
-        "Indosiar",
-        "RCTI",
-        "TVRI",
-        "iNews"
-      ],
-      "channel_url": "#channel:SCTV",
-      "start": "2026-06-21T23:00:00+07:00",
-      "end": "2026-06-22T01:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-23T23:00:00+07:00",
+      "end": "2026-06-28T23:30:00+07:00",
       "time_label": "23:00",
-      "date_label": "2026-06-21",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2645070"
+      "date_label": "2026-06-23",
+      "kickoff_raw": "2026-06-23 23:00",
+      "poster": "https://uploads.tickettailorassets.com/c_scale,w_720/v1/production/userfiles/skoit9swgmmdeaveyobq.jpg?_a=BAAHWXDQ",
+      "stream_servers": [
+        {
+          "server": "C1",
+          "url": "https://streams.esportex.site/player#ZW0vYndmMQ=="
+        },
+        {
+          "server": "C2",
+          "url": "https://streams.esportex.site/player#ZW0vYndmMg=="
+        },
+        {
+          "server": "C3",
+          "url": "https://streams.esportex.site/player#ZW0vYndmMw=="
+        },
+        {
+          "server": "C4",
+          "url": "https://streams.esportex.site/player#ZW0vYndmNA=="
+        },
+        {
+          "server": "C1+",
+          "url": "https://streams.esportex.site/player#dGMvYndmMQ=="
+        },
+        {
+          "server": "C2+",
+          "url": "https://streams.esportex.site/player#dGMvYndmMg=="
+        },
+        {
+          "server": "C3+",
+          "url": "https://streams.esportex.site/player#dGMvYndmMw=="
+        },
+        {
+          "server": "C4+",
+          "url": "https://streams.esportex.site/player#dGMvYndmNA=="
+        },
+        {
+          "server": "C1cn",
+          "url": "https://streams.esportex.site/player#eWsvYndmMQ=="
+        },
+        {
+          "server": "C2cn",
+          "url": "https://streams.esportex.site/player#eWsvYndmMg=="
+        },
+        {
+          "server": "C3cn",
+          "url": "https://streams.esportex.site/player#eWsvYndmMw=="
+        },
+        {
+          "server": "C4cn",
+          "url": "https://streams.esportex.site/player#eWsvYndmNA=="
+        },
+        {
+          "server": "C1vn",
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE="
+        },
+        {
+          "server": "C2vn",
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjI="
+        },
+        {
+          "server": "C3vn",
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjM="
+        },
+        {
+          "server": "C4vn",
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjQ="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=bwf-world-tour-3",
+      "server_count": 16
     },
     {
-      "id": "2677210",
-      "title": "Flu Feira vs SSA",
-      "category": "Baiano 2",
-      "channel_name": "Mola TV",
+      "id": "vnl-bulgaria-italy",
+      "title": "Bulgaria vs Italy",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "PPV/iOS",
+        "HD/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T18:00:00+07:00",
+      "end": "2026-06-24T20:30:00+07:00",
+      "time_label": "18:00",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 18:00",
+      "poster": "https://cdn.jwplayer.com/v2/media/Y1NhddbN/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTI="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTI="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-bulgaria-italy",
+      "server_count": 3
+    },
+    {
+      "id": "vnl-china-turkiye",
+      "title": "China vs Türkiye",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T18:00:00+07:00",
+      "end": "2026-06-24T20:30:00+07:00",
+      "time_label": "18:00",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 18:00",
+      "poster": "https://cdn.jwplayer.com/v2/media/NysjqFz3/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTE="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTE="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-china-turkiye",
+      "server_count": 3
+    },
+    {
+      "id": "vnl-serbia-japan",
+      "title": "Serbia vs Japan",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T18:30:00+07:00",
+      "end": "2026-06-24T21:00:00+07:00",
+      "time_label": "18:30",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 18:30",
+      "poster": "https://cdn.jwplayer.com/v2/media/fArVexsE/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTM="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzky"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-serbia-japan",
+      "server_count": 4
+    },
+    {
+      "id": "vnl-argentina-germany",
+      "title": "Argentina vs Germany",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T21:30:00+07:00",
+      "end": "2026-06-25T00:00:00+07:00",
+      "time_label": "21:30",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 21:30",
+      "poster": "https://cdn.jwplayer.com/v2/media/GM6snNT4/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTQ="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTQ="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzkz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-argentina-germany",
+      "server_count": 4
+    },
+    {
+      "id": "vnl-ukraine-brazil",
+      "title": "Ukraine vs Brazil",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T21:30:00+07:00",
+      "end": "2026-06-25T00:00:00+07:00",
+      "time_label": "21:30",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 21:30",
+      "poster": "https://cdn.jwplayer.com/v2/media/CBUXmAmT/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTU="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTU="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk0"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-ukraine-brazil",
+      "server_count": 4
+    },
+    {
+      "id": "vnl-cuba-usa",
+      "title": "Cuba v USA",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T22:00:00+07:00",
+      "end": "2026-06-25T00:30:00+07:00",
+      "time_label": "22:00",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 22:00",
+      "poster": "https://cdn.jwplayer.com/v2/media/JsH8BgQt/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTY="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTY="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk1"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-cuba-usa",
+      "server_count": 4
+    },
+    {
+      "id": "texas-rangers-vs-miami-marlins",
+      "title": "Texas Rangers vs Miami Marlins",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-24T23:10:00+07:00",
+      "end": "2026-06-25T02:10:00+07:00",
+      "time_label": "23:10",
+      "date_label": "2026-06-24",
+      "kickoff_raw": "2026-06-24 23:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/8bc1028c808db5ef1a1e9b9c2fadcbd3-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTc="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNA=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc0"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=texas-rangers-vs-miami-marlins",
+      "server_count": 3
+    },
+    {
+      "id": "chicago-cubs-vs-new-york-mets",
+      "title": "Chicago Cubs vs New York Mets",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T00:10:00+07:00",
+      "end": "2026-06-25T03:10:00+07:00",
+      "time_label": "00:10",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 00:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/ce1598f7c03f46b086999e6a6f057def-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTg="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNw=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc1"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=chicago-cubs-vs-new-york-mets",
+      "server_count": 3
+    },
+    {
+      "id": "vnl-poland-belgium",
+      "title": "Poland vs Belgium",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
+      "channel_options": [
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T01:00:00+07:00",
+      "end": "2026-06-25T03:30:00+07:00",
       "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2677210"
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 01:00",
+      "poster": "https://cdn.jwplayer.com/v2/media/wTN8x3fI/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTc="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTc="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk2"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-poland-belgium",
+      "server_count": 4
     },
     {
-      "id": "2662792",
-      "title": "ÍBV vs Stjarnan",
-      "category": "Besta-deild karla",
-      "channel_name": "Mola TV",
+      "id": "cleveland-guardians-vs-chicago-white-sox",
+      "title": "Cleveland Guardians vs Chicago White Sox",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2662792"
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T01:10:00+07:00",
+      "end": "2026-06-25T04:10:00+07:00",
+      "time_label": "01:10",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 01:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/7ebea8210dbfabd258b377d08738fde1-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTk="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYwNQ=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc2"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cleveland-guardians-vs-chicago-white-sox",
+      "server_count": 3
     },
     {
-      "id": "2662796",
-      "title": "FH vs Thór",
-      "category": "Besta-deild karla",
-      "channel_name": "Mola TV",
+      "id": "vnl-france-iran",
+      "title": "France vs Iran",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2662796"
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T01:30:00+07:00",
+      "end": "2026-06-25T04:00:00+07:00",
+      "time_label": "01:30",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 01:30",
+      "poster": "https://cdn.jwplayer.com/v2/media/Wc7oaHth/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTg="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTg="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=vnl-france-iran",
+      "server_count": 4
     },
     {
-      "id": "2662795",
-      "title": "Valur vs Keflavík",
-      "category": "Besta-deild karla",
-      "channel_name": "Mola TV",
+      "id": "voli-slovenia-canada",
+      "title": "Slovenia vs Canada",
+      "category": "Men VNL 2026",
+      "channel_name": "PPV/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "PPV/iOS",
+        "HD/iOS",
+        "HD1/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2662795"
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T01:30:00+07:00",
+      "end": "2026-06-25T04:00:00+07:00",
+      "time_label": "01:30",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 01:30",
+      "poster": "https://cdn.jwplayer.com/v2/media/admZ9YkM/poster.jpg?width=320",
+      "stream_servers": [
+        {
+          "server": "PPV/iOS",
+          "url": "https://streams.esportex.site/player#c20vdm9saTk="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#amwvdm9saTk="
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzk3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=voli-slovenia-canada",
+      "server_count": 4
     },
     {
-      "id": "2662794",
-      "title": "Breiðablik vs KA",
-      "category": "Besta-deild karla",
-      "channel_name": "Mola TV",
+      "id": "bosnia-qatar",
+      "title": "Bosnia and Herzegovina vs Qatar",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "TUR",
+        "WCTV",
+        "ESP"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2662794"
-    },
-    {
-      "id": "2690114",
-      "title": "Parnahyba vs Águia Marabá",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690114"
-    },
-    {
-      "id": "2690109",
-      "title": "Central PE vs Ferroviário",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T01:00:00+07:00",
-      "end": "2026-06-22T03:00:00+07:00",
-      "time_label": "01:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690109"
-    },
-    {
-      "id": "2645069",
-      "title": "Belgium vs Iran",
-      "category": "FIFA World Cup™",
-      "channel_name": "SCTV",
-      "channel_options": [
-        "SCTV",
-        "MNCTV",
-        "Indosiar",
-        "RCTI",
-        "TVRI",
-        "iNews"
-      ],
-      "channel_url": "#channel:SCTV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T02:00:00+07:00",
+      "end": "2026-06-25T04:45:00+07:00",
       "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2645069"
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 02:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/6fe24e2a5e2f7eed4309b0e9cd7d911d-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "TUR",
+          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ=="
+        },
+        {
+          "server": "WCTV",
+          "url": "https://player.lapakstreaming.live/?id=Y2lnbmFs"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "FOX",
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "ISR",
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "RU",
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsMQ=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsMQ=="
+        },
+        {
+          "server": "RTB/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x"
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTE="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2M="
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjE="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjI="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjM3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=bosnia-qatar",
+      "server_count": 27
     },
     {
-      "id": "2681530",
-      "title": "Barreiras vs Conquista",
-      "category": "Baiano 2",
-      "channel_name": "Mola TV",
+      "id": "switzerland-canada",
+      "title": "Switzerland vs Canada",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "TUR",
+        "WCTV",
+        "ESP"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T02:00:00+07:00",
+      "end": "2026-06-25T04:45:00+07:00",
       "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2681530"
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 02:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/b154f97db0bda43be4ff4d9e20df335f-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "TUR",
+          "url": "https://streams.esportex.site/player#dHIvdHJ0MQ=="
+        },
+        {
+          "server": "WCTV",
+          "url": "https://player.lapakstreaming.live/?id=Y2lnbmFs"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "FOX",
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "ISR",
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "RU",
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsMQ=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsMQ=="
+        },
+        {
+          "server": "RTB/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28x"
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTE="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2M="
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjE="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjI="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzQ="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjQ1"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=switzerland-canada",
+      "server_count": 27
     },
     {
-      "id": "2669370",
-      "title": "CRB vs Fortaleza",
-      "category": "Brasileirão Série B Superbet",
-      "channel_name": "Mola TV",
+      "id": "boston-red-sox-vs-colorado-rockies",
+      "title": "Boston Red Sox vs Colorado Rockies",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2669370"
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T02:10:00+07:00",
+      "end": "2026-06-25T05:10:00+07:00",
+      "time_label": "02:10",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 02:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/4873f0911f944515ab540d25ede0c505-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjA="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYwOA=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=boston-red-sox-vs-colorado-rockies",
+      "server_count": 3
     },
     {
-      "id": "2673838",
-      "title": "Brusque vs Floresta",
-      "category": "Brasileirão Série C",
-      "channel_name": "Mola TV",
+      "id": "baltimore-orioles-vs-los-angeles-angels",
+      "title": "Baltimore Orioles vs Los Angeles Angels",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2673838"
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T03:07:00+07:00",
+      "end": "2026-06-25T06:07:00+07:00",
+      "time_label": "03:07",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 03:07",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/c9732d1788e0513ba664db42fee02cde-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjE="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYxMg=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=baltimore-orioles-vs-los-angeles-angels",
+      "server_count": 3
     },
     {
-      "id": "2690095",
-      "title": "Maguary vs Piauí",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
+      "id": "morocco-haiti",
+      "title": "Morocco vs Haiti",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
       "channel_options": [
-        "Mola TV",
-        "Vidio"
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "KZ",
+        "ESP",
+        "ESP2"
       ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690095"
-    },
-    {
-      "id": "2690405",
-      "title": "Jacuipense vs Treze FC PB",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690405"
-    },
-    {
-      "id": "2690402",
-      "title": "Lagarto vs CSA",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690402"
-    },
-    {
-      "id": "2690398",
-      "title": "CRAC vs Tombense",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690398"
-    },
-    {
-      "id": "2690116",
-      "title": "São José RS vs Santa Catarina",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690116"
-    },
-    {
-      "id": "2690108",
-      "title": "Brasiliense vs Goiatuba",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690108"
-    },
-    {
-      "id": "2690106",
-      "title": "Altos vs ABC",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690106"
-    },
-    {
-      "id": "2690096",
-      "title": "Tuna Luso vs Iguatu",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690096"
-    },
-    {
-      "id": "2690098",
-      "title": "Portuguesa RJ vs Noroeste",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690098"
-    },
-    {
-      "id": "2690100",
-      "title": "Cascavel vs Marcílio Dias",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:00:00+07:00",
-      "end": "2026-06-22T04:00:00+07:00",
-      "time_label": "02:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690100"
-    },
-    {
-      "id": "2690403",
-      "title": "Serra Branca vs Juazeirense",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T02:30:00+07:00",
-      "end": "2026-06-22T04:30:00+07:00",
-      "time_label": "02:30",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690403"
-    },
-    {
-      "id": "2669363",
-      "title": "São Bernardo vs Juventude",
-      "category": "Brasileirão Série B Superbet",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:00:00+07:00",
-      "end": "2026-06-22T05:00:00+07:00",
-      "time_label": "03:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2669363"
-    },
-    {
-      "id": "2690112",
-      "title": "Sampaio Corrêa FC vs Trem",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:00:00+07:00",
-      "end": "2026-06-22T05:00:00+07:00",
-      "time_label": "03:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690112"
-    },
-    {
-      "id": "2690107",
-      "title": "Rio Branco vs Uberlândia",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:00:00+07:00",
-      "end": "2026-06-22T05:00:00+07:00",
-      "time_label": "03:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690107"
-    },
-    {
-      "id": "2690404",
-      "title": "ASA vs Sergipe",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:00:00+07:00",
-      "end": "2026-06-22T05:00:00+07:00",
-      "time_label": "03:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690404"
-    },
-    {
-      "id": "2690406",
-      "title": "Ivinhema vs Democrata GV",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:00:00+07:00",
-      "end": "2026-06-22T05:00:00+07:00",
-      "time_label": "03:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690406"
-    },
-    {
-      "id": "2662793",
-      "title": "Fram vs Víkingur Reykjavík",
-      "category": "Besta-deild karla",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T03:15:00+07:00",
-      "end": "2026-06-22T05:15:00+07:00",
-      "time_label": "03:15",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2662793"
-    },
-    {
-      "id": "2690397",
-      "title": "São Raimundo R vs Porto Velho",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:00:00+07:00",
-      "end": "2026-06-22T06:00:00+07:00",
-      "time_label": "04:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690397"
-    },
-    {
-      "id": "2690407",
-      "title": "Independência vs Manauara",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:00:00+07:00",
-      "end": "2026-06-22T06:00:00+07:00",
-      "time_label": "04:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690407"
-    },
-    {
-      "id": "2690408",
-      "title": "Araguaína vs Nacional AM",
-      "category": "Brasileirão Série D",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:00:00+07:00",
-      "end": "2026-06-22T06:00:00+07:00",
-      "time_label": "04:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2690408"
-    },
-    {
-      "id": "2669367",
-      "title": "Goiás vs Operário",
-      "category": "Brasileirão Série B Superbet",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:30:00+07:00",
-      "end": "2026-06-22T06:30:00+07:00",
-      "time_label": "04:30",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2669367"
-    },
-    {
-      "id": "2673834",
-      "title": "Ferroviária vs Inter Limeira",
-      "category": "Brasileirão Série C",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:30:00+07:00",
-      "end": "2026-06-22T06:30:00+07:00",
-      "time_label": "04:30",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2673834"
-    },
-    {
-      "id": "2673832",
-      "title": "Barra vs Amazonas",
-      "category": "Brasileirão Série C",
-      "channel_name": "Mola TV",
-      "channel_options": [
-        "Mola TV",
-        "Vidio"
-      ],
-      "channel_url": "#channel:Mola TV",
-      "start": "2026-06-22T04:30:00+07:00",
-      "end": "2026-06-22T06:30:00+07:00",
-      "time_label": "04:30",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2673832"
-    },
-    {
-      "id": "2645071",
-      "title": "Uruguay vs Cabo Verde",
-      "category": "FIFA World Cup™",
-      "channel_name": "SCTV",
-      "channel_options": [
-        "SCTV",
-        "MNCTV",
-        "Indosiar",
-        "RCTI",
-        "TVRI",
-        "iNews"
-      ],
-      "channel_url": "#channel:SCTV",
-      "start": "2026-06-22T05:00:00+07:00",
-      "end": "2026-06-22T07:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:00:00+07:00",
+      "end": "2026-06-25T07:45:00+07:00",
       "time_label": "05:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2645071"
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/63c0c4fe37413b071b85a5de621c604b-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "KZ",
+          "url": "https://streams.esportex.site/player#a3ovcWF6"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "FOX",
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsMw=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsMw=="
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTM="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2M="
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjU="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjY="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzU="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjUz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=morocco-haiti",
+      "server_count": 23
     },
     {
-      "id": "2645072",
-      "title": "New Zealand vs Egypt",
-      "category": "FIFA World Cup™",
-      "channel_name": "SCTV",
+      "id": "scotland-brazil",
+      "title": "Scotland vs Brazil",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
       "channel_options": [
-        "SCTV",
-        "MNCTV",
-        "Indosiar",
-        "RCTI",
-        "TVRI",
-        "iNews"
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "WCTV",
+        "ESP",
+        "ESP2"
       ],
-      "channel_url": "#channel:SCTV",
-      "start": "2026-06-22T08:00:00+07:00",
-      "end": "2026-06-22T10:00:00+07:00",
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:00:00+07:00",
+      "end": "2026-06-25T07:45:00+07:00",
+      "time_label": "05:00",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/b833af4416764ce6288894442a27d0cf-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "WCTV",
+          "url": "https://player.lapakstreaming.live/?id=Y2lnbmFs"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#ZXMvcnR2ZQ=="
+        },
+        {
+          "server": "ESP3",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "MNE",
+          "url": "https://streams.esportex.site/player#bW5lL3R2Y2cx"
+        },
+        {
+          "server": "CZ",
+          "url": "https://streams.esportex.site/player#Y3ovY3Q="
+        },
+        {
+          "server": "KZ",
+          "url": "https://streams.esportex.site/player#a3ovcWF6"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "ISR",
+          "url": "https://streams.esportex.site/player#aXNyL2thbjEx"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "RU",
+          "url": "https://streams.esportex.site/player#cnUvbWF0Y2hmYg=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "FOX",
+          "url": "https://streams.esportex.site/player#dXMvZm94Mg=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsMg=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsMg=="
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTI="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2M="
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjM="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1YjQ="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzY="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjYx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=scotland-brazil",
+      "server_count": 29
+    },
+    {
+      "id": "kansas-city-royals-vs-tampa-bay-rays",
+      "title": "Kansas City Royals vs Tampa Bay Rays",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:40:00+07:00",
+      "end": "2026-06-25T08:40:00+07:00",
+      "time_label": "05:40",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/fda72535ed1fa2cf4e8ac894d6a97bb8-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjI="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyNg=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc5"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=kansas-city-royals-vs-tampa-bay-rays",
+      "server_count": 3
+    },
+    {
+      "id": "new-york-yankees-vs-detroit-tigers",
+      "title": "New York Yankees vs Detroit Tigers",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:40:00+07:00",
+      "end": "2026-06-25T08:40:00+07:00",
+      "time_label": "05:40",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/214e71b6918ed7e995fcb66b6cded21d-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYwOQ=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=new-york-yankees-vs-detroit-tigers",
+      "server_count": 3
+    },
+    {
+      "id": "seattle-mariners-vs-pittsburgh-pirates",
+      "title": "Seattle Mariners vs Pittsburgh Pirates",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:40:00+07:00",
+      "end": "2026-06-25T08:40:00+07:00",
+      "time_label": "05:40",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/ee86fabc212e66d24df4fa62dd62caef-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjQ="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMQ=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=seattle-mariners-vs-pittsburgh-pirates",
+      "server_count": 3
+    },
+    {
+      "id": "philadelphia-phillies-vs-washington-nationals",
+      "title": "Philadelphia Phillies vs Washington Nationals",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T05:45:00+07:00",
+      "end": "2026-06-25T08:45:00+07:00",
+      "time_label": "05:45",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 05:45",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/2f870797b9d668169b53f482ae5c6030-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjU="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyOQ=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=philadelphia-phillies-vs-washington-nationals",
+      "server_count": 3
+    },
+    {
+      "id": "houston-astros-vs-toronto-blue-jays",
+      "title": "Houston Astros vs Toronto Blue Jays",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:07:00+07:00",
+      "end": "2026-06-25T09:07:00+07:00",
+      "time_label": "06:07",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:07",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/21cdd8d878e2cc2761d56b4a07a46da3-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjY="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyOA=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzgz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=houston-astros-vs-toronto-blue-jays",
+      "server_count": 3
+    },
+    {
+      "id": "milwaukee-brewers-vs-cincinnati-reds",
+      "title": "Milwaukee Brewers vs Cincinnati Reds",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:10:00+07:00",
+      "end": "2026-06-25T09:10:00+07:00",
+      "time_label": "06:10",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/b050a693b257514184ece1a12e68cce6-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjg="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYwNg=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg1"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=milwaukee-brewers-vs-cincinnati-reds",
+      "server_count": 3
+    },
+    {
+      "id": "minnesota-lynx-vs-washington-mystics",
+      "title": "Minnesota Lynx vs Washington Mystics",
+      "category": "NBA",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:30:00+07:00",
+      "end": "2026-06-25T09:30:00+07:00",
+      "time_label": "06:30",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:30",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/fd7e35c788921b72f3b1110035186931-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTQ="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=minnesota-lynx-vs-washington-mystics",
+      "server_count": 2
+    },
+    {
+      "id": "phoenix-mercury-vs-indiana-fever",
+      "title": "Phoenix Mercury vs Indiana Fever",
+      "category": "NBA",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:30:00+07:00",
+      "end": "2026-06-25T09:30:00+07:00",
+      "time_label": "06:30",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:30",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/d05cabb29c6d37cac9502c6885af50fe-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTM="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=phoenix-mercury-vs-indiana-fever",
+      "server_count": 2
+    },
+    {
+      "id": "los-angeles-dodgers-vs-minnesota-twins",
+      "title": "Los Angeles Dodgers vs Minnesota Twins",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:40:00+07:00",
+      "end": "2026-06-25T09:40:00+07:00",
+      "time_label": "06:40",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/287312a08774a059d811080a426e96c1-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjk="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYxNg=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg2"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=los-angeles-dodgers-vs-minnesota-twins",
+      "server_count": 3
+    },
+    {
+      "id": "arizona-diamondbacks-vs-st-louis-cardinals",
+      "title": "Arizona Diamondbacks vs St. Louis Cardinals",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T06:45:00+07:00",
+      "end": "2026-06-25T09:45:00+07:00",
+      "time_label": "06:45",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 06:45",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/befc90bc75e31b7a6c1d0cad6d4fcc88-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzA="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyNQ=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=arizona-diamondbacks-vs-st-louis-cardinals",
+      "server_count": 3
+    },
+    {
+      "id": "2026-nba-draft-round-2",
+      "title": "2026 NBA Draft | Round 2",
+      "category": "ESPN",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T07:00:00+07:00",
+      "end": "2026-06-25T11:00:00+07:00",
+      "time_label": "07:00",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 07:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/d8c6788285e93807efdeb5b38cb4a355-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzIx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=2026-nba-draft-round-2",
+      "server_count": 1
+    },
+    {
+      "id": "portland-fire-vs-chicago-sky",
+      "title": "Portland Fire vs Chicago Sky",
+      "category": "NBA",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T07:00:00+07:00",
+      "end": "2026-06-25T10:00:00+07:00",
+      "time_label": "07:00",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 07:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/d3f1f5c43158722ff4f3dff752e87671-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTU="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=portland-fire-vs-chicago-sky",
+      "server_count": 2
+    },
+    {
+      "id": "atlanta-braves-vs-san-diego-padres",
+      "title": "Atlanta Braves vs San Diego Padres",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T07:40:00+07:00",
+      "end": "2026-06-25T10:40:00+07:00",
+      "time_label": "07:40",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 07:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/92092666a36f7574efbd9171cac4984a-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzE="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMg=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=atlanta-braves-vs-san-diego-padres",
+      "server_count": 3
+    },
+    {
+      "id": "czech-Mexico",
+      "title": "Czechia Republic vs Mexico",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
+      "channel_options": [
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "KZ",
+        "ESP",
+        "ESP2"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T08:00:00+07:00",
+      "end": "2026-06-25T10:45:00+07:00",
       "time_label": "08:00",
-      "date_label": "2026-06-22",
-      "source": "onefootball.com",
-      "source_href": "https://onefootball.com/en/match/2645072"
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 08:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/a74d8adbce5611a99efb1fd3a42455d9-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "KZ",
+          "url": "https://streams.esportex.site/player#a3ovcWF6"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsNA=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsNA=="
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2Mx"
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzc="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjY5"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=czech-Mexico",
+      "server_count": 22
+    },
+    {
+      "id": "africa-korea",
+      "title": "South Africa vs Korea Republic",
+      "category": "FIFA World Cup",
+      "channel_name": "VIP1/iOS",
+      "channel_options": [
+        "VIP1/iOS",
+        "VIP2/iOS",
+        "KZ",
+        "ESP",
+        "ESP2"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T08:00:00+07:00",
+      "end": "2026-06-25T10:45:00+07:00",
+      "time_label": "08:00",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 08:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/ccf4f8d710d4671a0040cbed6cac98aa-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "VIP1/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiZ28="
+        },
+        {
+          "server": "VIP2/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRiMg=="
+        },
+        {
+          "server": "KZ",
+          "url": "https://streams.esportex.site/player#a3ovcWF6"
+        },
+        {
+          "server": "ESP",
+          "url": "https://streams.esportex.site/player#YXJnL2RzcG9ydHM="
+        },
+        {
+          "server": "ESP2",
+          "url": "https://streams.esportex.site/player#dXMvdGVsZW11bmRv"
+        },
+        {
+          "server": "BRA",
+          "url": "https://streams.esportex.site/player#YnIvY2F6ZXR2"
+        },
+        {
+          "server": "VN1",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Mw=="
+        },
+        {
+          "server": "VN2",
+          "url": "https://streams.esportex.site/player#dm4vdnR2Ng=="
+        },
+        {
+          "server": "TVRI",
+          "url": "https://player.lapakstreaming.live/?id=aWQvdHZyaQ=="
+        },
+        {
+          "server": "POL",
+          "url": "https://streams.esportex.site/player#cG9sL3R2cA=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuMQ=="
+        },
+        {
+          "server": "TSN/iOS",
+          "url": "https://streams.esportex.site/player#djIvZXBsNA=="
+        },
+        {
+          "server": "ESP/iOS",
+          "url": "https://streams.esportex.site/player#djIvdWNsNA=="
+        },
+        {
+          "server": "VN/iOS",
+          "url": "https://streams.esportex.site/player#eG8vbGlnYTQ="
+        },
+        {
+          "server": "Arab/iOS",
+          "url": "https://streams.esportex.site/player#YXIvd2Mx"
+        },
+        {
+          "server": "ENG/iOS",
+          "url": "https://streams.esportex.site/player#Ym8vcnRi"
+        },
+        {
+          "server": "EHD1/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjc="
+        },
+        {
+          "server": "EHD2/iOS",
+          "url": "https://streams.esportex.site/player#c3QvY2x1Yjg="
+        },
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzg="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzcx"
+        },
+        {
+          "server": "HD1/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjc3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=africa-korea",
+      "server_count": 22
+    },
+    {
+      "id": "athletics-vs-san-francisco-giants",
+      "title": "Athletics vs San Francisco Giants",
+      "category": "MLB",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T08:45:00+07:00",
+      "end": "2026-06-25T11:45:00+07:00",
+      "time_label": "08:45",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 08:45",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/08698c07dc99127fbd3881e54908f083-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMzI="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzYyMw=="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzg5"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=athletics-vs-san-francisco-giants",
+      "server_count": 3
+    },
+    {
+      "id": "atlanta-dream-vs-golden-state-valkyries",
+      "title": "Atlanta Dream vs Golden State Valkyries",
+      "category": "NBA",
+      "channel_name": "SD/iOS",
+      "channel_options": [
+        "SD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T09:00:00+07:00",
+      "end": "2026-06-25T12:00:00+07:00",
+      "time_label": "09:00",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 09:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/bce0d65e36a3e70a9a5fc1214b0f3c0e-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "SD/iOS",
+          "url": "https://streams.esportex.site/player#c2MvMTAxMTY="
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzcz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=atlanta-dream-vs-golden-state-valkyries",
+      "server_count": 2
+    },
+    {
+      "id": "afl-2026-06-25-bl-syd",
+      "title": "Brisbane Lions vs Sydney Swans",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-25T16:30:00+07:00",
+      "end": "2026-06-25T19:30:00+07:00",
+      "time_label": "16:30",
+      "date_label": "2026-06-25",
+      "kickoff_raw": "2026-06-25 16:30",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/8a9a6ce470dec8ca5c3a5ae21b61fe57-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-25-bl-syd",
+      "server_count": 1
+    },
+    {
+      "id": "wc-2026-06-25-cuw-civ",
+      "title": "Curaçao vs Ivory Coast",
+      "category": "FIFA World Cup",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T03:00:00+07:00",
+      "end": "2026-06-26T05:30:00+07:00",
+      "time_label": "03:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 03:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/3f029522114837d358231458066ba549-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzIy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-cuw-civ",
+      "server_count": 2
+    },
+    {
+      "id": "wc-2026-06-25-ecu-ger",
+      "title": "Ecuador vs Germany",
+      "category": "FIFA World Cup",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T03:00:00+07:00",
+      "end": "2026-06-26T05:30:00+07:00",
+      "time_label": "03:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 03:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/e340c0ff6d69afd93b8aa40c028890e0-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzMw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-ecu-ger",
+      "server_count": 2
+    },
+    {
+      "id": "wc-2026-06-25-jpn-swe",
+      "title": "Japan vs Sweden",
+      "category": "FIFA World Cup",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T06:00:00+07:00",
+      "end": "2026-06-26T08:30:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 06:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/b0e06d7a9157644a2d60157376161bf5-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzM4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-jpn-swe",
+      "server_count": 2
+    },
+    {
+      "id": "wc-2026-06-25-tun-ned",
+      "title": "Tunisia vs Netherlands",
+      "category": "FIFA World Cup",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T06:00:00+07:00",
+      "end": "2026-06-26T08:30:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 06:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/c56f54c1a35ecc7a87193490d5aacda1-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzQ2"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-tun-ned",
+      "server_count": 2
+    },
+    {
+      "id": "cfl-2026-06-25-edm-wpg",
+      "title": "Edmonton Elks vs Winnipeg Blue Bombers",
+      "category": "CFL+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T07:30:00+07:00",
+      "end": "2026-06-26T11:00:00+07:00",
+      "time_label": "07:30",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 07:30",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/566e0d91b42e70e6b92aa542b8971fbc-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTUx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cfl-2026-06-25-edm-wpg",
+      "server_count": 1
+    },
+    {
+      "id": "wc-2026-06-25-par-aus",
+      "title": "Paraguay vs Australia",
+      "category": "FIFA World Cup",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS",
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T09:00:00+07:00",
+      "end": "2026-06-26T11:30:00+07:00",
+      "time_label": "09:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 09:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/8f275ad055747126119282d2d382b1cc-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQx"
+        },
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzU0"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-par-aus",
+      "server_count": 2
+    },
+    {
+      "id": "wc-2026-06-25-tur-usa",
+      "title": "Türkiye vs United States",
+      "category": "FIFA World Cup",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T09:00:00+07:00",
+      "end": "2026-06-26T11:30:00+07:00",
+      "time_label": "09:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 09:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/e2fe685df8143c6f7a566dc72e8de81b-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzYy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=wc-2026-06-25-tur-usa",
+      "server_count": 1
+    },
+    {
+      "id": "f1-practice-1",
+      "title": "Austria Grand Prix - Practice 1",
+      "category": "Formula 1",
+      "channel_name": "SKY F1",
+      "channel_options": [
+        "SKY F1",
+        "Fancode",
+        "TSN",
+        "ENG1/iOS",
+        "ENG2/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T15:00:00+07:00",
+      "end": "2026-06-26T20:00:00+07:00",
+      "time_label": "15:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 15:00",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/4jsthx1774920200.jpg",
+      "stream_servers": [
+        {
+          "server": "SKY F1",
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+        },
+        {
+          "server": "Fancode",
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuNQ=="
+        },
+        {
+          "server": "ENG1/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+        },
+        {
+          "server": "ENG2/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+        },
+        {
+          "server": "Bein/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+        },
+        {
+          "server": "SKYuk/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+        },
+        {
+          "server": "SKYde/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+        },
+        {
+          "server": "SKYit/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+        },
+        {
+          "server": "DAZNF1/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=f1-practice-1",
+      "server_count": 11
+    },
+    {
+      "id": "afl-2026-06-26-haw-gws",
+      "title": "Hawthorn vs GWS GIANTS",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T16:40:00+07:00",
+      "end": "2026-06-26T19:40:00+07:00",
+      "time_label": "16:40",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 16:40",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/12f5446476878ee04da67a7e2a59a79c-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-26-haw-gws",
+      "server_count": 1
+    },
+    {
+      "id": "f1-practice-2",
+      "title": "Austria Grand Prix - Practice 2",
+      "category": "Formula 1",
+      "channel_name": "SKY F1",
+      "channel_options": [
+        "SKY F1",
+        "Fancode",
+        "TSN",
+        "ENG1/iOS",
+        "ENG2/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-26T20:00:00+07:00",
+      "end": "2026-06-26T23:30:00+07:00",
+      "time_label": "20:00",
+      "date_label": "2026-06-26",
+      "kickoff_raw": "2026-06-26 20:00",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/jlsefm1774920210.jpg",
+      "stream_servers": [
+        {
+          "server": "SKY F1",
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+        },
+        {
+          "server": "Fancode",
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuNQ=="
+        },
+        {
+          "server": "ENG1/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+        },
+        {
+          "server": "ENG2/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+        },
+        {
+          "server": "Bein/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+        },
+        {
+          "server": "SKYuk/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+        },
+        {
+          "server": "SKYde/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+        },
+        {
+          "server": "SKYit/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+        },
+        {
+          "server": "DAZNF1/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=f1-practice-2",
+      "server_count": 11
+    },
+    {
+      "id": "cfl-2026-06-26-tor-ssk",
+      "title": "Toronto Argonauts vs Saskatchewan Roughriders",
+      "category": "CFL+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T08:00:00+07:00",
+      "end": "2026-06-27T11:30:00+07:00",
+      "time_label": "08:00",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 08:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/e4635280158fd7e5c44358491236981a-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTU0"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cfl-2026-06-26-tor-ssk",
+      "server_count": 1
+    },
+    {
+      "id": "afl-2026-06-27-carl-wce",
+      "title": "Carlton vs West Coast Eagles",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T10:15:00+07:00",
+      "end": "2026-06-27T13:15:00+07:00",
+      "time_label": "10:15",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 10:15",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/78a5387c37d19e7185b095adec84e0bc-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTk5"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-27-carl-wce",
+      "server_count": 1
+    },
+    {
+      "id": "afl-2026-06-27-coll-rich",
+      "title": "Collingwood vs Richmond",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T13:15:00+07:00",
+      "end": "2026-06-27T16:15:00+07:00",
+      "time_label": "13:15",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 13:15",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/28f1cf6a8eb859e7d97e0af95da18924-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-27-coll-rich",
+      "server_count": 1
+    },
+    {
+      "id": "f1-practice-3",
+      "title": "Austria Grand Prix - Practice 3",
+      "category": "Formula 1",
+      "channel_name": "SKY F1",
+      "channel_options": [
+        "SKY F1",
+        "Fancode",
+        "TSN",
+        "ENG1/iOS",
+        "ENG2/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T15:00:00+07:00",
+      "end": "2026-06-27T20:00:00+07:00",
+      "time_label": "15:00",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 15:00",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/ubccao1774920220.jpg",
+      "stream_servers": [
+        {
+          "server": "SKY F1",
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+        },
+        {
+          "server": "Fancode",
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuNQ=="
+        },
+        {
+          "server": "ENG1/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+        },
+        {
+          "server": "ENG2/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+        },
+        {
+          "server": "Bein/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+        },
+        {
+          "server": "SKYuk/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+        },
+        {
+          "server": "SKYde/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+        },
+        {
+          "server": "SKYit/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+        },
+        {
+          "server": "DAZNF1/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c28vaGQy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=f1-practice-3",
+      "server_count": 11
+    },
+    {
+      "id": "afl-2026-06-27-port-adel",
+      "title": "Port Adelaide vs Adelaide Crows",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T16:35:00+07:00",
+      "end": "2026-06-27T19:35:00+07:00",
+      "time_label": "16:35",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 16:35",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/17c8240c531dad1285dc35559ed8e594-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAx"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-27-port-adel",
+      "server_count": 1
+    },
+    {
+      "id": "f1-qualifying",
+      "title": "Austria Grand Prix - Qualifying",
+      "category": "Formula 1",
+      "channel_name": "SKY F1",
+      "channel_options": [
+        "SKY F1",
+        "Fancode",
+        "TSN",
+        "ENG1/iOS",
+        "ENG2/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T20:00:00+07:00",
+      "end": "2026-06-27T23:30:00+07:00",
+      "time_label": "20:00",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 20:00",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/ni75b71774920230.jpg",
+      "stream_servers": [
+        {
+          "server": "SKY F1",
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+        },
+        {
+          "server": "Fancode",
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+        },
+        {
+          "server": "TSN",
+          "url": "https://streams.esportex.site/player#dHNuNQ=="
+        },
+        {
+          "server": "ENG1/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+        },
+        {
+          "server": "ENG2/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+        },
+        {
+          "server": "Bein/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+        },
+        {
+          "server": "SKYuk/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+        },
+        {
+          "server": "SKYde/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+        },
+        {
+          "server": "SKYit/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+        },
+        {
+          "server": "DAZNF1/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=f1-qualifying",
+      "server_count": 10
+    },
+    {
+      "id": "afle-2026-06-27-rhe-alp",
+      "title": "Rhein Fire vs Alpine Rams",
+      "category": "AFLE+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-27T22:10:00+07:00",
+      "end": "2026-06-28T01:40:00+07:00",
+      "time_label": "22:10",
+      "date_label": "2026-06-27",
+      "kickoff_raw": "2026-06-27 22:10",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/f54963edbbe051bc5f27285a0f2864da-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTcy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afle-2026-06-27-rhe-alp",
+      "server_count": 1
+    },
+    {
+      "id": "cfl-2026-06-27-cgy-bc",
+      "title": "Calgary Stampeders vs BC Lions",
+      "category": "CFL+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-28T06:00:00+07:00",
+      "end": "2026-06-28T09:30:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-06-28",
+      "kickoff_raw": "2026-06-28 06:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/db7cc35c7c73293d09c8b9b1f8f0ac6c-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTU4"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cfl-2026-06-27-cgy-bc",
+      "server_count": 1
+    },
+    {
+      "id": "afl-2026-06-28-nmfc-ess",
+      "title": "North Melbourne vs Essendon",
+      "category": "AFL",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-28T12:15:00+07:00",
+      "end": "2026-06-28T15:15:00+07:00",
+      "time_label": "12:15",
+      "date_label": "2026-06-28",
+      "kickoff_raw": "2026-06-28 12:15",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/c76554cbb97994646880440d5e6a04ba-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNjAy"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afl-2026-06-28-nmfc-ess",
+      "server_count": 1
+    },
+    {
+      "id": "f1-race",
+      "title": "Austria Grand Prix - Race",
+      "category": "Formula 1",
+      "channel_name": "SKY F1",
+      "channel_options": [
+        "SKY F1",
+        "Fancode",
+        "SKY",
+        "Bein",
+        "ENG1/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-28T13:00:00+07:00",
+      "end": "2026-06-28T23:00:00+07:00",
+      "time_label": "13:00",
+      "date_label": "2026-06-28",
+      "kickoff_raw": "2026-06-28 13:00",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/01q2vk1774920240.jpg",
+      "stream_servers": [
+        {
+          "server": "SKY F1",
+          "url": "https://streams.esportex.site/player#ZGUvc2t5ZjE="
+        },
+        {
+          "server": "Fancode",
+          "url": "https://streams.esportex.site/player#aW5kL2ZhbmNvZGVmMQ=="
+        },
+        {
+          "server": "SKY",
+          "url": "https://streams.esportex.site/player#bnovc2t5MQ=="
+        },
+        {
+          "server": "Bein",
+          "url": "https://streams.esportex.site/player#bW5jL2JlaW4x"
+        },
+        {
+          "server": "ENG1/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTE="
+        },
+        {
+          "server": "ENG2/iOS",
+          "url": "https://streams.esportex.site/player#cHB2L2YxLTI="
+        },
+        {
+          "server": "Bein/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2JlaW4xbXk="
+        },
+        {
+          "server": "SKYuk/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxdWs="
+        },
+        {
+          "server": "SKYde/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxZGU="
+        },
+        {
+          "server": "SKYit/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL3NreWYxaXQ="
+        },
+        {
+          "server": "DAZNF1/iOS",
+          "url": "https://streams.esportex.site/player#ZGRoL2Rhem4xZXM="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=f1-race",
+      "server_count": 11
+    },
+    {
+      "id": "afle-2026-06-28-pan-fir",
+      "title": "Panthers Wroclaw vs Firenze Red Lions",
+      "category": "AFLE+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-28T20:00:00+07:00",
+      "end": "2026-06-28T23:30:00+07:00",
+      "time_label": "20:00",
+      "date_label": "2026-06-28",
+      "kickoff_raw": "2026-06-28 20:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/01a3892a2af8cae9e670fee446534319-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTc3"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=afle-2026-06-28-pan-fir",
+      "server_count": 1
+    },
+    {
+      "id": "cfl-2026-06-28-ott-mtl",
+      "title": "Ottawa RedBlacks vs Montreal Alouettes",
+      "category": "CFL+",
+      "channel_name": "FHD/iOS",
+      "channel_options": [
+        "FHD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-29T06:00:00+07:00",
+      "end": "2026-06-29T09:30:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-06-29",
+      "kickoff_raw": "2026-06-29 06:00",
+      "poster": "https://api.esportex.site/api/banner/assets/thumb/76798e50de725849fa80db804acd4e9a-thumbnail.jpg",
+      "stream_servers": [
+        {
+          "server": "FHD/iOS",
+          "url": "https://streams.esportex.site/player#cHB2LzIzNTYw"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cfl-2026-06-28-ott-mtl",
+      "server_count": 1
+    },
+    {
+      "id": "tennis-wimbledon-open",
+      "title": "Wimbledon",
+      "category": "Tennis",
+      "channel_name": "Bein1",
+      "channel_options": [
+        "Bein1",
+        "Bein2",
+        "TV4"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-29T16:00:00+07:00",
+      "end": "2026-07-13T23:30:00+07:00",
+      "time_label": "16:00",
+      "date_label": "2026-06-29",
+      "kickoff_raw": "2026-06-29 16:00",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIBM7ghCtulqDzwSepaeIjJqy1EnhONM_yzQ&s",
+      "stream_servers": [
+        {
+          "server": "Bein1",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+        },
+        {
+          "server": "Bein2",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+        },
+        {
+          "server": "TV4",
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=tennis-wimbledon-open",
+      "server_count": 3
+    },
+    {
+      "id": "bwf-world-tour-4",
+      "title": "YONEX Canada Open 2026",
+      "category": "BWF",
+      "channel_name": "C1",
+      "channel_options": [
+        "C1",
+        "C1+",
+        "C1hd",
+        "C1cn",
+        "C1vn"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-06-30T12:00:00+07:00",
+      "end": "2026-07-05T23:30:00+07:00",
+      "time_label": "12:00",
+      "date_label": "2026-06-30",
+      "kickoff_raw": "2026-06-30 12:00",
+      "poster": "https://doavub8d2uzrx.cloudfront.net/media/images/venues/badminton-canada/backgrounds/aad503b5-c9e.png",
+      "stream_servers": [
+        {
+          "server": "C1",
+          "url": "https://streams.esportex.site/player#ZW1iL2J3ZjE="
+        },
+        {
+          "server": "C1+",
+          "url": "https://streams.esportex.site/player#dGMvYndmMQ=="
+        },
+        {
+          "server": "C1hd",
+          "url": "https://streams.esportex.site/player#ZW1jL2J3ZjE="
+        },
+        {
+          "server": "C1cn",
+          "url": "https://streams.esportex.site/player#eWsvYndmMQ=="
+        },
+        {
+          "server": "C1vn",
+          "url": "https://streams.esportex.site/player#eG9pL2J3ZjE="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=bwf-world-tour-4",
+      "server_count": 5
+    },
+    {
+      "id": "cincinnati bengals - detroit lions cincinnati bengals detroit lions nfl nfl football thu, aug 13",
+      "title": "Cincinnati Bengals vs Detroit Lions",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T06:00:00+07:00",
+      "end": "2026-08-14T09:00:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 06:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI1Nw=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=cincinnati bengals - detroit lions cincinnati bengals detroit lions nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "pittsburgh steelers - green bay packers pittsburgh steelers green bay packers nfl nfl football thu, aug 13",
+      "title": "Pittsburgh Steelers vs Green Bay Packers",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T06:00:00+07:00",
+      "end": "2026-08-14T09:00:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 06:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI3Nw=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=pittsburgh steelers - green bay packers pittsburgh steelers green bay packers nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "new england patriots - indianapolis colts new england patriots indianapolis colts nfl nfl football thu, aug 13",
+      "title": "New England Patriots vs Indianapolis Colts",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T06:30:00+07:00",
+      "end": "2026-08-14T09:30:00+07:00",
+      "time_label": "06:30",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 06:30",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI3Mg=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=new england patriots - indianapolis colts new england patriots indianapolis colts nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "houston texans - los angeles chargers houston texans los angeles chargers nfl nfl football thu, aug 13",
+      "title": "Houston Texans vs Los Angeles Chargers",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T07:00:00+07:00",
+      "end": "2026-08-14T10:00:00+07:00",
+      "time_label": "07:00",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 07:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI2Mw=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=houston texans - los angeles chargers houston texans los angeles chargers nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "las vegas raiders - arizona cardinals las vegas raiders arizona cardinals nfl nfl football thu, aug 13",
+      "title": "Las Vegas Raiders vs Arizona Cardinals",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T07:00:00+07:00",
+      "end": "2026-08-14T10:00:00+07:00",
+      "time_label": "07:00",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 07:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI2Nw=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=las vegas raiders - arizona cardinals las vegas raiders arizona cardinals nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "san francisco 49ers - tennessee titans san francisco 49ers tennessee titans nfl nfl football thu, aug 13",
+      "title": "San Francisco 49ers vs Tennessee Titans",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-14T08:00:00+07:00",
+      "end": "2026-08-14T11:00:00+07:00",
+      "time_label": "08:00",
+      "date_label": "2026-08-14",
+      "kickoff_raw": "2026-08-14 08:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI3OA=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=san francisco 49ers - tennessee titans san francisco 49ers tennessee titans nfl nfl football thu, aug 13",
+      "server_count": 1
+    },
+    {
+      "id": "atlanta falcons - denver broncos atlanta falcons denver broncos nfl nfl football fri, aug 14",
+      "title": "Atlanta Falcons vs Denver Broncos",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-15T06:00:00+07:00",
+      "end": "2026-08-15T09:00:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-08-15",
+      "kickoff_raw": "2026-08-15 06:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI1Mg=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=atlanta falcons - denver broncos atlanta falcons denver broncos nfl nfl football fri, aug 14",
+      "server_count": 1
+    },
+    {
+      "id": "new york jets - tampa bay buccaneers new york jets tampa bay buccaneers nfl nfl football fri, aug 14",
+      "title": "New York Jets vs Tampa Bay Buccaneers",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-15T06:00:00+07:00",
+      "end": "2026-08-15T09:00:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-08-15",
+      "kickoff_raw": "2026-08-15 06:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI3NQ=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=new york jets - tampa bay buccaneers new york jets tampa bay buccaneers nfl nfl football fri, aug 14",
+      "server_count": 1
+    },
+    {
+      "id": "washington commanders - miami dolphins washington commanders miami dolphins nfl nfl football fri, aug 14",
+      "title": "Washington Commanders vs Miami Dolphins",
+      "category": "NFL",
+      "channel_name": "HD/iOS",
+      "channel_options": [
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-08-15T06:00:00+07:00",
+      "end": "2026-08-15T09:00:00+07:00",
+      "time_label": "06:00",
+      "date_label": "2026-08-15",
+      "kickoff_raw": "2026-08-15 06:00",
+      "poster": null,
+      "stream_servers": [
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#ZWhkLzI4Mg=="
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=washington commanders - miami dolphins washington commanders miami dolphins nfl nfl football fri, aug 14",
+      "server_count": 1
+    },
+    {
+      "id": "tennis-davis-cup",
+      "title": "Davis Cup Qualifiers 2nd Rd",
+      "category": "Tennis",
+      "channel_name": "Bein1",
+      "channel_options": [
+        "Bein1",
+        "Bein2",
+        "TV4",
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-09-17T01:00:00+07:00",
+      "end": "2026-09-20T18:30:00+07:00",
+      "time_label": "01:00",
+      "date_label": "2026-09-17",
+      "kickoff_raw": "2026-09-17 01:00",
+      "poster": "https://www.atptour.com/-/media/images/news/2022/10/31/08/11/atp-itf-davis-cup-graphic-2022.jpg",
+      "stream_servers": [
+        {
+          "server": "Bein1",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+        },
+        {
+          "server": "Bein2",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+        },
+        {
+          "server": "TV4",
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c3QvdGVubmlz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=tennis-davis-cup",
+      "server_count": 4
+    },
+    {
+      "id": "tennis-laver-cup",
+      "title": "Laver Cup",
+      "category": "Tennis",
+      "channel_name": "Bein1",
+      "channel_options": [
+        "Bein1",
+        "Bein2",
+        "TV4",
+        "HD/iOS"
+      ],
+      "channel_url": "#channel:Live Event",
+      "start": "2026-09-25T01:00:00+07:00",
+      "end": "2026-09-27T18:30:00+07:00",
+      "time_label": "01:00",
+      "date_label": "2026-09-25",
+      "kickoff_raw": "2026-09-25 01:00",
+      "poster": "https://lavercup.com/wp-content/uploads/2026/02/GolfWebBanner-1440x726.jpg",
+      "stream_servers": [
+        {
+          "server": "Bein1",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjE="
+        },
+        {
+          "server": "Bein2",
+          "url": "https://streams.esportex.site/player#YXUvYmVpbjI="
+        },
+        {
+          "server": "TV4",
+          "url": "https://streams.esportex.site/player#dHY0dGVubmlz"
+        },
+        {
+          "server": "HD/iOS",
+          "url": "https://streams.esportex.site/player#c3QvdGVubmlz"
+        }
+      ],
+      "source": "airdropglobalz.my.id",
+      "source_href": "https://airdropglobalz.my.id/?match=tennis-laver-cup",
+      "server_count": 4
     }
-  ],
-  "last_updated": "2026-06-21T14:13:25+07:00"
+  ]
 }
