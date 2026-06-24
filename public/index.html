@@ -952,7 +952,7 @@ footer a{color:var(--text-2)}
   <button class="mini-close" id="miniClose" type="button" aria-label="Tutup player">✕</button>
   <button class="sticky-close" id="stickyClose" type="button" aria-label="Unstick player">↓</button>
   <video id="player" playsinline controls autoplay muted crossorigin="anonymous" preload="auto"></video>
-  <iframe id="ytPlayer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="display:none;position:absolute;inset:0;width:100%;height:100%;border:0;background:#000"></iframe>
+  <iframe id="ytPlayer" sandbox="allow-scripts allow-same-origin allow-presentation" referrerpolicy="no-referrer" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen style="display:none;position:absolute;inset:0;width:100%;height:100%;border:0;background:#000"></iframe>
   <div class="now-playing">
     <div class="now-playing-name" id="nowPlaying">Pilih Channel</div>
     <div class="now-playing-quality" id="nowQuality"></div>
