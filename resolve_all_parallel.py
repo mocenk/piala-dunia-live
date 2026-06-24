@@ -71,10 +71,15 @@ def collect_targets(root: dict):
                 or url.startswith("https://player.lapakstreaming.live/")
             ):
                 continue
-            # Skip if recently resolved (<1h)
+            # Skip if recently resolved:
+            #  - <5min for HLS with auth_key (signs/expires quickly)
+            #  - <1h for everything else
             if srv.get("resolved_m3u8") and srv.get("last_resolved_at"):
                 try:
-                    if now - float(srv["last_resolved_at"]) < 3600:
+                    age = now - float(srv["last_resolved_at"])
+                    resolved_url = str(srv.get("resolved_m3u8", ""))
+                    ttl = 300 if ("auth_key=" in resolved_url or "cdntoken=" in resolved_url) else 3600
+                    if age < ttl:
                         continue
                 except Exception:
                     pass
