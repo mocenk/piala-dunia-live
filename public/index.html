@@ -1615,9 +1615,12 @@ footer a{color:var(--text-2)}
     const start = new Date(ev.start).getTime();
     const end = new Date(ev.end).getTime();
     if (!(now >= start && now < end)) return false;
+    // Skip BWF/badminton events (e.g. YONEX US Open) — user explicitly
+    // doesn't want them surfaced in the live overlay.
+    const cat = String(ev.category || '').toUpperCase();
+    if (cat === 'BWF' || cat.includes('BADMINTON')) return false;
     // Only show events that have at least one RESOLVED stream server.
-    // Skips placeholders (YONEX/BWF without playable URLs) AND events whose
-    // servers are still un-resolved (resolve_specific hasn't run yet).
+    // Skips placeholders AND events whose servers are still un-resolved.
     const servers = Array.isArray(ev.stream_servers) ? ev.stream_servers : [];
     return servers.some(s => s && s.url && s.resolved_m3u8 && s.resolution_status === 'ok');
   }
