@@ -435,9 +435,14 @@ input{font-family:inherit}
 .chip.active .chip-count{background:rgba(0,0,0,0.18);color:#000}
 
 /* ── LIVE EVENTS (SEDANG TAYANG) ────────────────────────────── */
+:root {
+  --adg-green: #3ad17b;
+  --adg-green-lt: #5ce39a;
+  --adg-green-dk: #2a9d5c;
+  --adg-radius: 14px;
+}
 .live-events-section{
   margin:14px 0 6px;display:none;
-  background:linear-gradient(180deg,rgba(255,23,68,0.06) 0%,transparent 100%);
   border-top:1px solid var(--border);
   border-bottom:1px solid var(--border);
   padding:14px 0 12px;
@@ -448,71 +453,154 @@ input{font-family:inherit}
   padding:0 16px 10px;
 }
 .live-events-title{
-  font-size:11px;font-weight:900;
+  font-size:11px;font-weight:700;
   color:var(--text);letter-spacing:0.18em;
   text-transform:uppercase;
   display:flex;align-items:center;gap:8px;
 }
 .live-events-title .live-pulse{
-  width:8px;height:8px;border-radius:50%;background:var(--red);
-  box-shadow:0 0 0 0 var(--red-glow);animation:pulse 1.4s infinite;
+  width:8px;height:8px;border-radius:50%;background:var(--adg-green);
+  box-shadow:0 0 0 3px rgba(58,209,123,0.25);animation:pulse 1.4s infinite;
 }
 .live-events-title .badge-live{
-  background:var(--red);color:#fff;font-size:9px;font-weight:900;
-  padding:3px 6px;letter-spacing:0.15em;border-radius:2px;
+  background:var(--adg-green);color:#051007;font-size:9px;font-weight:800;
+  padding:3px 6px;letter-spacing:0.15em;border-radius:4px;
   margin-left:4px;
 }
 .live-events-count{
-  font-size:10px;color:var(--text-3);font-weight:700;
-  letter-spacing:0.1em;
+  font-size:11px;color:var(--text-3);font-weight:600;
+  letter-spacing:0.05em;background:var(--surface);padding:3px 10px;
+  border-radius:999px;
 }
 .live-events-scroll{
-  display:flex;gap:10px;overflow-x:auto;
+  display:flex;gap:12px;overflow-x:auto;
   scrollbar-width:none;-webkit-overflow-scrolling:touch;
   padding:0 16px 4px;
 }
 .live-events-scroll::-webkit-scrollbar{display:none}
 .live-event-card{
   flex-shrink:0;width:280px;
-  background:linear-gradient(135deg,rgba(255,23,68,0.12) 0%,rgba(212,175,55,0.08) 100%);
-  border:1px solid rgba(255,23,68,0.4);
-  border-left:3px solid var(--red);
-  padding:12px 14px;cursor:pointer;
-  transition:all 0.15s;font-family:inherit;color:inherit;text-align:left;
-  -webkit-appearance:none;position:relative;overflow:hidden;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--adg-radius);overflow:hidden;cursor:pointer;
+  display:flex;flex-direction:column;
+  transition:transform 0.15s,border-color 0.15s,box-shadow 0.15s;
+  font-family:inherit;color:inherit;text-align:left;
+  -webkit-appearance:none;
 }
-.live-event-card::before{
-  content:'';position:absolute;top:0;right:0;width:30px;height:30px;
-  background:linear-gradient(135deg,transparent 50%,var(--red) 50%);
-  opacity:0.15;
-}
-.live-event-card:active{transform:scale(0.98)}
 .live-event-card:hover{
-  border-color:var(--red);
-  background:linear-gradient(135deg,rgba(255,23,68,0.18) 0%,rgba(212,175,55,0.12) 100%);
+  transform:translateY(-2px);border-color:rgba(58,209,123,0.4);
+  box-shadow:0 8px 24px rgba(0,0,0,0.4);
 }
+.live-event-card .lec-poster{
+  position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;
+  background:#0a0a0a;
+}
+.live-event-card .lec-poster img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform 0.3s ease;
+}
+.live-event-card:hover .lec-poster img{transform:scale(1.04)}
+.live-event-card .lec-server-pill{
+  position:absolute;bottom:8px;right:8px;
+  font-size:10px;font-weight:600;color:var(--text);
+  background:rgba(5,5,5,0.8);padding:3px 8px;
+  border-radius:6px;backdrop-filter:blur(4px);
+}
+.live-event-card .lec-body{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
 .live-event-category{
-  font-size:9px;font-weight:900;color:var(--red);
-  text-transform:uppercase;letter-spacing:0.18em;margin-bottom:4px;
+  font-size:11px;color:var(--adg-green);font-weight:700;
+  text-transform:uppercase;letter-spacing:0.1em;
 }
 .live-event-title{
-  font-size:13px;font-weight:700;color:var(--text);line-height:1.3;
-  margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;
+  font-size:15px;font-weight:700;color:var(--text);line-height:1.25;
+  overflow:hidden;text-overflow:ellipsis;
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
 }
-.live-event-channel{
-  font-size:10px;color:var(--text-2);margin-bottom:6px;
-  display:flex;align-items:center;gap:4px;
-  letter-spacing:0.05em;text-transform:uppercase;font-weight:600;
-}
 .live-event-time{
-  font-size:11px;font-weight:700;color:var(--gold-bright);
-  display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-2);margin-top:auto;
+  display:flex;align-items:center;justify-content:space-between;padding-top:6px;
   font-variant-numeric:tabular-nums;
 }
 .live-event-countdown{
-  font-family:'JetBrains Mono',monospace;font-weight:800;
-  color:var(--text);
+  font-family:'JetBrains Mono',monospace;font-weight:700;
+  color:var(--adg-green);
+}
+
+/* ── SERVER PICKER MODAL — simple center popup ─────────────── */
+.server-modal-backdrop{
+  position:fixed;inset:0;background:rgba(10,10,10,0.85);
+  backdrop-filter:blur(6px);
+  z-index:9000;display:none;align-items:center;justify-content:center;
+  padding:18px;animation:fadeIn 0.18s ease;
+}
+.server-modal-backdrop.show{display:flex}
+.server-modal{
+  width:100%;max-width:520px;max-height:80vh;
+  background:var(--surface);border:1px solid rgba(58,209,123,0.3);
+  border-radius:var(--adg-radius);overflow:hidden;
+  display:flex;flex-direction:column;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  animation:slideUp 0.22s cubic-bezier(0.22,1,0.36,1);
+}
+@keyframes slideUp{
+  from{transform:translateY(16px);opacity:0}
+  to{transform:translateY(0);opacity:1}
+}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.server-modal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;border-bottom:1px solid var(--border);
+  flex-shrink:0;gap:12px;
+}
+.server-modal-title{
+  font-size:13px;font-weight:700;color:var(--adg-green);letter-spacing:0.15em;
+  text-transform:uppercase;display:flex;flex-direction:column;gap:3px;min-width:0;
+}
+.server-modal-title .smt-event{
+  font-size:14px;color:var(--text);font-weight:700;letter-spacing:0;
+  text-transform:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-family:'Bricolage Grotesque',system-ui,sans-serif;
+}
+.server-modal-close{
+  background:transparent;border:1px solid var(--border);
+  color:var(--text-2);width:34px;height:34px;
+  border-radius:8px;font-size:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all 0.15s;flex-shrink:0;
+}
+.server-modal-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.server-modal-body{
+  overflow-y:auto;flex:1;padding:14px;
+  scrollbar-width:thin;scrollbar-color:var(--adg-green) transparent;
+}
+.server-modal-body::-webkit-scrollbar{width:6px}
+.server-modal-body::-webkit-scrollbar-thumb{background:var(--adg-green);border-radius:3px}
+.server-chip{
+  width:100%;padding:10px 14px;margin-bottom:6px;
+  background:var(--surface-2);border:1px solid var(--border);
+  border-radius:8px;cursor:pointer;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  transition:all 0.12s;font-family:inherit;color:inherit;text-align:left;
+  -webkit-appearance:none;
+}
+.server-chip:hover{
+  border-color:var(--adg-green);background:rgba(58,209,123,0.06);
+}
+.server-chip:active{transform:scale(0.98)}
+.server-chip .sc-info{flex:1;min-width:0}
+.server-chip .sc-name{
+  font-size:13px;font-weight:600;color:var(--text);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.server-chip .sc-meta{
+  font-size:10px;color:var(--text-3);letter-spacing:0.05em;
+  margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-family:ui-monospace,'JetBrains Mono',monospace;
+}
+.server-chip .sc-arrow{color:var(--adg-green);font-size:14px;flex-shrink:0}
+.server-empty{
+  text-align:center;padding:32px 20px;color:var(--text-3);font-size:12px;
+  letter-spacing:0.1em;text-transform:uppercase;
 }
 
 /* ── SECTIONS ───────────────────────────────────────────────── */
@@ -1559,16 +1647,28 @@ footer a{color:var(--text-2)}
       const card = document.createElement('button');
       card.className = 'live-event-card';
       card.type = 'button';
+      const posterUrl = ev.poster || ev.thumbnail || '';
+      const serverCount = Array.isArray(ev.stream_servers) ? ev.stream_servers.length : 0;
+      const hasServers = serverCount > 0;
+      const safePoster = posterUrl ? String(posterUrl).replace(/"/g, '&quot;') : '';
+      const safeTitle = String(ev.title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const safeCat = String(ev.category || 'Live Event').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       card.innerHTML = `
-        <div class="live-event-category">${ev.category || 'Live Event'}</div>
-        <div class="live-event-title">${ev.title || ''}</div>
-        <div class="live-event-channel">📺 ${ev.channel_name || ''}</div>
-        <div class="live-event-time">
-          <span>${formatTimeRange(ev)} WIB</span>
-          <span class="live-event-countdown">⏱ ${formatCountdown(ev)}</span>
+        ${safePoster ? `<div class="lec-poster"><img src="${safePoster}" alt="" loading="lazy" onerror="this.style.display='none'">${hasServers ? `<span class="lec-server-pill">${serverCount} server</span>` : ''}</div>` : ''}
+        <div class="lec-body">
+          <div class="live-event-category">${safeCat}</div>
+          <div class="live-event-title">${safeTitle}</div>
+          <div class="live-event-time">
+            <span>${formatTimeRange(ev)} WIB</span>
+            <span class="live-event-countdown">⏱ ${formatCountdown(ev)}</span>
+          </div>
         </div>`;
       card.onclick = () => {
         captureUserGesture();
+        if (hasServers) {
+          openServerPicker(ev);
+          return;
+        }
         const matched = resolveEventChannel(ev);
         if (matched) playChannel(matched);
         else if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) playChannel({ name: ev.channel_name || 'Live Event', url: ev.channel_url, urls: [ev.channel_url], quality: 'fhd', category: 'fifa' });
@@ -1726,6 +1826,8 @@ footer a{color:var(--text-2)}
         const ev = sorted[idx];
         switchTab('home');
         setTimeout(() => {
+          const hasServers = Array.isArray(ev.stream_servers) && ev.stream_servers.length > 0;
+          if (hasServers) { openServerPicker(ev); return; }
           const matched = resolveEventChannel(ev);
           if (matched) playChannel(matched);
           else if (ev.channel_url && !String(ev.channel_url).startsWith('#channel:')) playChannel({ name: ev.channel_name || 'Live Event', url: ev.channel_url, urls: [ev.channel_url], quality: 'fhd', category: 'fifa' });
@@ -1782,8 +1884,83 @@ footer a{color:var(--text-2)}
   });
   loadLiveEvents();
   setTimeout(loadLiveEvents, 2000);
-
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
+
+  // ── Server picker modal ─────────────────────────────────
+  let serverPickerBackdrop = null;
+  function ensureServerPicker() {
+    if (serverPickerBackdrop) return serverPickerBackdrop;
+    const bd = document.createElement('div');
+    bd.className = 'server-modal-backdrop';
+    bd.id = 'serverPickerBackdrop';
+    bd.innerHTML = `
+      <div class="server-modal" role="dialog" aria-modal="true">
+        <div class="server-modal-head">
+          <div class="server-modal-title">
+            <span id="smtTitle">Pilih Server</span>
+            <span class="smt-event" id="smtEvent"></span>
+          </div>
+          <button class="server-modal-close" id="smtClose" type="button" aria-label="Tutup">×</button>
+        </div>
+        <div class="server-modal-body" id="smtBody"></div>
+      </div>`;
+    document.body.appendChild(bd);
+    bd.addEventListener('click', (e) => { if (e.target === bd) closeServerPicker(); });
+    bd.querySelector('#smtClose').addEventListener('click', closeServerPicker);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeServerPicker(); });
+    serverPickerBackdrop = bd;
+    return bd;
+  }
+  function openServerPicker(ev) {
+    captureUserGesture();
+    const bd = ensureServerPicker();
+    const servers = (ev.stream_servers || []).filter(s => s && s.url);
+    const titleEl = bd.querySelector('#smtTitle');
+    const evEl = bd.querySelector('#smtEvent');
+    const body = bd.querySelector('#smtBody');
+    titleEl.textContent = `Pilih Server — ${servers.length} Pilihan`;
+    evEl.textContent = ev.title || '';
+    body.innerHTML = '';
+    if (servers.length === 0) {
+      body.innerHTML = '<div class="server-empty">Tidak ada server tersedia</div>';
+    } else {
+      servers.forEach((s, i) => {
+        const chip = document.createElement('button');
+        chip.className = 'server-chip';
+        chip.type = 'button';
+        const name = String(s.server || s.name || `Server ${i + 1}`);
+        const url = String(s.url);
+        const urlShort = url.length > 60 ? url.slice(0, 57) + '…' : url;
+        chip.innerHTML = `
+          <div class="sc-info">
+            <div class="sc-name">${name}</div>
+            <div class="sc-meta">${urlShort}</div>
+          </div>
+          <div class="sc-arrow">▶</div>`;
+        chip.onclick = () => {
+          closeServerPicker();
+          const channelName = `${ev.title || 'Live Event'} · ${name}`;
+          playChannel({
+            name: channelName,
+            url: url,
+            urls: [url],
+            quality: 'fhd',
+            category: 'fifa'
+          });
+          const pw = document.getElementById('playerWrap');
+          if (pw) pw.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        body.appendChild(chip);
+      });
+    }
+    bd.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeServerPicker() {
+    if (!serverPickerBackdrop) return;
+    serverPickerBackdrop.classList.remove('show');
+    document.body.style.overflow = '';
+  }
 </script>
 </body>
 </html>
