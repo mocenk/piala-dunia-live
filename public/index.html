@@ -1348,16 +1348,19 @@ footer a{color:var(--text-2)}
 
     await cleanupPlayers();
 
-    // === Iframe wrapper fallback (esportex / embedsportex) ===
-    // URL bentuk https://streams.esportex.site/player#<base64> atau embedsportex.pages.dev
-    // bukan m3u8/mpd — itu HTML iframe page. Embed langsung via iframe, jangan feed ke HLS.
+    // === Iframe wrapper fallback (esportex / embedsportex / generic embeds) ===
+    // Resolved iframe URLs from data.esportex.site API are clean embed pages
+    // (e.g. https://streams.center/embed/ch18.php, https://embedhd.org/source/fetch.php?hd=608).
+    // They are NOT m3u8/mpd — render as iframe, don't feed to HLS.js.
     const isIframeWrapper =
       /^https?:\/\/(streams\.esportex\.site|embedsportex\.pages\.dev)\/player/i.test(url) ||
-      /^https?:\/\/embedsportex\.pages\.dev\//i.test(url);
+      /^https?:\/\/embedsportex\.pages\.dev\//i.test(url) ||
+      /^https?:\/\/(streams\.center|embedhd\.org|streamshouse\.com|embedsports\.to)\//i.test(url) ||
+      /\/embed\/[a-z]+\.php(\?|$)/i.test(url) ||
+      /\/source\/fetch\.php(\?|$)/i.test(url);
     if (isIframeWrapper) {
       const yt = document.getElementById('ytPlayer');
       if (!yt) { console.error('[playChannel] ytPlayer iframe missing'); return; }
-      // Hash bagian (#base64) cuma anchor — biarin, browser akan pass ke iframe
       const sep = url.includes('?') ? '&' : '?';
       const iframeUrl = url + sep + 'autoplay=1';
       console.log(`[playChannel] ${ch.name} → Iframe wrapper ${iframeUrl}`);
@@ -1611,7 +1614,11 @@ footer a{color:var(--text-2)}
     const now = Date.now();
     const start = new Date(ev.start).getTime();
     const end = new Date(ev.end).getTime();
-    return now >= start && now < end;
+    if (!(now >= start && now < end)) return false;
+    // Only show events that have at least one playable stream server.
+    // Excludes "Sedang Tayang" placeholders (e.g. YONEX US Open without streams.center link).
+    const hasServers = Array.isArray(ev.stream_servers) && ev.stream_servers.some(s => s && s.url);
+    return !!hasServers;
   }
 
   function formatCountdown(ev) {
@@ -1951,11 +1958,20 @@ footer a{color:var(--text-2)}
         chip.className = 'server-chip';
         chip.type = 'button';
         const name = String(s.server || s.name || `Server ${i + 1}`);
-        const url = String(s.url);
-        const urlShort = url.length > 60 ? url.slice(0, 57) + '…' : url;
+        const wrapperUrl = String(s.url);
+        // Prefer resolved URL (XOR-decoded from data.esportex.site API).
+        // Falls back to wrapper URL if resolution failed.
+        const playUrl = (s.resolved_m3u8 && s.resolution_status === 'ok')
+          ? String(s.resolved_m3u8)
+          : wrapperUrl;
+        const urlShort = playUrl.length > 60 ? playUrl.slice(0, 57) + '…' : playUrl;
+        // Show resolved type badge if different from wrapper
+        const typeBadge = (s.resolved_type && s.resolved_type !== 'iframe')
+          ? ` · ${s.resolved_type.toUpperCase()}`
+          : '';
         chip.innerHTML = `
           <div class="sc-info">
-            <div class="sc-name">${name}</div>
+            <div class="sc-name">${name}${typeBadge}</div>
             <div class="sc-meta">${urlShort}</div>
           </div>
           <div class="sc-arrow">▶</div>`;
@@ -1964,8 +1980,8 @@ footer a{color:var(--text-2)}
           const channelName = `${ev.title || 'Live Event'} · ${name}`;
           playChannel({
             name: channelName,
-            url: url,
-            urls: [url],
+            url: playUrl,
+            urls: [playUrl],
             quality: 'fhd',
             category: 'fifa'
           });

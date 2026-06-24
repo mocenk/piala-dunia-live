@@ -925,15 +925,25 @@
       "stream_servers": [
         {
           "server": "SD/iOS",
-          "url": "https://streams.esportex.site/player#c2MvMTAxMjA="
+          "url": "https://streams.esportex.site/player#c2MvMTAxMjA=",
+          "resolved_m3u8": "https://streams.center/embed/ch18.php",
+          "resolved_type": "iframe",
+          "last_resolved_at": 1782338257,
+          "resolution_status": "ok"
         },
         {
           "server": "HD/iOS",
-          "url": "https://streams.esportex.site/player#ZWhkLzYwOA=="
+          "url": "https://streams.esportex.site/player#ZWhkLzYwOA==",
+          "resolved_m3u8": "https://embedhd.org/source/fetch.php?hd=608",
+          "resolved_type": "iframe",
+          "last_resolved_at": 1782338258,
+          "resolution_status": "ok"
         },
         {
           "server": "FHD/iOS",
-          "url": "https://streams.esportex.site/player#cHB2LzIzNzc3"
+          "url": "https://streams.esportex.site/player#cHB2LzIzNzc3",
+          "resolution_status": "fail: json parse failed: Expecting value: line 1 column 1 (char 0)",
+          "last_resolved_at": 1782338260
         }
       ],
       "source": "airdropglobalz.my.id",
