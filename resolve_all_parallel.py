@@ -25,9 +25,19 @@ MAX_WORKERS = 12  # conservative — server-side seems OK with this
 
 
 def decode_wrapper(wrapper_url: str) -> dict:
-    if "#" not in wrapper_url:
-        return {"ok": False, "error": "no hash"}
-    hash_part = wrapper_url.split("#", 1)[1]
+    if wrapper_url.startswith("https://streams.esportex.site/player"):
+        if "#" not in wrapper_url:
+            return {"ok": False, "error": "no hash"}
+        hash_part = wrapper_url.split("#", 1)[1]
+    elif wrapper_url.startswith("https://player.lapakstreaming.live/"):
+        # URL format: https://player.lapakstreaming.live/?id=<base64hash>
+        from urllib.parse import urlparse, parse_qs
+        qs = parse_qs(urlparse(wrapper_url).query)
+        hash_part = (qs.get("id") or [""])[0]
+        if not hash_part:
+            return {"ok": False, "error": "no id query"}
+    else:
+        return {"ok": False, "error": "unsupported wrapper"}
     api_url = API_BASE + hash_part
     try:
         req = urllib.request.Request(api_url, headers=HEADERS)
@@ -56,7 +66,10 @@ def collect_targets(root: dict):
             if not isinstance(srv, dict):
                 continue
             url = srv.get("url") or ""
-            if not url.startswith("https://streams.esportex.site/player"):
+            if not (
+                url.startswith("https://streams.esportex.site/player")
+                or url.startswith("https://player.lapakstreaming.live/")
+            ):
                 continue
             # Skip if recently resolved (<1h)
             if srv.get("resolved_m3u8") and srv.get("last_resolved_at"):

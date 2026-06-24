@@ -1957,7 +1957,18 @@ footer a{color:var(--text-2)}
     if (servers.length === 0) {
       body.innerHTML = '<div class="server-empty">Tidak ada server tersedia</div>';
     } else {
-      servers.forEach((s, i) => {
+      // Sort: direct DASH/HLS first (most likely to play), iframe wrappers last.
+      // Within same priority, prefer resolved over unresolved.
+      const ranked = servers.slice().sort((a, b) => {
+        const ta = String(a.resolved_type || '').toLowerCase();
+        const tb = String(b.resolved_type || '').toLowerCase();
+        const ra = (a.resolution_status === 'ok') ? 1 : 0;
+        const rb = (b.resolution_status === 'ok') ? 1 : 0;
+        const pa = (ra === 1 && (ta === 'dash' || ta === 'hls')) ? 0 : (ra === 1 ? 1 : 2);
+        const pb = (rb === 1 && (tb === 'dash' || tb === 'hls')) ? 0 : (rb === 1 ? 1 : 2);
+        return pa - pb;
+      });
+      ranked.forEach((s, i) => {
         const chip = document.createElement('button');
         chip.className = 'server-chip';
         chip.type = 'button';
